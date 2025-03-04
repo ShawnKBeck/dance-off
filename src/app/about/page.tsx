@@ -35,7 +35,7 @@ export default function AboutPage() {
             <div>
               <h2 className="text-3xl font-bold mb-6 font-poppins text-purple-600">Our Mission</h2>
               <p className="text-lg mb-4">
-                &quot;You&apos;ve Been Served&quot; is more than just a dance competition—it&apos;s a community-driven initiative to raise funds and awareness for local charities in DeKalb County.
+                &quot;You Got Served&quot; is more than just a dance competition—it&apos;s a community-driven initiative to raise funds and awareness for local charities in DeKalb County.
               </p>
               <p className="text-lg mb-4">
                 Through the universal language of dance, we bring together people from all walks of life to celebrate artistic expression while making a meaningful impact on our community.
@@ -92,7 +92,7 @@ export default function AboutPage() {
             <div className="bg-white dark:bg-slate-700 p-8 rounded-lg shadow-md">
               <h3 className="text-2xl font-bold mb-4 font-poppins text-pink-500">Entertainment & Community</h3>
               <p className="mb-4">
-                Beyond the competition, &quot;You&apos;ve Been Served&quot; offers a full evening of entertainment with professional dance showcases, live music, and interactive elements that get the whole audience involved.
+                Beyond the competition, "You Got Served" offers a full evening of entertainment with professional dance showcases, live music, and interactive elements that get the whole audience involved.
               </p>
               <p className="mb-4">
                 This event is designed to bring our community together, celebrating the diverse talents of DeKalb County while supporting causes that matter. It&apos;s a night of fun, inspiration, and positive impact.
@@ -115,7 +115,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-4">
           <h2 className="section-title">Meet Our Hosts</h2>
           <p className="section-subtitle">
-            &quot;You&apos;ve Been Served&quot; is proudly hosted by Dance Dimensions and the Egyptian Theatre
+            "You Got Served" is proudly hosted by Dance Dimensions
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-12">
@@ -131,29 +131,10 @@ export default function AboutPage() {
               </div>
               <h3 className="text-2xl font-bold mb-4 font-poppins text-purple-600">Dance Dimensions</h3>
               <p className="mb-4">
-                Dance Dimensions is DeKalb&apos;s premier dance studio, offering instruction in various styles for all ages and skill levels. With a team of professional instructors and a passion for artistic expression, they bring technical expertise and creative vision to &quot;You&apos;ve Been Served.&quot;
+                Dance Dimensions is DeKalb&apos;s premier dance studio, offering instruction in various styles for all ages and skill levels. With a team of professional instructors and a passion for artistic expression, they bring technical expertise and creative vision to "You Got Served."
               </p>
               <p className="mb-4">
                 Their instructors will coach each competing team, sharing their knowledge and helping participants shine on stage while fostering a spirit of friendly competition.
-              </p>
-            </div>
-
-            <div className="bg-purple-50 dark:bg-slate-800 p-8 rounded-lg shadow-md">
-              <div className="mb-6 rounded-lg overflow-hidden">
-                <Image
-                  src="/images/egyptian-theatre.jpg"
-                  alt="Egyptian Theatre"
-                  width={500}
-                  height={300}
-                  className="w-full h-auto object-cover"
-                />
-              </div>
-              <h3 className="text-2xl font-bold mb-4 font-poppins text-pink-500">Egyptian Theatre</h3>
-              <p className="mb-4">
-                The historic Egyptian Theatre in downtown DeKalb is a cultural landmark that has been entertaining the community since 1929. With its stunning architecture and state-of-the-art facilities, it provides the perfect backdrop for our dance competition.
-              </p>
-              <p className="mb-4">
-                As a non-profit organization itself, the Egyptian Theatre shares our commitment to community enrichment and artistic excellence, making it an ideal partner for this charitable event.
               </p>
             </div>
           </div>

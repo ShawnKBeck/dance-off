@@ -28,7 +28,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <span className="font-poppins font-bold text-2xl">You&apos;ve Been Served</span>
+            <span className="font-poppins font-bold text-2xl">You Got Served</span>
           </Link>
 
           {/* Desktop Navigation */}

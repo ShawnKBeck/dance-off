@@ -7,9 +7,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* About Section */}
           <div>
-            <h3 className="text-xl font-bold mb-4 text-pink-400">You&apos;ve Been Served</h3>
+            <h3 className="text-xl font-bold mb-4 text-pink-400">You Got Served</h3>
             <p className="mb-4">
-              A charitable competitive dance-off event hosted by Dance Dimensions and the Egyptian Theatre in DeKalb, Illinois.
+              A charitable competitive dance-off event hosted by Dance Dimensions in DeKalb, Illinois.
             </p>
             <div className="flex space-x-4">
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
@@ -55,7 +55,7 @@ const Footer = () => {
           {/* Contact Info */}
           <div>
             <h3 className="text-xl font-bold mb-4 text-pink-400">Contact Us</h3>
-            <p className="mb-2">The Funky Flamingo Dance Hall</p>
+            <p className="mb-2">DeKalb Community Center</p>
             <p className="mb-2">42 Boogie Boulevard</p>
             <p className="mb-2">Groovytown, IL 60115</p>
             <p className="mb-2">Phone: (555) DANCE-NOW</p>
@@ -70,9 +70,9 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-6 text-center text-sm">
-          <p>&copy; {new Date().getFullYear()} You&apos;ve Been Served. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} You Got Served. All rights reserved.</p>
           <p className="mt-2">
-            Hosted by Dance Dimensions and The Funky Flamingo in Groovytown, Illinois.
+            Hosted by Dance Dimensions in Groovytown, Illinois.
           </p>
         </div>
       </div>

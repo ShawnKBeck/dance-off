@@ -50,7 +50,7 @@ export default function Home() {
 
         <div className="container mx-auto px-4 z-20 text-center">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-poppins mb-4 drop-shadow-lg" style={{ color: '#1b365f' }}>
-            You&apos;ve Been <span className="text-pink-500 drop-shadow-lg">Served!</span>
+            You <span className="text-pink-500 drop-shadow-lg">Got</span> Served!
           </h1>
           <p className="text-xl md:text-2xl text-purple-100 max-w-3xl mx-auto mb-8 drop-shadow-md">
             A charitable competitive dance-off event raising money for local charities
@@ -157,7 +157,7 @@ export default function Home() {
               <div>
                 <h2 className="text-3xl font-bold mb-4 font-poppins">Mark Your Calendar!</h2>
                 <p className="text-lg mb-6">
-                  Join us for an unforgettable night of dance, fun, and charity at the historic Egyptian Theatre in DeKalb.
+                  Join us for an unforgettable night of dance, fun, and charity at our event in DeKalb.
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="flex items-start">
@@ -180,7 +180,7 @@ export default function Home() {
                     </div>
                     <div>
                       <h4 className="font-bold">Location</h4>
-                      <p>Egyptian Theatre, DeKalb, IL</p>
+                      <p>DeKalb Community Center, DeKalb, IL</p>
                     </div>
                   </div>
                 </div>

@@ -100,13 +100,13 @@ export default function RulesPage() {
             <h2 className="text-3xl font-bold mb-6 font-poppins text-center">The South Park Inspiration</h2>
             <div className="bg-white dark:bg-slate-700 p-8 rounded-lg shadow-md">
               <p className="text-lg mb-4">
-                Our &quot;You&apos;ve Been Served&quot; event pays homage to the iconic South Park episode where Stan, Kyle, Kenny, and Cartman find themselves in an unexpected dance battle after being &quot;served&quot; by a rival dance crew.
+                Our "You Got Served" event pays homage to the iconic South Park episode where Stan, Kyle, Kenny, and Cartman find themselves in an unexpected dance battle after being "served" by a rival dance crew.
               </p>
               <p className="text-lg mb-4">
-                While our event takes inspiration from this comedic portrayal, we&apos;ve transformed it into a positive community experience that celebrates dance as an art form and a way to bring people together for a good cause.
+                While our event takes inspiration from this comedic portrayal, we've transformed it into a positive community experience that celebrates dance as an art form and a way to bring people together for a good cause.
               </p>
               <p className="text-lg">
-                Don&apos;t worry - no actual &quot;serving&quot; or dance intimidation is required! Just bring your enthusiasm, support your favorite team, and enjoy the show!
+                Don't worry - no actual "serving" or dance intimidation is required! Just bring your enthusiasm, support your favorite team, and enjoy the show!
               </p>
             </div>
           </div>

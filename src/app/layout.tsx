@@ -16,8 +16,8 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "You've Been Served | Dance Competition for Charity",
-  description: "A vibrant, charitable competitive dance-off event hosted by Dance Dimensions and the Egyptian Theatre in DeKalb, Illinois.",
+  title: "You Got Served | Dance Competition",
+  description: "A charitable competitive dance-off event raising money for local charities",
 };
 
 export default function RootLayout({
