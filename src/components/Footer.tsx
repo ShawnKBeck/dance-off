@@ -55,10 +55,10 @@ const Footer = () => {
           {/* Contact Info */}
           <div>
             <h3 className="text-xl font-bold mb-4 text-pink-400">Contact Us</h3>
-            <p className="mb-2">Egyptian Theatre</p>
-            <p className="mb-2">135 N 2nd St</p>
-            <p className="mb-2">DeKalb, IL 60115</p>
-            <p className="mb-2">Phone: (555) 123-4567</p>
+            <p className="mb-2">The Funky Flamingo Dance Hall</p>
+            <p className="mb-2">42 Boogie Boulevard</p>
+            <p className="mb-2">Groovytown, IL 60115</p>
+            <p className="mb-2">Phone: (555) DANCE-NOW</p>
             <p className="mb-4">Email: info@youvebeenserved.org</p>
             <Link 
               href="/contact" 
@@ -72,7 +72,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 mt-8 pt-6 text-center text-sm">
           <p>&copy; {new Date().getFullYear()} You&apos;ve Been Served. All rights reserved.</p>
           <p className="mt-2">
-            Hosted by Dance Dimensions and the Egyptian Theatre in DeKalb, Illinois.
+            Hosted by Dance Dimensions and The Funky Flamingo in Groovytown, Illinois.
           </p>
         </div>
       </div>

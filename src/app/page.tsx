@@ -8,58 +8,33 @@ export default function Home() {
       number: 1,
       title: "Serve or Be Served",
       description: "Teams challenge each other to dance battles. The challenging team performs first, setting the bar for the competition.",
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-        </svg>
-      ),
     },
     {
       number: 2,
       title: "You Got Served",
       description: "Once challenged, the receiving team must accept or concede defeat. There's no backing down from a challenge!",
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-        </svg>
-      ),
     },
     {
       number: 3,
       title: "Dance Instructor",
       description: "Each team receives coaching from a professional Dance Dimensions instructor who will help choreograph and perfect their routine.",
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
-        </svg>
-      ),
     },
     {
       number: 4,
       title: "Judges Decide",
       description: "Impartial judges declare the winner based on style, originality, and attitude. Their decision is final and binding.",
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
-        </svg>
-      ),
     },
     {
       number: 5,
-      title: "Dance for Charity",
-      description: "All bragging rights are for a good cause; keep it fun and respectful! Remember, we're here to support local charities in DeKalb County.",
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-        </svg>
-      ),
+      title: "Bring It!",
+      description: "Show up with your best moves and attitude! This is your chance to prove you've got what it takes to dominate the dance floor.",
     },
   ];
 
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[80vh] flex items-center justify-center overflow-hidden bg-purple-900">
         <div className="absolute inset-0 z-0">
           <div className="relative w-full h-full">
             <Image
@@ -69,14 +44,23 @@ export default function Home() {
               priority
               className="object-cover"
             />
-            <div className="absolute inset-0 bg-black/70"></div>
+            <div className="absolute inset-0 bg-gradient-to-br from-purple-800/90 via-purple-900/85 to-indigo-900/80"></div>
           </div>
         </div>
-        <div className="container mx-auto px-4 z-10 text-center">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white font-poppins mb-4 drop-shadow-lg text-shadow-lg">
-            You&apos;ve Been <span className="text-yellow-400">Served!</span>
+        
+        {/* Simple Dancing Figures */}
+        <div className="absolute bottom-0 left-[10%] w-10 h-20 bg-black z-10 animate-bounce" style={{ animationDuration: '1s' }}></div>
+        <div className="absolute bottom-0 left-[25%] w-10 h-20 bg-black z-10 animate-bounce" style={{ animationDuration: '1.5s' }}></div>
+        <div className="absolute bottom-0 left-[40%] w-10 h-20 bg-black z-10 animate-bounce" style={{ animationDuration: '0.8s' }}></div>
+        <div className="absolute bottom-0 right-[40%] w-10 h-20 bg-black z-10 animate-bounce" style={{ animationDuration: '1.2s' }}></div>
+        <div className="absolute bottom-0 right-[25%] w-10 h-20 bg-black z-10 animate-bounce" style={{ animationDuration: '1.7s' }}></div>
+        <div className="absolute bottom-0 right-[10%] w-10 h-20 bg-black z-10 animate-bounce" style={{ animationDuration: '1s' }}></div>
+
+        <div className="container mx-auto px-4 z-20 text-center">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-poppins mb-4 drop-shadow-lg" style={{ color: '#1b365f' }}>
+            You&apos;ve Been <span className="text-pink-500 drop-shadow-lg">Served!</span>
           </h1>
-          <p className="text-xl md:text-2xl text-white max-w-3xl mx-auto mb-8 drop-shadow-md text-shadow">
+          <p className="text-xl md:text-2xl text-purple-100 max-w-3xl mx-auto mb-8 drop-shadow-md">
             A charitable competitive dance-off event raising money for local charities
           </p>
           <div className="flex flex-wrap justify-center gap-4">
@@ -94,7 +78,7 @@ export default function Home() {
       </section>
 
       {/* Mission Section */}
-      <section className="section-padding bg-white dark:bg-slate-900">
+      <section className="section-padding bg-white">
         <div className="container mx-auto px-4">
           <h2 className="section-title">Our Mission</h2>
           <p className="section-subtitle">
@@ -102,7 +86,7 @@ export default function Home() {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
-            <div className="bg-white dark:bg-slate-800 p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+            <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
               <div className="text-purple-600 text-4xl mb-4">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 019-9m-9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
@@ -114,7 +98,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="bg-white dark:bg-slate-800 p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+            <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
               <div className="text-pink-500 text-4xl mb-4">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -126,7 +110,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="bg-white dark:bg-slate-800 p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+            <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
               <div className="text-purple-600 text-4xl mb-4">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -142,7 +126,7 @@ export default function Home() {
       </section>
 
       {/* Rules Preview Section */}
-      <section className="section-padding bg-purple-50 dark:bg-slate-800">
+      <section className="section-padding bg-purple-50">
         <div className="container mx-auto px-4">
           <h2 className="section-title bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-500">
             How It Works
@@ -152,16 +136,13 @@ export default function Home() {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
-            {rules.slice(0, 3).map((rule) => (
-              <div key={rule.number} className="bg-white dark:bg-slate-700 p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+            {rules.map((rule) => (
+              <div key={rule.number} className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
                 <div className="flex items-center mb-4">
                   <div className="bg-gradient-to-r from-purple-600 to-pink-500 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-4">
                     {rule.number}
                   </div>
                   <h3 className="text-xl font-bold font-poppins">{rule.title}</h3>
-                </div>
-                <div className="text-purple-600 dark:text-purple-400 mb-4">
-                  {rule.icon}
                 </div>
                 <p className="text-gray-600 dark:text-gray-300">{rule.description}</p>
               </div>
@@ -170,14 +151,14 @@ export default function Home() {
 
           <div className="text-center mt-12">
             <Link href="/rules" className="btn-secondary inline-block">
-              See All Rules
+              Learn More About the Rules
             </Link>
           </div>
         </div>
       </section>
 
       {/* Event Info & Countdown */}
-      <section className="section-padding bg-white dark:bg-slate-900">
+      <section className="section-padding bg-white">
         <div className="container mx-auto px-4">
           <div className="bg-gradient-to-r from-purple-600 to-pink-500 rounded-xl p-8 md:p-12 text-white shadow-lg">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
@@ -244,7 +225,7 @@ export default function Home() {
       </section>
 
       {/* Sponsors Section */}
-      <section className="section-padding bg-purple-50 dark:bg-slate-800">
+      <section className="section-padding bg-purple-50">
         <div className="container mx-auto px-4 text-center">
           <h2 className="section-title">Our Sponsors</h2>
           <p className="section-subtitle">
@@ -252,16 +233,16 @@ export default function Home() {
           </p>
 
           <div className="flex flex-wrap justify-center items-center gap-8 mt-12">
-            <div className="bg-white dark:bg-slate-700 p-6 rounded-lg shadow-md w-40 h-40 flex items-center justify-center">
+            <div className="bg-white p-6 rounded-lg shadow-md w-40 h-40 flex items-center justify-center">
               <p className="text-gray-400 dark:text-gray-500">Sponsor Logo</p>
             </div>
-            <div className="bg-white dark:bg-slate-700 p-6 rounded-lg shadow-md w-40 h-40 flex items-center justify-center">
+            <div className="bg-white p-6 rounded-lg shadow-md w-40 h-40 flex items-center justify-center">
               <p className="text-gray-400 dark:text-gray-500">Sponsor Logo</p>
             </div>
-            <div className="bg-white dark:bg-slate-700 p-6 rounded-lg shadow-md w-40 h-40 flex items-center justify-center">
+            <div className="bg-white p-6 rounded-lg shadow-md w-40 h-40 flex items-center justify-center">
               <p className="text-gray-400 dark:text-gray-500">Sponsor Logo</p>
             </div>
-            <div className="bg-white dark:bg-slate-700 p-6 rounded-lg shadow-md w-40 h-40 flex items-center justify-center">
+            <div className="bg-white p-6 rounded-lg shadow-md w-40 h-40 flex items-center justify-center">
               <p className="text-gray-400 dark:text-gray-500">Sponsor Logo</p>
             </div>
           </div>

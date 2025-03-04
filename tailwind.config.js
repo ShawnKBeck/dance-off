@@ -52,6 +52,19 @@ module.exports = {
       brightness: {
         25: '.25',
       },
+      animation: {
+        'spin-slow': 'spin 8s linear infinite',
+        'bounce-slow': 'bounce 3s infinite',
+        'dance': 'dance 2s ease-in-out infinite',
+      },
+      keyframes: {
+        dance: {
+          '0%, 100%': { transform: 'rotate(-5deg) translateY(0)' },
+          '25%': { transform: 'rotate(5deg) translateY(-10px)' },
+          '50%': { transform: 'rotate(-5deg) translateY(0)' },
+          '75%': { transform: 'rotate(5deg) translateY(-5px)' },
+        },
+      },
     },
   },
   plugins: [

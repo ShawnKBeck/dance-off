@@ -72,3 +72,147 @@ body {
     transform: translateY(-20px);
   }
 }
+
+/* Disco Ball Animations */
+.disco-ball {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.4));
+  box-shadow: 0 0 25px 5px rgba(255, 255, 255, 0.8);
+  z-index: 10;
+  animation: pulse 2s infinite alternate;
+}
+
+.disco-ball::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.disco-ball::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: linear-gradient(135deg, transparent 20%, rgba(255, 255, 255, 0.8) 20%, rgba(255, 255, 255, 0.8) 22%, transparent 22%),
+              linear-gradient(225deg, transparent 20%, rgba(255, 255, 255, 0.8) 20%, rgba(255, 255, 255, 0.8) 22%, transparent 22%),
+              linear-gradient(315deg, transparent 20%, rgba(255, 255, 255, 0.8) 20%, rgba(255, 255, 255, 0.8) 22%, transparent 22%),
+              linear-gradient(45deg, transparent 20%, rgba(255, 255, 255, 0.8) 20%, rgba(255, 255, 255, 0.8) 22%, transparent 22%);
+  background-size: 20px 20px;
+  animation: spin 8s linear infinite;
+}
+
+.disco-light {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background: radial-gradient(ellipse at 50% 50%, transparent 60%, rgba(255, 255, 255, 0.1) 100%);
+  pointer-events: none;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 25px 5px rgba(255, 255, 255, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 35px 10px rgba(255, 255, 255, 0.9);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Dancing Silhouette */
+.dancer {
+  position: absolute;
+  bottom: 0;
+  width: 50px;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 10;
+  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+
+.dancer-1 {
+  left: 10%;
+  animation: dance1 3s infinite;
+}
+
+.dancer-2 {
+  left: 30%;
+  animation: dance2 2.5s infinite;
+}
+
+.dancer-3 {
+  left: 50%;
+  transform: translateX(-50%);
+  animation: dance3 4s infinite;
+}
+
+.dancer-4 {
+  right: 30%;
+  animation: dance2 3.5s infinite 0.5s;
+}
+
+.dancer-5 {
+  right: 10%;
+  animation: dance1 3s infinite 1s;
+}
+
+@keyframes dance1 {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-20px) rotate(-5deg);
+  }
+  50% {
+    transform: translateY(0) rotate(0deg);
+  }
+  75% {
+    transform: translateY(-10px) rotate(5deg);
+  }
+}
+
+@keyframes dance2 {
+  0%, 100% {
+    transform: translateY(0) rotate(5deg);
+  }
+  25% {
+    transform: translateY(-15px) rotate(-5deg);
+  }
+  50% {
+    transform: translateY(0) rotate(5deg);
+  }
+  75% {
+    transform: translateY(-25px) rotate(-5deg);
+  }
+}
+
+@keyframes dance3 {
+  0%, 100% {
+    transform: translateX(-50%) translateY(0) scale(1.2);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-30px) scale(1.2);
+  }
+}

@@ -7,58 +7,33 @@ export default function RulesPage() {
       number: 1,
       title: "Serve or Be Served",
       description: "Teams challenge each other to dance battles. The challenging team performs first, setting the bar for the competition.",
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-        </svg>
-      ),
     },
     {
       number: 2,
       title: "You Got Served",
       description: "Once challenged, the receiving team must accept or concede defeat. There's no backing down from a challenge!",
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-        </svg>
-      ),
     },
     {
       number: 3,
       title: "Dance Instructor",
       description: "Each team receives coaching from a professional Dance Dimensions instructor who will help choreograph and perfect their routine.",
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
-        </svg>
-      ),
     },
     {
       number: 4,
       title: "Judges Decide",
       description: "Impartial judges declare the winner based on style, originality, and attitude. Their decision is final and binding.",
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
-        </svg>
-      ),
     },
     {
       number: 5,
-      title: "Dance for Charity",
-      description: "All bragging rights are for a good cause; keep it fun and respectful! Remember, we're here to support local charities in DeKalb County.",
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-        </svg>
-      ),
+      title: "Bring It!",
+      description: "Show up with your best moves and attitude! This is your chance to prove you've got what it takes to dominate the dance floor.",
     },
   ];
 
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-[40vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[40vh] flex items-center justify-center overflow-hidden bg-purple-900">
         <div className="absolute inset-0 z-0">
           <div className="relative w-full h-full">
             <Image
@@ -68,7 +43,7 @@ export default function RulesPage() {
               priority
               className="object-cover"
             />
-            <div className="absolute inset-0 bg-black/70"></div>
+            <div className="absolute inset-0 bg-gradient-to-br from-purple-800/90 via-purple-900/85 to-indigo-900/80"></div>
           </div>
         </div>
         <div className="container mx-auto px-4 z-10 text-center">
@@ -95,9 +70,6 @@ export default function RulesPage() {
             <div className="mt-12 space-y-12">
               {rules.map((rule) => (
                 <div key={rule.number} className="flex flex-col md:flex-row gap-6 items-start md:items-center p-6 bg-purple-50 dark:bg-slate-800 rounded-xl shadow-md hover:shadow-lg transition duration-300">
-                  <div className="flex-shrink-0 bg-gradient-to-r from-purple-600 to-pink-500 text-white p-4 rounded-full">
-                    {rule.icon}
-                  </div>
                   <div>
                     <h3 className="text-2xl font-bold mb-2 font-poppins flex items-center">
                       <span className="bg-gradient-to-r from-purple-600 to-pink-500 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">
@@ -111,8 +83,8 @@ export default function RulesPage() {
               ))}
             </div>
 
-            <div className="mt-12 p-6 bg-yellow-50 dark:bg-yellow-900/30 border-l-4 border-yellow-500 rounded-lg">
-              <h3 className="text-xl font-bold mb-2 font-poppins text-yellow-700 dark:text-yellow-400">Remember</h3>
+            <div className="mt-12 p-6 bg-purple-50 dark:bg-purple-900/30 border-l-4 border-purple-500 rounded-lg">
+              <h3 className="text-xl font-bold mb-2 font-poppins text-purple-700 dark:text-purple-400">Remember</h3>
               <p className="text-lg text-gray-700 dark:text-gray-300">
                 This competition is all about having fun while supporting a great cause. Bring your best moves, your team spirit, and your respect for fellow dancers. May the best team win!
               </p>
