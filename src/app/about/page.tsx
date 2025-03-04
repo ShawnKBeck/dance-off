@@ -92,7 +92,7 @@ export default function AboutPage() {
             <div className="bg-white dark:bg-slate-700 p-8 rounded-lg shadow-md">
               <h3 className="text-2xl font-bold mb-4 font-poppins text-pink-500">Entertainment & Community</h3>
               <p className="mb-4">
-                Beyond the competition, "You Got Served" offers a full evening of entertainment with professional dance showcases, live music, and interactive elements that get the whole audience involved.
+                Beyond the competition, &quot;You Got Served&quot; offers a full evening of entertainment with professional dance showcases, live music, and interactive elements that get the whole audience involved.
               </p>
               <p className="mb-4">
                 This event is designed to bring our community together, celebrating the diverse talents of DeKalb County while supporting causes that matter. It&apos;s a night of fun, inspiration, and positive impact.
@@ -115,7 +115,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-4">
           <h2 className="section-title">Meet Our Hosts</h2>
           <p className="section-subtitle">
-            "You Got Served" is proudly hosted by Dance Dimensions
+            &quot;You Got Served&quot; is proudly hosted by Dance Dimensions
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-12">
@@ -131,7 +131,7 @@ export default function AboutPage() {
               </div>
               <h3 className="text-2xl font-bold mb-4 font-poppins text-purple-600">Dance Dimensions</h3>
               <p className="mb-4">
-                Dance Dimensions is DeKalb&apos;s premier dance studio, offering instruction in various styles for all ages and skill levels. With a team of professional instructors and a passion for artistic expression, they bring technical expertise and creative vision to "You Got Served."
+                Dance Dimensions is DeKalb&apos;s premier dance studio, offering instruction in various styles for all ages and skill levels. With a team of professional instructors and a passion for artistic expression, they bring technical expertise and creative vision to &quot;You Got Served.&quot;
               </p>
               <p className="mb-4">
                 Their instructors will coach each competing team, sharing their knowledge and helping participants shine on stage while fostering a spirit of friendly competition.
