@@ -33,7 +33,7 @@ export default function RulesPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-[40vh] flex items-center justify-center overflow-hidden bg-purple-900">
+      <section className="relative h-[40vh] flex items-center justify-center overflow-hidden bg-purple-100">
         <div className="absolute inset-0 z-0">
           <div className="relative w-full h-full">
             <Image
@@ -43,7 +43,7 @@ export default function RulesPage() {
               priority
               className="object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-br from-purple-800/90 via-purple-900/85 to-indigo-900/80"></div>
+            <div className="absolute inset-0 bg-gradient-to-br from-purple-500/70 via-purple-600/60 to-indigo-700/50"></div>
           </div>
         </div>
         <div className="container mx-auto px-4 z-10 text-center">

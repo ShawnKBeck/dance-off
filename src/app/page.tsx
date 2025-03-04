@@ -34,7 +34,7 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-[80vh] flex items-center justify-center overflow-hidden bg-purple-900">
+      <section className="relative h-[80vh] flex items-center justify-center overflow-hidden bg-purple-100">
         <div className="absolute inset-0 z-0">
           <div className="relative w-full h-full">
             <Image
@@ -44,17 +44,9 @@ export default function Home() {
               priority
               className="object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-br from-purple-800/90 via-purple-900/85 to-indigo-900/80"></div>
+            <div className="absolute inset-0 bg-gradient-to-br from-purple-500/70 via-purple-600/60 to-indigo-700/50"></div>
           </div>
         </div>
-        
-        {/* Simple Dancing Figures */}
-        <div className="absolute bottom-0 left-[10%] w-10 h-20 bg-black z-10 animate-bounce" style={{ animationDuration: '1s' }}></div>
-        <div className="absolute bottom-0 left-[25%] w-10 h-20 bg-black z-10 animate-bounce" style={{ animationDuration: '1.5s' }}></div>
-        <div className="absolute bottom-0 left-[40%] w-10 h-20 bg-black z-10 animate-bounce" style={{ animationDuration: '0.8s' }}></div>
-        <div className="absolute bottom-0 right-[40%] w-10 h-20 bg-black z-10 animate-bounce" style={{ animationDuration: '1.2s' }}></div>
-        <div className="absolute bottom-0 right-[25%] w-10 h-20 bg-black z-10 animate-bounce" style={{ animationDuration: '1.7s' }}></div>
-        <div className="absolute bottom-0 right-[10%] w-10 h-20 bg-black z-10 animate-bounce" style={{ animationDuration: '1s' }}></div>
 
         <div className="container mx-auto px-4 z-20 text-center">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-poppins mb-4 drop-shadow-lg" style={{ color: '#1b365f' }}>
