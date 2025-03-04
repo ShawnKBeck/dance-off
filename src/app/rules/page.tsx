@@ -5,13 +5,13 @@ export default function RulesPage() {
   const rules = [
     {
       number: 1,
-      title: "Serve or Be Served",
-      description: "Teams challenge each other to dance battles. The challenging team performs first, setting the bar for the competition.",
+      title: "You Are Served",
+      description: "When a team challenges you to a dance battle, you have officially been 'served'. This is the formal initiation of a dance challenge that cannot be ignored.",
     },
     {
       number: 2,
-      title: "You Got Served",
-      description: "Once challenged, the receiving team must accept or concede defeat. There's no backing down from a challenge!",
+      title: "It's On",
+      description: "Once served, the battle is automatically 'on'. There's no backing down from a challenge - refusing to accept means automatic defeat and public shame.",
     },
     {
       number: 3,
@@ -20,13 +20,13 @@ export default function RulesPage() {
     },
     {
       number: 4,
-      title: "Judges Decide",
-      description: "Impartial judges declare the winner based on style, originality, and attitude. Their decision is final and binding.",
+      title: "Bring It",
+      description: "The challenged team must 'bring it' with their best dance moves and attitude. This is your chance to respond and prove your dance superiority.",
     },
     {
       number: 5,
-      title: "Bring It!",
-      description: "Show up with your best moves and attitude! This is your chance to prove you've got what it takes to dominate the dance floor.",
+      title: "Judges Decide",
+      description: "Impartial judges declare the winner based on style, originality, and attitude. Their decision is final and binding.",
     },
   ];
 
@@ -51,7 +51,7 @@ export default function RulesPage() {
             Bring It!
           </h1>
           <p className="text-xl text-white max-w-3xl mx-auto drop-shadow-md text-shadow">
-            Official Dance-Off Rules Inspired by South Park
+            Official Dance-Off Rules
           </p>
         </div>
       </section>
@@ -93,20 +93,20 @@ export default function RulesPage() {
         </div>
       </section>
 
-      {/* South Park Inspiration */}
+      {/* Cultural Inspiration */}
       <section className="section-padding bg-purple-50 dark:bg-slate-800">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6 font-poppins text-center">The South Park Inspiration</h2>
+            <h2 className="text-3xl font-bold mb-6 font-poppins text-center">The Dance Battle Tradition</h2>
             <div className="bg-white dark:bg-slate-700 p-8 rounded-lg shadow-md">
               <p className="text-lg mb-4">
-                Our &quot;You Got Served&quot; event pays homage to the iconic South Park episode where Stan, Kyle, Kenny, and Cartman find themselves in an unexpected dance battle after being &quot;served&quot; by a rival dance crew.
+                Our &quot;You Got Served&quot; event celebrates the rich tradition of dance battles that have been a cornerstone of street dance culture for decades.
               </p>
               <p className="text-lg mb-4">
-                While our event takes inspiration from this comedic portrayal, we&apos;ve transformed it into a positive community experience that celebrates dance as an art form and a way to bring people together for a good cause.
+                The three sacred rules of dance battles form the foundation of our competition: when you are served, it&apos;s automatically on, and then you have to bring it. These principles have guided dance battles across many styles and communities.
               </p>
               <p className="text-lg">
-                Don&apos;t worry - no actual &quot;serving&quot; or dance intimidation is required! Just bring your enthusiasm, support your favorite team, and enjoy the show!
+                While our event transforms this competitive tradition into a positive community experience, we maintain the spirit of the challenge: accepting the call to dance and bringing your absolute best to the floor!
               </p>
             </div>
           </div>
@@ -175,19 +175,13 @@ export default function RulesPage() {
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-pink-500 mr-2 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                     </svg>
-                    <span className="text-lg"><strong>Attitude (20%):</strong> Energy, confidence, and stage presence.</span>
+                    <span className="text-lg"><strong>Attitude (25%):</strong> Energy, confidence, and stage presence.</span>
                   </li>
                   <li className="flex items-start">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-pink-500 mr-2 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                     </svg>
-                    <span className="text-lg"><strong>Teamwork (15%):</strong> Synchronization and cohesiveness as a group.</span>
-                  </li>
-                  <li className="flex items-start">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-pink-500 mr-2 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                    </svg>
-                    <span className="text-lg"><strong>Audience Response (10%):</strong> Crowd engagement and reaction.</span>
+                    <span className="text-lg"><strong>Teamwork (20%):</strong> Synchronization, formations, and group dynamics.</span>
                   </li>
                 </ul>
               </div>

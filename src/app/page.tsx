@@ -6,13 +6,13 @@ export default function Home() {
   const rules = [
     {
       number: 1,
-      title: "Serve or Be Served",
-      description: "Teams challenge each other to dance battles. The challenging team performs first, setting the bar for the competition.",
+      title: "You Are Served",
+      description: "When a team challenges you to a dance battle, you have officially been 'served'. This is the formal initiation of a dance challenge that cannot be ignored.",
     },
     {
       number: 2,
-      title: "You Got Served",
-      description: "Once challenged, the receiving team must accept or concede defeat. There's no backing down from a challenge!",
+      title: "It's On",
+      description: "Once served, the battle is automatically 'on'. There's no backing down from a challenge - refusing to accept means automatic defeat and public shame.",
     },
     {
       number: 3,
@@ -21,13 +21,13 @@ export default function Home() {
     },
     {
       number: 4,
-      title: "Judges Decide",
-      description: "Impartial judges declare the winner based on style, originality, and attitude. Their decision is final and binding.",
+      title: "Bring It",
+      description: "The challenged team must 'bring it' with their best dance moves and attitude. This is your chance to respond and prove your dance superiority.",
     },
     {
       number: 5,
-      title: "Bring It!",
-      description: "Show up with your best moves and attitude! This is your chance to prove you've got what it takes to dominate the dance floor.",
+      title: "Judges Decide",
+      description: "Impartial judges declare the winner based on style, originality, and attitude. Their decision is final and binding.",
     },
   ];
 
@@ -189,24 +189,32 @@ export default function Home() {
                 <h3 className="text-2xl font-bold mb-2 font-poppins">Countdown to the Event</h3>
                 <div className="grid grid-cols-4 gap-2 mt-4">
                   <div className="bg-white/20 rounded-lg p-3">
-                    <div className="text-3xl font-bold">224</div>
+                    <div className="text-3xl font-bold">
+                      224
+                    </div>
                     <div className="text-sm">Days</div>
                   </div>
                   <div className="bg-white/20 rounded-lg p-3">
-                    <div className="text-3xl font-bold">16</div>
+                    <div className="text-3xl font-bold">
+                      16
+                    </div>
                     <div className="text-sm">Hours</div>
                   </div>
                   <div className="bg-white/20 rounded-lg p-3">
-                    <div className="text-3xl font-bold">43</div>
+                    <div className="text-3xl font-bold">
+                      43
+                    </div>
                     <div className="text-sm">Minutes</div>
                   </div>
                   <div className="bg-white/20 rounded-lg p-3">
-                    <div className="text-3xl font-bold">12</div>
+                    <div className="text-3xl font-bold">
+                      12
+                    </div>
                     <div className="text-sm">Seconds</div>
                   </div>
                 </div>
                 <div className="mt-6">
-                  <Link href="/tickets" className="btn-tertiary bg-white text-purple-600 hover:bg-yellow-100">
+                  <Link href="/tickets" className="bg-white text-purple-600 font-bold py-3 px-6 rounded-lg hover:bg-gray-100 transition duration-300 transform hover:scale-105 shadow-md">
                     Get Your Tickets
                   </Link>
                 </div>
@@ -216,36 +224,19 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Sponsors Section */}
-      <section className="section-padding bg-purple-50">
+      {/* CTA Section */}
+      <section className="py-16 bg-gradient-to-r from-purple-600 to-pink-500 text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="section-title">Our Sponsors</h2>
-          <p className="section-subtitle">
-            Thank you to the generous organizations making this event possible
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 font-poppins">Ready to Get Served?</h2>
+          <p className="text-xl max-w-3xl mx-auto mb-8">
+            Whether you want to compete, volunteer, or just enjoy the show, there&apos;s a place for you at our dance-off event!
           </p>
-
-          <div className="flex flex-wrap justify-center items-center gap-8 mt-12">
-            <div className="bg-white p-6 rounded-lg shadow-md w-40 h-40 flex items-center justify-center">
-              <p className="text-gray-400 dark:text-gray-500">Sponsor Logo</p>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-md w-40 h-40 flex items-center justify-center">
-              <p className="text-gray-400 dark:text-gray-500">Sponsor Logo</p>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-md w-40 h-40 flex items-center justify-center">
-              <p className="text-gray-400 dark:text-gray-500">Sponsor Logo</p>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-md w-40 h-40 flex items-center justify-center">
-              <p className="text-gray-400 dark:text-gray-500">Sponsor Logo</p>
-            </div>
-          </div>
-
-          <div className="mt-12">
-            <h3 className="text-2xl font-bold mb-4 font-poppins">Become a Sponsor</h3>
-            <p className="text-lg max-w-2xl mx-auto mb-6">
-              Interested in supporting our event and promoting your business to the community? Contact us to learn about our sponsorship packages.
-            </p>
-            <Link href="/contact" className="btn-secondary inline-block">
-              Contact Us About Sponsorship
+          <div className="flex flex-wrap justify-center gap-4">
+            <Link href="/register" className="bg-white text-purple-600 font-bold py-3 px-8 rounded-lg hover:bg-gray-100 transition duration-300 transform hover:scale-105 shadow-md">
+              Register Your Team
+            </Link>
+            <Link href="/tickets" className="bg-transparent border-2 border-white text-white font-bold py-3 px-8 rounded-lg hover:bg-white/10 transition duration-300 transform hover:scale-105">
+              Get Tickets
             </Link>
           </div>
         </div>
