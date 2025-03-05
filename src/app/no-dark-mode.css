@@ -54,6 +54,19 @@ body {
     color: #ffffff !important;
   }
   
+  /* Preserve hero header styling */
+  section.bg-purple-100 h1 {
+    color: #1b365f !important; /* deep navy blue */
+  }
+  
+  section.bg-purple-100 h1 span.text-pink-500 {
+    color: #ec4899 !important;
+  }
+  
+  section.bg-purple-100 p.text-white {
+    color: white !important;
+  }
+  
   /* Force all SVG elements to be visible */
   svg {
     color: inherit !important;

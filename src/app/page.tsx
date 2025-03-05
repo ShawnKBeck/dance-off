@@ -49,7 +49,7 @@ export default function Home() {
         </div>
 
         <div className="container mx-auto px-4 z-20 text-center">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-poppins mb-4 drop-shadow-lg text-white">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-poppins mb-4 drop-shadow-lg" style={{ color: '#1b365f' }}>
             You <span className="text-pink-500 drop-shadow-lg">Got</span> Served!
           </h1>
           <p className="text-xl md:text-2xl text-white max-w-3xl mx-auto mb-8 drop-shadow-md">
@@ -227,7 +227,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-purple-600 to-pink-500 text-white">
+      <section className="py-16 bg-purple-500 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 font-poppins">Ready to Get Served?</h2>
           <p className="text-xl max-w-3xl mx-auto mb-8">
