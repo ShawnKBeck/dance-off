@@ -57,7 +57,7 @@ export default function RulesPage() {
       </section>
 
       {/* Rules Section */}
-      <section className="section-padding bg-white dark:bg-slate-900">
+      <section className="section-padding bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="section-title bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-500">
@@ -69,7 +69,7 @@ export default function RulesPage() {
 
             <div className="mt-12 space-y-12">
               {rules.map((rule) => (
-                <div key={rule.number} className="flex flex-col md:flex-row gap-6 items-start md:items-center p-6 bg-purple-50 dark:bg-slate-800 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+                <div key={rule.number} className="flex flex-col md:flex-row gap-6 items-start md:items-center p-6 bg-purple-50 rounded-xl shadow-md hover:shadow-lg transition duration-300">
                   <div>
                     <h3 className="text-2xl font-bold mb-2 font-poppins flex items-center">
                       <span className="bg-gradient-to-r from-purple-600 to-pink-500 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">
@@ -77,15 +77,15 @@ export default function RulesPage() {
                       </span>
                       {rule.title}
                     </h3>
-                    <p className="text-lg text-gray-700 dark:text-gray-300">{rule.description}</p>
+                    <p className="text-lg text-gray-700">{rule.description}</p>
                   </div>
                 </div>
               ))}
             </div>
 
-            <div className="mt-12 p-6 bg-purple-50 dark:bg-purple-900/30 border-l-4 border-purple-500 rounded-lg">
-              <h3 className="text-xl font-bold mb-2 font-poppins text-purple-700 dark:text-purple-400">Remember</h3>
-              <p className="text-lg text-gray-700 dark:text-gray-300">
+            <div className="mt-12 p-6 bg-purple-50 border-l-4 border-purple-500 rounded-lg">
+              <h3 className="text-xl font-bold mb-2 font-poppins text-purple-700">Remember</h3>
+              <p className="text-lg text-gray-700">
                 This competition is all about having fun while supporting a great cause. Bring your best moves, your team spirit, and your respect for fellow dancers. May the best team win!
               </p>
             </div>
@@ -94,11 +94,11 @@ export default function RulesPage() {
       </section>
 
       {/* Cultural Inspiration */}
-      <section className="section-padding bg-purple-50 dark:bg-slate-800">
+      <section className="section-padding bg-purple-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold mb-6 font-poppins text-center">The Dance Battle Tradition</h2>
-            <div className="bg-white dark:bg-slate-700 p-8 rounded-lg shadow-md">
+            <div className="bg-white p-8 rounded-lg shadow-md">
               <p className="text-lg mb-4">
                 Our &quot;You Got Served&quot; event celebrates the rich tradition of dance battles that have been a cornerstone of street dance culture for decades.
               </p>
@@ -114,39 +114,39 @@ export default function RulesPage() {
       </section>
 
       {/* Format & Judging */}
-      <section className="section-padding bg-white dark:bg-slate-900">
+      <section className="section-padding bg-white">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div>
               <h2 className="text-3xl font-bold mb-6 font-poppins text-purple-600">Competition Format</h2>
-              <div className="bg-purple-50 dark:bg-slate-800 p-6 rounded-lg shadow-md">
+              <div className="bg-purple-50 p-6 rounded-lg shadow-md">
                 <ul className="space-y-4">
                   <li className="flex items-start">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-purple-600 mr-2 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-purple-600 mr-2 mt-1" fill="none" viewBox="0 0 24 24" stroke="#7c3aed">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                     <span className="text-lg">Teams will be arranged in a tournament bracket.</span>
                   </li>
                   <li className="flex items-start">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-purple-600 mr-2 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-purple-600 mr-2 mt-1" fill="none" viewBox="0 0 24 24" stroke="#7c3aed">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                     <span className="text-lg">Each battle consists of two teams performing back-to-back.</span>
                   </li>
                   <li className="flex items-start">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-purple-600 mr-2 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-purple-600 mr-2 mt-1" fill="none" viewBox="0 0 24 24" stroke="#7c3aed">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                     <span className="text-lg">Performances are limited to 3 minutes per team.</span>
                   </li>
                   <li className="flex items-start">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-purple-600 mr-2 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-purple-600 mr-2 mt-1" fill="none" viewBox="0 0 24 24" stroke="#7c3aed">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                     <span className="text-lg">Winners advance to the next round until a champion is crowned.</span>
                   </li>
                   <li className="flex items-start">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-purple-600 mr-2 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-purple-600 mr-2 mt-1" fill="none" viewBox="0 0 24 24" stroke="#7c3aed">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                     <span className="text-lg">All music will be family-friendly and provided by our DJ.</span>
@@ -157,28 +157,28 @@ export default function RulesPage() {
 
             <div>
               <h2 className="text-3xl font-bold mb-6 font-poppins text-pink-500">Judging Criteria</h2>
-              <div className="bg-pink-50 dark:bg-slate-800 p-6 rounded-lg shadow-md">
+              <div className="bg-pink-50 p-6 rounded-lg shadow-md">
                 <ul className="space-y-4">
                   <li className="flex items-start">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-pink-500 mr-2 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-pink-500 mr-2 mt-1" fill="none" viewBox="0 0 24 24" stroke="#ec4899">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                     </svg>
                     <span className="text-lg"><strong>Style (30%):</strong> Creativity, originality, and uniqueness of choreography.</span>
                   </li>
                   <li className="flex items-start">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-pink-500 mr-2 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-pink-500 mr-2 mt-1" fill="none" viewBox="0 0 24 24" stroke="#ec4899">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                     </svg>
                     <span className="text-lg"><strong>Technique (25%):</strong> Execution, precision, and skill level.</span>
                   </li>
                   <li className="flex items-start">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-pink-500 mr-2 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-pink-500 mr-2 mt-1" fill="none" viewBox="0 0 24 24" stroke="#ec4899">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                     </svg>
                     <span className="text-lg"><strong>Attitude (25%):</strong> Energy, confidence, and stage presence.</span>
                   </li>
                   <li className="flex items-start">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-pink-500 mr-2 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-pink-500 mr-2 mt-1" fill="none" viewBox="0 0 24 24" stroke="#ec4899">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                     </svg>
                     <span className="text-lg"><strong>Teamwork (20%):</strong> Synchronization, formations, and group dynamics.</span>

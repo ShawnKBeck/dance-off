@@ -12,13 +12,6 @@
   --foreground: #171717;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0f172a;
-    --foreground: #f8fafc;
-  }
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
@@ -56,11 +49,11 @@ body {
 }
 
 .section-title {
-  @apply text-3xl md:text-4xl lg:text-5xl font-bold font-poppins mb-6 text-center;
+  @apply text-3xl md:text-4xl lg:text-5xl font-bold font-poppins mb-6 text-center text-purple-700;
 }
 
 .section-subtitle {
-  @apply text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto text-center mb-12;
+  @apply text-xl text-gray-600 max-w-3xl mx-auto text-center mb-12;
 }
 
 /* Animation Classes */

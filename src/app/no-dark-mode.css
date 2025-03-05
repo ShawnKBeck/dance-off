@@ -1,0 +1,80 @@
+/* Force light mode regardless of system preferences */
+:root {
+  color-scheme: light !important;
+  forced-color-adjust: none !important;
+}
+
+html {
+  color-scheme: light !important;
+}
+
+body {
+  background-color: var(--background) !important;
+  color: var(--foreground) !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #ffffff !important;
+    --foreground: #171717 !important;
+  }
+  
+  html, body {
+    background-color: #ffffff !important;
+    color: #171717 !important;
+  }
+  
+  /* Override any dark mode styles */
+  .dark\:bg-slate-900,
+  .dark\:bg-slate-800,
+  .dark\:bg-slate-700,
+  .dark\:bg-purple-900\/30,
+  .dark\:bg-gray-600 {
+    background-color: transparent !important;
+  }
+  
+  .dark\:text-gray-300,
+  .dark\:text-purple-400,
+  .dark\:text-gray-500 {
+    color: inherit !important;
+  }
+  
+  /* Force section titles to be visible */
+  .section-title {
+    color: #7c3aed !important; /* purple-600 */
+  }
+  
+  /* Force all text to be visible */
+  p, h1, h2, h3, h4, h5, h6, span, div {
+    color: #171717 !important;
+  }
+  
+  /* Exception for elements that need to be white */
+  .text-white, .text-white * {
+    color: #ffffff !important;
+  }
+  
+  /* Force all SVG elements to be visible */
+  svg {
+    color: inherit !important;
+  }
+  
+  svg[stroke="currentColor"] {
+    stroke: #7c3aed !important; /* Default to purple if no color is specified */
+  }
+  
+  .text-pink-500 svg[stroke="currentColor"],
+  .text-pink-600 svg[stroke="currentColor"] {
+    stroke: #ec4899 !important;
+  }
+  
+  .text-yellow-300 svg[stroke="currentColor"],
+  .text-yellow-400 svg[stroke="currentColor"] {
+    stroke: #fcd34d !important;
+  }
+  
+  .text-gray-400 svg[stroke="currentColor"],
+  .text-gray-500 svg[stroke="currentColor"] {
+    stroke: #9ca3af !important;
+  }
+}

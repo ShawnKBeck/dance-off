@@ -72,7 +72,9 @@ export default function Home() {
       {/* Mission Section */}
       <section className="section-padding bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="section-title">Our Mission</h2>
+          <h2 className="section-title text-purple-700">
+            Our Mission
+          </h2>
           <p className="section-subtitle">
             Bringing the community together through dance and charity
           </p>
@@ -80,36 +82,36 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
             <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
               <div className="text-purple-600 text-4xl mb-4">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="#7c3aed">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 019-9m-9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
                 </svg>
               </div>
               <h3 className="text-xl font-bold mb-2 font-poppins">Community Impact</h3>
-              <p className="text-gray-600 dark:text-gray-300">
+              <p className="text-gray-600">
                 All proceeds from the event go directly to local charities in DeKalb County, making a real difference in our community.
               </p>
             </div>
 
             <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
               <div className="text-pink-500 text-4xl mb-4">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="#ec4899">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
               <h3 className="text-xl font-bold mb-2 font-poppins">Entertainment</h3>
-              <p className="text-gray-600 dark:text-gray-300">
+              <p className="text-gray-600">
                 Experience an unforgettable evening of dance battles, professional showcases, and interactive audience participation.
               </p>
             </div>
 
             <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
               <div className="text-purple-600 text-4xl mb-4">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="#7c3aed">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
               </div>
               <h3 className="text-xl font-bold mb-2 font-poppins">Local Talent</h3>
-              <p className="text-gray-600 dark:text-gray-300">
+              <p className="text-gray-600">
                 Showcasing the incredible dance talent in our community, from beginners to professionals, all united for a common cause.
               </p>
             </div>
@@ -120,7 +122,7 @@ export default function Home() {
       {/* Rules Preview Section */}
       <section className="section-padding bg-purple-50">
         <div className="container mx-auto px-4">
-          <h2 className="section-title bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-500">
+          <h2 className="section-title text-purple-700 bg-clip-text">
             How It Works
           </h2>
           <p className="section-subtitle">
@@ -136,7 +138,7 @@ export default function Home() {
                   </div>
                   <h3 className="text-xl font-bold font-poppins">{rule.title}</h3>
                 </div>
-                <p className="text-gray-600 dark:text-gray-300">{rule.description}</p>
+                <p className="text-gray-600">{rule.description}</p>
               </div>
             ))}
           </div>
@@ -162,7 +164,7 @@ export default function Home() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="flex items-start">
                     <div className="text-yellow-300 mr-3">
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="#7c3aed">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                       </svg>
                     </div>
@@ -173,7 +175,7 @@ export default function Home() {
                   </div>
                   <div className="flex items-start">
                     <div className="text-yellow-300 mr-3">
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="#7c3aed">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                       </svg>

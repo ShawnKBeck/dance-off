@@ -61,7 +61,7 @@ export default function TeamsPage() {
       </section>
 
       {/* Teams Section - Coming Soon */}
-      <section className="section-padding bg-white dark:bg-slate-900">
+      <section className="section-padding bg-white">
         <div className="container mx-auto px-4">
           <h2 className="section-title bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-500">
             Competing Teams
@@ -70,9 +70,9 @@ export default function TeamsPage() {
             Check back soon to discover who&apos;ll step up and get served!
           </p>
 
-          <div className="max-w-3xl mx-auto mt-12 p-8 bg-purple-50 dark:bg-slate-800 rounded-xl shadow-md text-center">
-            <div className="text-purple-600 dark:text-purple-400 mb-6">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <div className="max-w-3xl mx-auto mt-12 p-8 bg-purple-50 rounded-xl shadow-md text-center">
+            <div className="text-purple-600 mb-6">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16 mx-auto" fill="none" viewBox="0 0 24 24" stroke="#7c3aed">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
               </svg>
             </div>
@@ -93,17 +93,17 @@ export default function TeamsPage() {
           {/* Placeholder for team cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 opacity-60">
             {[1, 2, 3, 4, 5, 6].map((item) => (
-              <div key={item} className="bg-white dark:bg-slate-700 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
-                <div className="h-48 bg-gray-200 dark:bg-gray-600 flex items-center justify-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 text-gray-400 dark:text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <div key={item} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                <div className="h-48 bg-gray-200 flex items-center justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="#9ca3af">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                   </svg>
                 </div>
                 <div className="p-6">
-                  <div className="h-6 bg-gray-200 dark:bg-gray-600 rounded mb-3 w-3/4"></div>
-                  <div className="h-4 bg-gray-200 dark:bg-gray-600 rounded mb-2 w-1/2"></div>
-                  <div className="h-4 bg-gray-200 dark:bg-gray-600 rounded mb-2 w-full"></div>
-                  <div className="h-4 bg-gray-200 dark:bg-gray-600 rounded w-5/6"></div>
+                  <div className="h-6 bg-gray-200 rounded mb-3 w-3/4"></div>
+                  <div className="h-4 bg-gray-200 rounded mb-2 w-1/2"></div>
+                  <div className="h-4 bg-gray-200 rounded mb-2 w-full"></div>
+                  <div className="h-4 bg-gray-200 rounded w-5/6"></div>
                 </div>
               </div>
             ))}
@@ -112,7 +112,7 @@ export default function TeamsPage() {
       </section>
 
       {/* Instructors Section */}
-      <section className="section-padding bg-purple-50 dark:bg-slate-800">
+      <section className="section-padding bg-purple-50">
         <div className="container mx-auto px-4">
           <h2 className="section-title bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-500">
             Meet Our Instructors
@@ -123,7 +123,7 @@ export default function TeamsPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
             {instructors.map((instructor) => (
-              <div key={instructor.id} className="bg-white dark:bg-slate-700 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+              <div key={instructor.id} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
                 <div className="relative h-64">
                   <Image
                     src={instructor.image}
@@ -134,8 +134,8 @@ export default function TeamsPage() {
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-1 font-poppins">{instructor.name}</h3>
-                  <p className="text-purple-600 dark:text-purple-400 font-medium mb-3">{instructor.specialty}</p>
-                  <p className="text-gray-600 dark:text-gray-300">{instructor.bio}</p>
+                  <p className="text-purple-600 font-medium mb-3">{instructor.specialty}</p>
+                  <p className="text-gray-600">{instructor.bio}</p>
                 </div>
               </div>
             ))}
@@ -144,7 +144,7 @@ export default function TeamsPage() {
       </section>
 
       {/* Dance Styles Section */}
-      <section className="section-padding bg-white dark:bg-slate-900">
+      <section className="section-padding bg-white">
         <div className="container mx-auto px-4">
           <h2 className="section-title">Dance Styles</h2>
           <p className="section-subtitle">
