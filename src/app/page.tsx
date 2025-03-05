@@ -69,6 +69,38 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Rules Preview Section */}
+      <section className="section-padding bg-purple-50">
+        <div className="container mx-auto px-4">
+          <h2 className="section-title text-purple-700 bg-clip-text">
+            How It Works
+          </h2>
+          <p className="section-subtitle">
+            The official rules of our dance-off competition
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+            {rules.map((rule) => (
+              <div key={rule.number} className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                <div className="flex items-center mb-4">
+                  <div className="bg-gradient-to-r from-purple-600 to-pink-500 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-4">
+                    {rule.number}
+                  </div>
+                  <h3 className="text-xl font-bold font-poppins">{rule.title}</h3>
+                </div>
+                <p className="text-gray-600">{rule.description}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center mt-12">
+            <Link href="/rules" className="btn-secondary inline-block">
+              Learn More About the Rules
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Mission Section */}
       <section className="section-padding bg-white">
         <div className="container mx-auto px-4">
@@ -115,38 +147,6 @@ export default function Home() {
                 Showcasing the incredible dance talent in our community, from beginners to professionals, all united for a common cause.
               </p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Rules Preview Section */}
-      <section className="section-padding bg-purple-50">
-        <div className="container mx-auto px-4">
-          <h2 className="section-title text-purple-700 bg-clip-text">
-            How It Works
-          </h2>
-          <p className="section-subtitle">
-            The official rules of our dance-off competition
-          </p>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
-            {rules.map((rule) => (
-              <div key={rule.number} className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
-                <div className="flex items-center mb-4">
-                  <div className="bg-gradient-to-r from-purple-600 to-pink-500 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-4">
-                    {rule.number}
-                  </div>
-                  <h3 className="text-xl font-bold font-poppins">{rule.title}</h3>
-                </div>
-                <p className="text-gray-600">{rule.description}</p>
-              </div>
-            ))}
-          </div>
-
-          <div className="text-center mt-12">
-            <Link href="/rules" className="btn-secondary inline-block">
-              Learn More About the Rules
-            </Link>
           </div>
         </div>
       </section>
