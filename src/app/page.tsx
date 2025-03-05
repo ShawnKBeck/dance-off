@@ -49,10 +49,10 @@ export default function Home() {
         </div>
 
         <div className="container mx-auto px-4 z-20 text-center">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-poppins mb-4 drop-shadow-lg" style={{ color: '#1b365f' }}>
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-poppins mb-4 drop-shadow-lg text-white">
             You <span className="text-pink-500 drop-shadow-lg">Got</span> Served!
           </h1>
-          <p className="text-xl md:text-2xl text-purple-100 max-w-3xl mx-auto mb-8 drop-shadow-md">
+          <p className="text-xl md:text-2xl text-white max-w-3xl mx-auto mb-8 drop-shadow-md">
             A charitable competitive dance-off event raising money for local charities
           </p>
           <div className="flex flex-wrap justify-center gap-4">
@@ -62,7 +62,7 @@ export default function Home() {
             <Link href="/donate" className="btn-secondary bg-white/90">
               Donate Now
             </Link>
-            <Link href="/about" className="btn-tertiary">
+            <Link href="/about" className="btn-secondary">
               Learn More
             </Link>
           </div>
