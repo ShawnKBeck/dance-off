@@ -100,16 +100,16 @@ body {
   0% {
     transform: translateY(0) rotate(0deg);
   }
-  2.5% {
+  4% {
     transform: translateY(-20px) rotate(0deg);
   }
-  5% {
+  8% {
     transform: translateY(0) rotate(0deg);
   }
 
   /* Pause */
-  12.5%,
-  37.5% {
+  15%,
+  35% {
     transform: translateY(0) rotate(0deg);
   }
 
@@ -117,15 +117,15 @@ body {
   40% {
     transform: translateY(0) rotate(-15deg);
   }
-  42.5% {
+  44% {
     transform: translateY(0) rotate(15deg);
   }
-  45% {
+  48% {
     transform: translateY(0) rotate(0deg);
   }
 
   /* Final pause */
-  52.5%,
+  55%,
   100% {
     transform: translateY(0) rotate(0deg);
   }
