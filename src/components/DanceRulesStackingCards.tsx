@@ -126,7 +126,7 @@ export default function DanceRulesStackingCards() {
   const rules: RuleData[] = [
     {
       number: 1,
-      title: 'You Are Served',
+      title: 'You Got Served!',
       description:
         "When a team challenges you to a dance battle, you have officially been 'served'. This is the formal initiation of a dance challenge that cannot be ignored.",
       color: 'linear-gradient(135deg, #7c3aed 0%, #a855f7 100%)',
