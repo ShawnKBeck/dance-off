@@ -163,17 +163,11 @@ export default function DanceRulesStackingCards() {
 
   return (
     <ReactLenis root>
-      <main
-        ref={container}
-        className="relative bg-gradient-to-br from-purple-800 to-purple-900"
-      >
-        {/* Background Pattern */}
-        <div className="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#8b5cf620_1px,transparent_1px),linear-gradient(to_bottom,#8b5cf620_1px,transparent_1px)] bg-[size:54px_54px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"></div>
-
+      <main ref={container} className="relative bg-black">
         {/* Header Section */}
         <section className="pt-12 md:pt-16 pb-8 md:pb-12 flex items-center justify-center relative z-10">
           <div className="text-center text-white px-4">
-            <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold font-poppins mb-4 md:mb-6 drop-shadow-lg">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold font-poppins mb-4 md:mb-6 drop-shadow-lg">
               How It Works
             </h1>
             <p className="text-lg md:text-xl lg:text-2xl max-w-3xl mx-auto mb-6 md:mb-8 text-white/80">
