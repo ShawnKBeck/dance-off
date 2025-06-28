@@ -5,7 +5,6 @@ module.exports = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
-  darkMode: false,
   theme: {
     extend: {
       colors: {
@@ -56,7 +55,7 @@ module.exports = {
       animation: {
         'spin-slow': 'spin 8s linear infinite',
         'bounce-slow': 'bounce 3s infinite',
-        'dance': 'dance 2s ease-in-out infinite',
+        dance: 'dance 2s ease-in-out infinite',
       },
       keyframes: {
         dance: {
@@ -80,8 +79,8 @@ module.exports = {
         '.text-shadow-none': {
           textShadow: 'none',
         },
-      };
-      addUtilities(newUtilities);
+      }
+      addUtilities(newUtilities)
     },
   ],
-};
+}
