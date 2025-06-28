@@ -64,9 +64,9 @@ const RuleCard = ({
           scale,
           top: `calc(-5vh + ${i * 15}px)`,
         }}
-        className="flex flex-col relative h-[400px] md:h-[450px] w-[90%] md:w-[70%] max-w-4xl rounded-xl p-6 md:p-10 origin-top shadow-2xl"
+        className="flex flex-col relative min-h-[400px] h-[400px] md:h-[450px] w-[90%] md:w-[70%] max-w-4xl rounded-xl p-6 md:p-10 origin-top shadow-2xl"
       >
-        <div className="relative mb-4 md:mb-6">
+        <div className="relative mb-4 md:mb-6 flex-shrink-0">
           <div className="absolute top-0 left-0 bg-white/20 backdrop-blur-sm rounded-full w-10 h-10 md:w-12 md:h-12 flex items-center justify-center">
             <span className="text-lg md:text-2xl font-bold text-white">
               {number}
@@ -77,8 +77,8 @@ const RuleCard = ({
           </h2>
         </div>
 
-        <div className="flex flex-col md:flex-row h-full gap-4 md:gap-10 items-center">
-          <div className="w-full md:w-[60%] text-center md:text-left">
+        <div className="flex flex-col md:flex-row flex-1 gap-4 md:gap-10 items-center min-h-0">
+          <div className="w-full md:w-[60%] text-center md:text-left flex items-center justify-center md:justify-start">
             <p className="text-lg md:text-xl lg:text-2xl text-white/95 leading-relaxed md:leading-loose font-medium">
               {description}
             </p>
@@ -99,7 +99,7 @@ const RuleCard = ({
           </div>
         </div>
 
-        <div className="flex justify-center mt-4 md:mt-6">
+        <div className="flex justify-center mt-4 md:mt-6 flex-shrink-0">
           <div className="flex space-x-1 md:space-x-2">
             {Array.from({ length: 5 }, (_, index) => (
               <div
