@@ -199,7 +199,7 @@ export default function SponsorsPage() {
       <section className="section-padding bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-12 font-poppins text-center text-purple-700">
-            Why Sponsor "You Got Served"?
+            Why Sponsor &quot;You Got Served&quot;?
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
