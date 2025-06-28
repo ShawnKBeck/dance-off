@@ -1,5 +1,5 @@
-import Image from "next/image";
-import Link from "next/link";
+import Image from 'next/image'
+import Link from 'next/link'
 
 export default function AboutPage() {
   return (
@@ -33,15 +33,24 @@ export default function AboutPage() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold mb-6 font-poppins text-purple-600">Our Mission</h2>
+              <h2 className="text-3xl font-bold mb-6 font-poppins text-purple-600">
+                Our Mission
+              </h2>
               <p className="text-lg mb-4">
-                &quot;You Got Served&quot; is more than just a dance competition—it&apos;s a community-driven initiative to raise funds and awareness for local charities in DeKalb County.
+                &quot;You Got Served&quot; is more than just a dance
+                competition—it&apos;s a community-driven initiative to raise
+                funds and awareness for local causes that matter in DeKalb
+                County.
               </p>
               <p className="text-lg mb-4">
-                Through the universal language of dance, we bring together people from all walks of life to celebrate artistic expression while making a meaningful impact on our community.
+                Through the universal language of dance, we bring together
+                people from all walks of life to celebrate artistic expression
+                while making a meaningful impact on our community.
               </p>
               <p className="text-lg mb-4">
-                100% of the proceeds from ticket sales, donations, and sponsorships go directly to supporting local charities that provide essential services to those in need.
+                100% of the proceeds from ticket sales, donations, and
+                sponsorships go directly to supporting local organizations
+                making a difference in our community.
               </p>
               <div className="mt-6">
                 <Link href="/donate" className="btn-primary inline-block">
@@ -72,36 +81,75 @@ export default function AboutPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-12">
             <div className="bg-white dark:bg-slate-700 p-8 rounded-lg shadow-md">
-              <h3 className="text-2xl font-bold mb-4 font-poppins text-purple-600">The Dance-Off</h3>
+              <h3 className="text-2xl font-bold mb-4 font-poppins text-purple-600">
+                The Dance-Off
+              </h3>
               <p className="mb-4">
-                Teams will compete in head-to-head dance battles, showcasing their skills, creativity, and teamwork. Each team will be coached by a professional instructor from Dance Dimensions.
+                Teams will compete in head-to-head dance battles, showcasing
+                their skills, creativity, and teamwork. Each team will be
+                coached by a professional instructor from Dance Dimensions.
               </p>
               <p className="mb-4">
-                The competition follows a bracket format, with teams advancing based on judges&apos; scores and audience reaction. The winning team not only earns bragging rights but also gets to direct a portion of the proceeds to their chosen local charity.
+                The competition follows a bracket format, with teams advancing
+                based on judges&apos; scores and audience reaction. The winning
+                team not only earns bragging rights but also gets to direct a
+                portion of the proceeds to their chosen local charity.
               </p>
               <div className="mt-6">
-                <Link href="/rules" className="text-purple-600 font-medium hover:text-purple-800 transition duration-300 flex items-center">
+                <Link
+                  href="/rules"
+                  className="text-purple-600 font-medium hover:text-purple-800 transition duration-300 flex items-center"
+                >
                   <span>View Official Rules</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
-                    <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5 ml-2"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                      clipRule="evenodd"
+                    />
                   </svg>
                 </Link>
               </div>
             </div>
 
             <div className="bg-white dark:bg-slate-700 p-8 rounded-lg shadow-md">
-              <h3 className="text-2xl font-bold mb-4 font-poppins text-pink-500">Entertainment & Community</h3>
+              <h3 className="text-2xl font-bold mb-4 font-poppins text-pink-500">
+                Entertainment & Community
+              </h3>
               <p className="mb-4">
-                Beyond the competition, &quot;You Got Served&quot; offers a full evening of entertainment with professional dance showcases, live music, and interactive elements that get the whole audience involved.
+                Beyond the competition, &quot;You Got Served&quot; offers a full
+                evening of entertainment with professional dance showcases, live
+                music, and interactive elements that get the whole audience
+                involved.
               </p>
               <p className="mb-4">
-                This event is designed to bring our community together, celebrating the diverse talents of DeKalb County while supporting causes that matter. It&apos;s a night of fun, inspiration, and positive impact.
+                This event is designed to bring our community together,
+                celebrating the diverse talents of DeKalb County while
+                supporting causes that matter. It&apos;s a night of fun,
+                inspiration, and positive impact.
               </p>
               <div className="mt-6">
-                <Link href="/schedule" className="text-pink-500 font-medium hover:text-pink-700 transition duration-300 flex items-center">
+                <Link
+                  href="/schedule"
+                  className="text-pink-500 font-medium hover:text-pink-700 transition duration-300 flex items-center"
+                >
                   <span>View Event Schedule</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
-                    <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5 ml-2"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                      clipRule="evenodd"
+                    />
                   </svg>
                 </Link>
               </div>
@@ -129,12 +177,20 @@ export default function AboutPage() {
                   className="w-full h-auto object-cover"
                 />
               </div>
-              <h3 className="text-2xl font-bold mb-4 font-poppins text-purple-600">Dance Dimensions</h3>
+              <h3 className="text-2xl font-bold mb-4 font-poppins text-purple-600">
+                Dance Dimensions
+              </h3>
               <p className="mb-4">
-                Dance Dimensions is DeKalb&apos;s premier dance studio, offering instruction in various styles for all ages and skill levels. With a team of professional instructors and a passion for artistic expression, they bring technical expertise and creative vision to &quot;You Got Served.&quot;
+                Dance Dimensions is DeKalb&apos;s premier dance studio, offering
+                instruction in various styles for all ages and skill levels.
+                With a team of professional instructors and a passion for
+                artistic expression, they bring technical expertise and creative
+                vision to &quot;You Got Served.&quot;
               </p>
               <p className="mb-4">
-                Their instructors will coach each competing team, sharing their knowledge and helping participants shine on stage while fostering a spirit of friendly competition.
+                Their instructors will coach each competing team, sharing their
+                knowledge and helping participants shine on stage while
+                fostering a spirit of friendly competition.
               </p>
             </div>
           </div>
@@ -144,20 +200,29 @@ export default function AboutPage() {
       {/* CTA Section */}
       <section className="py-16 bg-gradient-to-r from-purple-600 to-pink-500 text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 font-poppins">Be Part of Something Special</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 font-poppins">
+            Be Part of Something Special
+          </h2>
           <p className="text-xl max-w-2xl mx-auto mb-8">
-            Whether you&apos;re competing, cheering, or supporting, join us for an unforgettable night that celebrates dance and community.
+            Whether you&apos;re competing, cheering, or supporting, join us for
+            an unforgettable night that celebrates dance and community.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Link href="/tickets" className="bg-white text-purple-600 font-bold py-3 px-8 rounded-lg hover:bg-gray-100 transition duration-300 transform hover:scale-105 shadow-md">
+            <Link
+              href="/tickets"
+              className="bg-white text-purple-600 font-bold py-3 px-8 rounded-lg hover:bg-gray-100 transition duration-300 transform hover:scale-105 shadow-md"
+            >
               Get Your Tickets
             </Link>
-            <Link href="/contact" className="bg-transparent border-2 border-white text-white font-bold py-3 px-8 rounded-lg hover:bg-white/10 transition duration-300 transform hover:scale-105">
+            <Link
+              href="/contact"
+              className="bg-transparent border-2 border-white text-white font-bold py-3 px-8 rounded-lg hover:bg-white/10 transition duration-300 transform hover:scale-105"
+            >
               Contact Us
             </Link>
           </div>
         </div>
       </section>
     </div>
-  );
+  )
 }

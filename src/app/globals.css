@@ -61,12 +61,73 @@ body {
   animation: bounce 3s infinite;
 }
 
+.animate-bounce-pause {
+  animation: bounceWithPause 4s infinite;
+}
+
+.animate-dance-moves {
+  animation: danceAlternate 8s infinite;
+}
+
 @keyframes bounce {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
     transform: translateY(-20px);
+  }
+}
+
+@keyframes bounceWithPause {
+  0% {
+    transform: translateY(0);
+  }
+  5% {
+    transform: translateY(-20px);
+  }
+  10% {
+    transform: translateY(0);
+  }
+  25%,
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes danceAlternate {
+  /* First move: Bounce */
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  2.5% {
+    transform: translateY(-20px) rotate(0deg);
+  }
+  5% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  /* Pause */
+  12.5%,
+  37.5% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  /* Second move: Side twist */
+  40% {
+    transform: translateY(0) rotate(-15deg);
+  }
+  42.5% {
+    transform: translateY(0) rotate(15deg);
+  }
+  45% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  /* Final pause */
+  52.5%,
+  100% {
+    transform: translateY(0) rotate(0deg);
   }
 }
 
@@ -79,7 +140,11 @@ body {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.4));
+  background: radial-gradient(
+    circle at 30% 30%,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.4)
+  );
   box-shadow: 0 0 25px 5px rgba(255, 255, 255, 0.8);
   z-index: 10;
   animation: pulse 2s infinite alternate;
@@ -101,10 +166,34 @@ body {
   position: absolute;
   inset: 0;
   border-radius: 50%;
-  background: linear-gradient(135deg, transparent 20%, rgba(255, 255, 255, 0.8) 20%, rgba(255, 255, 255, 0.8) 22%, transparent 22%),
-              linear-gradient(225deg, transparent 20%, rgba(255, 255, 255, 0.8) 20%, rgba(255, 255, 255, 0.8) 22%, transparent 22%),
-              linear-gradient(315deg, transparent 20%, rgba(255, 255, 255, 0.8) 20%, rgba(255, 255, 255, 0.8) 22%, transparent 22%),
-              linear-gradient(45deg, transparent 20%, rgba(255, 255, 255, 0.8) 20%, rgba(255, 255, 255, 0.8) 22%, transparent 22%);
+  background: linear-gradient(
+      135deg,
+      transparent 20%,
+      rgba(255, 255, 255, 0.8) 20%,
+      rgba(255, 255, 255, 0.8) 22%,
+      transparent 22%
+    ),
+    linear-gradient(
+      225deg,
+      transparent 20%,
+      rgba(255, 255, 255, 0.8) 20%,
+      rgba(255, 255, 255, 0.8) 22%,
+      transparent 22%
+    ),
+    linear-gradient(
+      315deg,
+      transparent 20%,
+      rgba(255, 255, 255, 0.8) 20%,
+      rgba(255, 255, 255, 0.8) 22%,
+      transparent 22%
+    ),
+    linear-gradient(
+      45deg,
+      transparent 20%,
+      rgba(255, 255, 255, 0.8) 20%,
+      rgba(255, 255, 255, 0.8) 22%,
+      transparent 22%
+    );
   background-size: 20px 20px;
   animation: spin 8s linear infinite;
 }
@@ -116,7 +205,11 @@ body {
   top: 0;
   left: 0;
   z-index: 5;
-  background: radial-gradient(ellipse at 50% 50%, transparent 60%, rgba(255, 255, 255, 0.1) 100%);
+  background: radial-gradient(
+    ellipse at 50% 50%,
+    transparent 60%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
   pointer-events: none;
 }
 
@@ -146,7 +239,16 @@ body {
   height: 100px;
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 10;
-  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  clip-path: polygon(
+    30% 0%,
+    70% 0%,
+    100% 30%,
+    100% 70%,
+    70% 100%,
+    30% 100%,
+    0% 70%,
+    0% 30%
+  );
 }
 
 .dancer-1 {
@@ -176,7 +278,8 @@ body {
 }
 
 @keyframes dance1 {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0) rotate(0deg);
   }
   25% {
@@ -191,7 +294,8 @@ body {
 }
 
 @keyframes dance2 {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0) rotate(5deg);
   }
   25% {
@@ -206,7 +310,8 @@ body {
 }
 
 @keyframes dance3 {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateX(-50%) translateY(0) scale(1.2);
   }
   50% {

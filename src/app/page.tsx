@@ -35,14 +35,14 @@ export default function Home() {
             Served!
           </h1>
           <p className="text-xl md:text-2xl text-white max-w-3xl mx-auto mb-8 drop-shadow-md">
-            Dance battles for charity
+            Dance battles for community impact
           </p>
 
           {/* Hero Dance Icons */}
           <div className="flex items-center justify-center gap-6 md:gap-8 mb-8">
             <div className="relative">
               <div className="bg-white/10 backdrop-blur-sm rounded-full w-32 h-32 md:w-36 md:h-36 lg:w-40 lg:h-40 flex items-center justify-center border-4 border-white/20 shadow-2xl">
-                <span className="text-5xl md:text-6xl lg:text-7xl animate-bounce">
+                <span className="text-5xl md:text-6xl lg:text-7xl animate-dance-moves">
                   💃
                 </span>
               </div>
@@ -58,8 +58,8 @@ export default function Home() {
             <div className="relative">
               <div className="bg-white/10 backdrop-blur-sm rounded-full w-32 h-32 md:w-36 md:h-36 lg:w-40 lg:h-40 flex items-center justify-center border-4 border-white/20 shadow-2xl">
                 <span
-                  className="text-5xl md:text-6xl lg:text-7xl animate-bounce"
-                  style={{ animationDelay: '0.5s' }}
+                  className="text-5xl md:text-6xl lg:text-7xl animate-dance-moves"
+                  style={{ animationDelay: '4s' }}
                 >
                   🕺🏾
                 </span>
@@ -92,7 +92,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <h2 className="section-title text-purple-700">Our Mission</h2>
           <p className="section-subtitle">
-            Bringing the community together through dance and charity
+            Bringing the community together through dance and purpose
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
@@ -117,8 +117,8 @@ export default function Home() {
                 Community Impact
               </h3>
               <p className="text-gray-600">
-                All proceeds from the event go directly to local charities in
-                DeKalb County, making a real difference in our community.
+                All proceeds from the event go directly to local organizations
+                making a difference in DeKalb County communities.
               </p>
             </div>
 
@@ -187,8 +187,8 @@ export default function Home() {
                   Mark Your Calendar!
                 </h2>
                 <p className="text-lg mb-6">
-                  Join us for an unforgettable night of dance, fun, and charity
-                  at our event in DeKalb.
+                  Join us for an unforgettable night of dance, fun, and
+                  community impact at our event in DeKalb.
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="flex items-start">
