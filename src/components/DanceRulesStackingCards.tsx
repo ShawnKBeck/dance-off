@@ -36,7 +36,7 @@ const RuleCard = ({
 
   const { scrollYProgress: iconProgress } = useScroll({
     target: iconContainer,
-    offset: ['start center', 'end center'],
+    offset: ['start 80%', 'end 20%'],
   })
 
   const iconScale = useTransform(iconProgress, [0, 1], [1, 1.5])
@@ -86,7 +86,7 @@ const RuleCard = ({
 
           <div
             ref={iconContainer}
-            className="relative w-full md:w-[40%] h-24 md:h-full rounded-lg overflow-hidden bg-white/10 backdrop-blur-sm flex items-center justify-center"
+            className="relative w-full md:w-[40%] h-32 md:h-full rounded-lg overflow-hidden bg-white/10 backdrop-blur-sm flex items-center justify-center"
           >
             <motion.div
               className="flex items-center justify-center"

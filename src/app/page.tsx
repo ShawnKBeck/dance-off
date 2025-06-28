@@ -40,31 +40,33 @@ export default function Home() {
           </p>
 
           {/* Hero Dance Icons */}
-          <div className="flex items-center justify-center gap-8 mb-8">
+          <div className="flex items-center justify-center gap-6 md:gap-8 mb-8">
             <div className="relative">
-              <div className="bg-white/10 backdrop-blur-sm rounded-full w-24 h-24 md:w-32 md:h-32 flex items-center justify-center border-4 border-white/20 shadow-2xl">
-                <span className="text-4xl md:text-6xl animate-bounce">💃</span>
+              <div className="bg-white/10 backdrop-blur-sm rounded-full w-32 h-32 md:w-36 md:h-36 lg:w-40 lg:h-40 flex items-center justify-center border-4 border-white/20 shadow-2xl">
+                <span className="text-5xl md:text-6xl lg:text-7xl animate-bounce">
+                  💃
+                </span>
               </div>
-              <div className="absolute -bottom-2 -right-2 bg-pink-500 rounded-full w-6 h-6 md:w-8 md:h-8 flex items-center justify-center">
-                <span className="text-sm md:text-lg">✨</span>
+              <div className="absolute -bottom-2 -right-2 bg-pink-500 rounded-full w-7 h-7 md:w-8 md:h-8 flex items-center justify-center">
+                <span className="text-base md:text-lg">✨</span>
               </div>
             </div>
 
-            <div className="text-4xl md:text-6xl text-white/80 font-bold drop-shadow-lg">
+            <div className="text-4xl md:text-6xl lg:text-7xl text-white/80 font-bold drop-shadow-lg">
               VS
             </div>
 
             <div className="relative">
-              <div className="bg-white/10 backdrop-blur-sm rounded-full w-24 h-24 md:w-32 md:h-32 flex items-center justify-center border-4 border-white/20 shadow-2xl">
+              <div className="bg-white/10 backdrop-blur-sm rounded-full w-32 h-32 md:w-36 md:h-36 lg:w-40 lg:h-40 flex items-center justify-center border-4 border-white/20 shadow-2xl">
                 <span
-                  className="text-4xl md:text-6xl animate-bounce"
+                  className="text-5xl md:text-6xl lg:text-7xl animate-bounce"
                   style={{ animationDelay: '0.5s' }}
                 >
                   🕺🏾
                 </span>
               </div>
-              <div className="absolute -bottom-2 -left-2 bg-purple-500 rounded-full w-6 h-6 md:w-8 md:h-8 flex items-center justify-center">
-                <span className="text-sm md:text-lg">⚡</span>
+              <div className="absolute -bottom-2 -left-2 bg-purple-500 rounded-full w-7 h-7 md:w-8 md:h-8 flex items-center justify-center">
+                <span className="text-base md:text-lg">⚡</span>
               </div>
             </div>
           </div>
