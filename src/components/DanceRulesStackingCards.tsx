@@ -44,13 +44,13 @@ const RuleCard = ({
 
   const getDanceIcon = (ruleNumber: number) => {
     const icons = {
-      1: '💃', // Dancing woman for "you are served"
+      1: '💃🏾', // Dancing woman for "you are served"
       2: '🪩', // Disco ball for "it's on" - the party/battle begins
       3: '🩰', // Ballet shoes for dance instructor - professional training
-      4: '🕺🏾', // Dancing man for "bring it" - show your moves
+      4: '🕺', // Dancing man for "bring it" - show your moves
       5: '🏆', // Trophy for judges decide - the winner
     }
-    return icons[ruleNumber as keyof typeof icons] || '💃'
+    return icons[ruleNumber as keyof typeof icons] || '💃🏾'
   }
 
   return (
