@@ -44,13 +44,13 @@ const RuleCard = ({
 
   const getDanceIcon = (ruleNumber: number) => {
     const icons = {
-      1: '💃🏾', // Dancing woman for "you are served"
+      1: '💃🏽', // Hispanic/Latina dancing woman for "you got served"
       2: '🪩', // Disco ball for "it's on" - the party/battle begins
       3: '🩰', // Ballet shoes for dance instructor - professional training
-      4: '🕺', // Dancing man for "bring it" - show your moves
+      4: '🕺🏻', // Asian dancing man for "bring it" - show your moves
       5: '🏆', // Trophy for judges decide - the winner
     }
-    return icons[ruleNumber as keyof typeof icons] || '💃🏾'
+    return icons[ruleNumber as keyof typeof icons] || '💃🏽'
   }
 
   return (
@@ -67,11 +67,6 @@ const RuleCard = ({
         className="flex flex-col relative min-h-[400px] h-[400px] md:h-[450px] w-[90%] md:w-[70%] max-w-4xl rounded-xl p-6 md:p-10 origin-top shadow-2xl"
       >
         <div className="relative mb-4 md:mb-6 flex-shrink-0">
-          <div className="absolute top-0 left-0 bg-white/20 backdrop-blur-sm rounded-full w-10 h-10 md:w-12 md:h-12 flex items-center justify-center">
-            <span className="text-lg md:text-2xl font-bold text-white">
-              {number}
-            </span>
-          </div>
           <h2 className="text-xl md:text-3xl font-bold text-white font-poppins text-center">
             {title}
           </h2>
