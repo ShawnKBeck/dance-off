@@ -158,7 +158,7 @@ export default function DanceRulesStackingCards() {
 
   return (
     <ReactLenis root>
-      <main ref={container} className="relative bg-black">
+      <main ref={container} className="relative bg-purple-950">
         {/* Header Section */}
         <section className="pt-12 md:pt-16 pb-8 md:pb-12 flex items-center justify-center relative z-10">
           <div className="text-center text-white px-4">
