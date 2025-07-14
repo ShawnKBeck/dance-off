@@ -59,7 +59,7 @@ export default function Home() {
               <div className="bg-white/10 backdrop-blur-sm rounded-full w-32 h-32 md:w-36 md:h-36 lg:w-40 lg:h-40 flex items-center justify-center border-4 border-white/20 shadow-2xl">
                 <span
                   className="text-5xl md:text-6xl lg:text-7xl animate-dance-moves"
-                  style={{ animationDelay: '4s' }}
+                  style={{ animationDelay: '1.5s' }}
                 >
                   🕺🏾
                 </span>

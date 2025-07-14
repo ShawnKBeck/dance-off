@@ -66,7 +66,7 @@ body {
 }
 
 .animate-dance-moves {
-  animation: danceAlternate 8s infinite;
+  animation: danceAlternate 3s infinite;
 }
 
 @keyframes bounce {
