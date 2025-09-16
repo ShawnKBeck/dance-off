@@ -18,8 +18,8 @@ const Countdown = () => {
   })
 
   useEffect(() => {
-    // Set the event date to March 14, 2026 at 7:00 PM
-    const eventDate = new Date('2026-03-14T19:00:00').getTime()
+    // Set the event date to April 11, 2026 at 7:00 PM
+    const eventDate = new Date('2026-04-11T19:00:00').getTime()
 
     const calculateTimeLeft = () => {
       const now = new Date().getTime()

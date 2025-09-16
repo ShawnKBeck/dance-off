@@ -163,11 +163,11 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-bold text-lg mb-2">Event Location</h3>
                     <p className="text-gray-700">
-                      DeKalb Community Center
+                      Egyptian Theatre
                       <br />
-                      DeKalb, IL 60115
+                      145 N 2nd St, DeKalb, IL 60115
                       <br />
-                      March 14, 2026 • 7:00 PM
+                      April 11, 2026 • 7:00 PM
                     </p>
                   </div>
                 </div>
@@ -193,10 +193,10 @@ export default function ContactPage() {
                     <h3 className="font-bold text-lg mb-2">Email</h3>
                     <p className="text-gray-700">
                       <a
-                        href="mailto:info@youvebeenserved.org"
+                        href="mailto:info@yougotserved.dance"
                         className="text-purple-600 hover:text-purple-800"
                       >
-                        info@youvebeenserved.org
+                        info@yougotserved.dance
                       </a>
                     </p>
                   </div>
@@ -223,40 +223,11 @@ export default function ContactPage() {
                     <h3 className="font-bold text-lg mb-2">Phone</h3>
                     <p className="text-gray-700">
                       <a
-                        href="tel:+1234567890"
+                        href="tel:+18157572825"
                         className="text-purple-600 hover:text-purple-800"
                       >
-                        (123) 456-7890
+                        (815) 757-2825
                       </a>
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start">
-                  <div className="text-purple-600 mr-4 mt-1">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-6 w-6"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-lg mb-2">Office Hours</h3>
-                    <p className="text-gray-700">
-                      Monday - Friday: 9:00 AM - 5:00 PM
-                      <br />
-                      Saturday: 10:00 AM - 2:00 PM
-                      <br />
-                      Sunday: Closed
                     </p>
                   </div>
                 </div>

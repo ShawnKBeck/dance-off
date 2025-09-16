@@ -212,7 +212,7 @@ export default function Home() {
                       <h4 className="text-lg md:text-xl font-bold">
                         Date & Time
                       </h4>
-                      <p>March 14, 2026 • 7:00 PM</p>
+                      <p>April 11, 2026 • 7:00 PM</p>
                     </div>
                   </div>
                   <div className="flex items-start">
@@ -240,7 +240,7 @@ export default function Home() {
                     </div>
                     <div>
                       <h4 className="text-lg md:text-xl font-bold">Location</h4>
-                      <p>DeKalb Community Center, DeKalb, IL</p>
+                      <p>Egyptian Theatre, DeKalb, IL</p>
                     </div>
                   </div>
                 </div>

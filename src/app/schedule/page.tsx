@@ -83,7 +83,7 @@ export default function SchedulePage() {
             Night of the Event
           </h2>
           <p className="section-subtitle">
-            March 14, 2026 • DeKalb Community Center
+            April 11, 2026 • Egyptian Theatre
           </p>
 
           <div className="max-w-4xl mx-auto mt-12">

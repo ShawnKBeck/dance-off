@@ -98,7 +98,7 @@ export default function TicketsPage() {
                   </svg>
                 </div>
                 <h3 className="font-bold text-lg">Date & Time</h3>
-                <p>March 14, 2026</p>
+                <p>April 11, 2026</p>
                 <p>7:00 PM - 10:30 PM</p>
               </div>
 
@@ -126,8 +126,8 @@ export default function TicketsPage() {
                   </svg>
                 </div>
                 <h3 className="font-bold text-lg">Location</h3>
-                <p>DeKalb Community Center</p>
-                <p>DeKalb, IL</p>
+                <p>Egyptian Theatre</p>
+                <p>145 N 2nd St, DeKalb, IL 60115</p>
               </div>
 
               <div className="p-4 bg-purple-50 rounded-lg">
