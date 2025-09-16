@@ -59,24 +59,26 @@ export default function SponsorsPage() {
 
   const currentSponsors = [
     {
-      name: 'Dance Dimensions',
+      name: 'Sparkles & Sass Glitter Emporium',
       tier: 'Presenting Sponsor',
-      description: "DeKalb's premier dance studio and event host",
+      description:
+        'Premier supplier of emergency glitter and confidence boosters',
     },
     {
-      name: 'DeKalb Community Bank',
+      name: 'The Funky Chicken Financial Group',
       tier: 'Platinum Partner',
-      description: 'Supporting local community initiatives',
+      description: 'Banking solutions that make your money do the cha-cha',
     },
     {
-      name: 'Groovy Threads Costume Shop',
+      name: 'Disco Ball Palace & Mirror Maze',
       tier: 'Gold Sponsor',
-      description: 'Providing costumes and dancewear',
+      description: 'Where every reflection shows your inner dancer',
     },
     {
-      name: 'Sound & Light Pro',
+      name: 'Boom Box Beats & Treats',
       tier: 'Silver Supporter',
-      description: 'Professional audio/visual services',
+      description:
+        'Sound systems that make even your grandma want to breakdance',
     },
   ]
 

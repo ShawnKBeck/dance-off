@@ -6,22 +6,22 @@ import Link from 'next/link'
 export default function DonatePage() {
   const charities = [
     {
-      name: 'DeKalb Food Pantry',
+      name: 'Society for the Prevention of Awkward Dancing',
       description:
-        'Providing essential food assistance to families in need throughout DeKalb County.',
-      impact: 'Serves over 300 families monthly',
+        'Dedicated to eliminating cringe-worthy dance moves and teaching proper rhythm to the rhythmically challenged.',
+      impact: 'Has saved 247 wedding receptions from disaster',
     },
     {
-      name: 'Youth Dance Program',
+      name: 'The International Brotherhood of Dramatic Pirouettes',
       description:
-        'Supporting after-school dance programs for underprivileged youth in our community.',
-      impact: 'Reaches 150+ children annually',
+        'Supporting overly theatrical spins and providing emergency sequins to dancers in need of extra sparkle.',
+      impact: 'Distributed 1,847 emergency jazz hands annually',
     },
     {
-      name: 'Senior Center Activities',
+      name: 'Cats Who Think They Can Dance Foundation',
       description:
-        'Funding recreational and wellness programs for seniors in DeKalb.',
-      impact: 'Benefits 200+ seniors weekly',
+        'Funding interpretive dance lessons for felines who believe they possess untapped choreographic genius.',
+      impact: 'Helped 97 cats achieve their dreams of stardom',
     },
   ]
 
