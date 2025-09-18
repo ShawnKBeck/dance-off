@@ -118,7 +118,7 @@ export default function TeamsPage() {
             Meet Our Instructors
           </h2>
           <p className="section-subtitle">
-            Professional dancers from Dance Dimensions who will coach our competing teams
+            Professional dancers from Dimensions who will coach our competing teams
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">

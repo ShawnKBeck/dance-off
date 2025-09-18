@@ -11,8 +11,8 @@ const Footer = () => {
               You Got Served
             </h3>
             <p className="mb-4">
-              A charitable competitive dance-off event hosted by Dance
-              Dimensions in DeKalb, Illinois.
+              A charitable competitive dance-off event hosted by Dimensions
+              in DeKalb, Illinois.
             </p>
             <div className="flex space-x-4">
               <a
@@ -132,7 +132,7 @@ const Footer = () => {
             reserved.
           </p>
           <p className="mt-2">
-            Hosted by Dance Dimensions in Groovytown, Illinois.
+            Hosted by Dimensions in Groovytown, Illinois.
           </p>
         </div>
       </div>

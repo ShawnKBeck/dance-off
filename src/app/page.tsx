@@ -271,8 +271,7 @@ export default function Home() {
             Ready to Bring It?
           </h2>
           <p className="text-xl max-w-3xl mx-auto mb-8">
-            Whether you want to compete, volunteer, or just enjoy the show,
-            there&apos;s a place for you at our dance-off event!
+            Got served by another organization? You have two options: Accept the challenge and register your team to compete live, or support the cause with a donation. Either way, you&apos;re helping our community!
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link

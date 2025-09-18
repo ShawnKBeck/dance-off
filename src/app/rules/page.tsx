@@ -7,25 +7,25 @@ export default function RulesPage() {
       number: 1,
       title: 'You Are Served',
       description:
-        "When a team challenges you to a dance battle, you have officially been 'served'. This is the formal initiation of a dance challenge that cannot be ignored.",
+        "When an organization records a challenge video and calls out your organization, you have officially been 'served'! This video challenge spreads awareness and gives you two choices: compete or donate.",
     },
     {
       number: 2,
       title: "It's On",
       description:
-        "Once served, the battle is automatically 'on'. There's no backing down from a challenge - refusing to accept means automatic defeat and public shame.",
+        "Once served, you must respond! Choose your path: Register your team and show up to compete live at the event, or support the cause by making a donation. Both responses help the community and show you've got spirit.",
     },
     {
       number: 3,
       title: 'Dance Instructor',
       description:
-        'Each team receives coaching from a professional Dance Dimensions instructor who will help choreograph and perfect their routine.',
+        'Each team receives coaching from a professional Dimensions instructor who will help choreograph and perfect their routine.',
     },
     {
       number: 4,
       title: 'Bring It',
       description:
-        "The challenged team must 'bring it' with their best dance moves and attitude. This is your chance to respond and prove your dance superiority.",
+        'When served (challenged via video), organizations have two options: Accept the challenge and register to compete live at the event, or make a donation to support the cause. Only teams who register and show up can compete for the win!',
     },
     {
       number: 5,
@@ -346,8 +346,9 @@ export default function RulesPage() {
             Ready to Bring It?
           </h2>
           <p className="text-xl max-w-2xl mx-auto mb-8">
-            Join us for an epic night of dance battles and help support local
-            charities in DeKalb County.
+            Serve other organizations by recording a challenge video, or respond
+            to being served by registering to compete or making a donation. Help
+            support local charities in DeKalb County!
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link

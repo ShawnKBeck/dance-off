@@ -87,7 +87,7 @@ export default function AboutPage() {
               <p className="mb-4">
                 Teams will compete in head-to-head dance battles, showcasing
                 their skills, creativity, and teamwork. Each team will be
-                coached by a professional instructor from Dance Dimensions.
+                coached by a professional instructor from Dimensions.
               </p>
               <p className="mb-4">
                 The competition follows a bracket format, with teams advancing
@@ -163,7 +163,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-4">
           <h2 className="section-title">Meet Our Hosts</h2>
           <p className="section-subtitle">
-            &quot;You Got Served&quot; is proudly hosted by Dance Dimensions
+            &quot;You Got Served&quot; is proudly hosted by Dimensions
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-12">
@@ -171,17 +171,17 @@ export default function AboutPage() {
               <div className="mb-6 rounded-lg overflow-hidden">
                 <Image
                   src="/images/dance-dimensions.jpg"
-                  alt="Dance Dimensions"
+                  alt="Dimensions"
                   width={500}
                   height={300}
                   className="w-full h-auto object-cover"
                 />
               </div>
               <h3 className="text-2xl font-bold mb-4 font-poppins text-purple-600">
-                Dance Dimensions
+                Dimensions
               </h3>
               <p className="mb-4">
-                Dance Dimensions is DeKalb&apos;s premier dance studio, offering
+                Dimensions is DeKalb&apos;s premier dance studio, offering
                 instruction in various styles for all ages and skill levels.
                 With a team of professional instructors and a passion for
                 artistic expression, they bring technical expertise and creative
