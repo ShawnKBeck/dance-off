@@ -36,106 +36,168 @@ export default function TeamsPage() {
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="relative h-[40vh] flex items-center justify-center overflow-hidden bg-purple-100">
-        <div className="absolute inset-0 z-0">
-          <div className="relative w-full h-full">
-            <Image
-              src="/images/teams-hero.jpg"
-              alt="Teams & Instructors"
-              fill
-              priority
-              className="object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-br from-purple-500/70 via-purple-600/60 to-indigo-700/50"></div>
-          </div>
-        </div>
-        <div className="container mx-auto px-4 z-10 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-white font-poppins mb-4 drop-shadow-lg text-shadow-lg">
-            Teams & Instructors
-          </h1>
-          <p className="text-xl text-white max-w-3xl mx-auto drop-shadow-md text-shadow">
-            Meet the talented dancers and coaches who bring the competition to
-            life
-          </p>
-        </div>
-      </section>
-
-      {/* Teams Section - Coming Soon */}
+      {/* Team Registration Form */}
       <section className="section-padding bg-white">
         <div className="container mx-auto px-4">
           <h2 className="section-title bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-500">
-            Competing Teams
+            Register Your Team
           </h2>
           <p className="section-subtitle">
-            Check back soon to discover who&apos;ll step up and get served!
+            Ready to get served? Sign up your team and represent your favorite
+            non-profit!
           </p>
 
-          <div className="max-w-3xl mx-auto mt-12 p-8 bg-purple-50 rounded-xl shadow-md text-center">
-            <div className="text-purple-600 mb-6">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-16 w-16 mx-auto"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="#7c3aed"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-                />
-              </svg>
-            </div>
-            <h3 className="text-2xl font-bold mb-4 font-poppins">
-              Team Registration Coming Soon
-            </h3>
-            <p className="text-lg mb-6">
-              We&apos;re currently accepting team applications for this exciting
-              event. Teams will be announced here once registration closes.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact" className="btn-primary">
-                Inquire About Registering
-              </Link>
-              <button className="btn-secondary">
-                Get Notified When Teams Are Announced
-              </button>
-            </div>
-          </div>
-
-          {/* Placeholder for team cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 opacity-60">
-            {[1, 2, 3, 4, 5, 6].map((item) => (
-              <div
-                key={item}
-                className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 transform hover:-translate-y-2"
-              >
-                <div className="h-48 bg-gray-200 flex items-center justify-center">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-12 w-12 text-gray-400"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="#9ca3af"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
-                    />
-                  </svg>
-                </div>
-                <div className="p-6">
-                  <div className="h-6 bg-gray-200 rounded mb-3 w-3/4"></div>
-                  <div className="h-4 bg-gray-200 rounded mb-2 w-1/2"></div>
-                  <div className="h-4 bg-gray-200 rounded mb-2 w-full"></div>
-                  <div className="h-4 bg-gray-200 rounded w-5/6"></div>
-                </div>
+          <div className="max-w-4xl mx-auto mt-12">
+            <div className="bg-white rounded-xl shadow-lg border border-purple-100 overflow-hidden">
+              <div className="bg-gradient-to-r from-purple-600 to-pink-500 p-6 text-white text-center">
+                <h3 className="text-2xl font-bold font-poppins mb-2">
+                  Team Application
+                </h3>
+                <p className="text-purple-100">
+                  Fill out the form below and we&apos;ll reach out with more
+                  details!
+                </p>
               </div>
-            ))}
+
+              <form className="p-8 space-y-6">
+                {/* Number of Dancers */}
+                <div>
+                  <label className="block text-sm font-bold text-gray-700 mb-2">
+                    How Many Dancers? *
+                  </label>
+                  <select className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition duration-200">
+                    <option value="">Select number of dancers</option>
+                    {Array.from({ length: 16 }, (_, i) => i + 5).map((num) => (
+                      <option key={num} value={num}>
+                        {num} dancers
+                      </option>
+                    ))}
+                  </select>
+                </div>
+
+                {/* Non-Profit Organization */}
+                <div>
+                  <label className="block text-sm font-bold text-gray-700 mb-2">
+                    What Non-Profit Organization do you want to represent? *
+                  </label>
+                  <input
+                    type="text"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition duration-200"
+                    placeholder="Enter the non-profit organization name"
+                  />
+                </div>
+
+                {/* Theme/Music Type */}
+                <div>
+                  <label className="block text-sm font-bold text-gray-700 mb-2">
+                    Theme/Music Type *
+                  </label>
+                  <input
+                    type="text"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition duration-200"
+                    placeholder="e.g., Hip Hop, Pop, R&B, Latin, etc."
+                  />
+                </div>
+
+                {/* Contact Information Grid */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  {/* Contact Person Name */}
+                  <div>
+                    <label className="block text-sm font-bold text-gray-700 mb-2">
+                      Contact Person Name *
+                    </label>
+                    <input
+                      type="text"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition duration-200"
+                      placeholder="Your full name"
+                    />
+                  </div>
+
+                  {/* Phone Number */}
+                  <div>
+                    <label className="block text-sm font-bold text-gray-700 mb-2">
+                      Phone Number *
+                    </label>
+                    <input
+                      type="tel"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition duration-200"
+                      placeholder="(555) 123-4567"
+                    />
+                  </div>
+                </div>
+
+                {/* Email and Location Grid */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  {/* Email Address */}
+                  <div>
+                    <label className="block text-sm font-bold text-gray-700 mb-2">
+                      Email Address *
+                    </label>
+                    <input
+                      type="email"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition duration-200"
+                      placeholder="your.email@example.com"
+                    />
+                  </div>
+
+                  {/* Location */}
+                  <div>
+                    <label className="block text-sm font-bold text-gray-700 mb-2">
+                      Location *
+                    </label>
+                    <input
+                      type="text"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition duration-200"
+                      placeholder="City, State"
+                    />
+                  </div>
+                </div>
+
+                {/* Important Notice */}
+                <div className="bg-purple-50 border border-purple-200 rounded-lg p-4">
+                  <div className="flex items-start">
+                    <div className="flex-shrink-0">
+                      <svg
+                        className="h-5 w-5 text-purple-600 mt-0.5"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                    </div>
+                    <div className="ml-3">
+                      <h4 className="text-sm font-bold text-purple-800">
+                        What happens next?
+                      </h4>
+                      <p className="text-sm text-purple-700 mt-1">
+                        After you submit this form, someone from our team will
+                        reach out to you soon with more details about the
+                        competition, practice schedules, and next steps.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Submit Button */}
+                <div className="text-center">
+                  <button
+                    type="submit"
+                    className="bg-gradient-to-r from-purple-600 to-pink-500 text-white font-bold py-4 px-12 rounded-lg hover:from-purple-700 hover:to-pink-600 transition duration-300 transform hover:scale-105 shadow-lg"
+                  >
+                    Submit Team Application
+                  </button>
+                </div>
+
+                {/* Required Fields Note */}
+                <p className="text-sm text-gray-500 text-center">
+                  * Required fields
+                </p>
+              </form>
+            </div>
           </div>
         </div>
       </section>
