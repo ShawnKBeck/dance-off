@@ -6,154 +6,95 @@ import Link from 'next/link'
 export default function SponsorsPage() {
   const sponsorTiers = [
     {
-      name: 'Platinum Partner',
-      price: '$2,500+',
-      color: 'from-gray-400 to-gray-600',
+      name: 'Friend of the Event',
+      price: '$100+',
+      color: 'from-blue-400 to-cyan-500',
       benefits: [
-        'Logo prominently displayed on all marketing materials',
-        'Banner placement at main event',
-        '10 VIP tickets included',
-        'Recognition during opening and closing ceremonies',
-        'Social media mentions and website feature',
-        'Opportunity to present awards',
-        'Meet & greet with dance instructors',
-      ],
-    },
-    {
-      name: 'Gold Sponsor',
-      price: '$1,000+',
-      color: 'from-yellow-400 to-yellow-600',
-      benefits: [
-        'Logo on event program and website',
-        'Banner placement at event venue',
-        '6 general admission tickets included',
-        'Recognition during event',
-        'Social media mentions',
-        'Program advertisement space',
-      ],
-    },
-    {
-      name: 'Silver Supporter',
-      price: '$500+',
-      color: 'from-gray-300 to-gray-500',
-      benefits: [
-        'Logo in event program',
-        'Website listing',
-        '4 general admission tickets included',
-        'Social media recognition',
-        'Program thank you listing',
-      ],
-    },
-    {
-      name: 'Community Friend',
-      price: '$250+',
-      color: 'from-green-400 to-green-600',
-      benefits: [
-        'Name in event program',
+        'Business name in event program',
         'Website thank you listing',
         '2 general admission tickets included',
         'Social media recognition',
+        'Program acknowledgment',
       ],
     },
-  ]
-
-  const currentSponsors = [
     {
-      name: 'Sparkles & Sass Glitter Emporium',
-      tier: 'Presenting Sponsor',
-      description:
-        'Premier supplier of emergency glitter and confidence boosters',
+      name: 'Community Supporter',
+      price: '$200+',
+      color: 'from-green-400 to-emerald-500',
+      benefits: [
+        'Business name in event program',
+        'Business name on event t-shirts (small text)',
+        'Website thank you listing',
+        '4 general admission tickets included',
+        'Social media recognition post',
+        'Program thank you section listing',
+      ],
     },
     {
-      name: 'The Funky Chicken Financial Group',
-      tier: 'Platinum Partner',
-      description: 'Banking solutions that make your money do the cha-cha',
+      name: 'Supporting Sponsor',
+      price: '$500+',
+      color: 'from-gray-400 to-gray-600',
+      benefits: [
+        'Logo in event program and website',
+        'Logo placement on event t-shirts (back)',
+        'Table tent signage at event',
+        '6 general admission tickets included',
+        'Social media recognition',
+        'Quarter-page advertisement in event program',
+        'Business listing on website sponsor page',
+      ],
     },
     {
-      name: 'Disco Ball Palace & Mirror Maze',
-      tier: 'Gold Sponsor',
-      description: 'Where every reflection shows your inner dancer',
+      name: 'Presenting Partner',
+      price: '$1,000+',
+      color: 'from-yellow-400 to-orange-500',
+      benefits: [
+        'Logo on all marketing materials',
+        'Logo placement on event t-shirts (sleeve)',
+        'Banner placement at event venue',
+        '10 general admission tickets included',
+        'Recognition during event ceremonies',
+        'Social media mentions throughout campaign',
+        'Half-page advertisement in event program',
+        'Featured listing on website',
+        'Opportunity to distribute promotional materials',
+      ],
     },
     {
-      name: 'Boom Box Beats & Treats',
-      tier: 'Silver Supporter',
-      description:
-        'Sound systems that make even your grandma want to breakdance',
+      name: 'Title Sponsor',
+      price: '$5,000+',
+      color: 'from-purple-600 to-indigo-800',
+      benefits: [
+        'Event named after your business (e.g., "Company Name presents You Got Served")',
+        'Logo prominently displayed on all marketing materials',
+        'Logo placement on event t-shirts (front chest)',
+        'Main stage banner placement',
+        '20 VIP tickets included',
+        'Recognition during opening and closing ceremonies',
+        'Opportunity to present grand prize trophy',
+        'Meet & greet with dance instructors and judges',
+        'Social media campaign featuring your business',
+        'Full-page advertisement in event program',
+        'Website homepage feature',
+      ],
     },
   ]
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="relative h-[40vh] flex items-center justify-center overflow-hidden bg-purple-100">
-        <div className="absolute inset-0 z-0">
-          <div className="relative w-full h-full">
-            <Image
-              src="/images/hero-dance.jpg"
-              alt="Event Sponsors"
-              fill
-              priority
-              className="object-cover"
-              onError={(e) => {
-                e.currentTarget.style.display = 'none'
-              }}
-            />
-            <div className="absolute inset-0 bg-gradient-to-br from-purple-500/70 via-purple-600/60 to-indigo-700/50"></div>
-          </div>
-        </div>
-        <div className="container mx-auto px-4 z-10 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-white font-poppins mb-4 drop-shadow-lg">
-            Our Sponsors
-          </h1>
-          <p className="text-xl text-white max-w-3xl mx-auto drop-shadow-md">
-            Thank you to our amazing partners who make this event possible
-          </p>
-        </div>
-      </section>
-
-      {/* Current Sponsors */}
-      <section className="section-padding bg-white">
-        <div className="container mx-auto px-4">
-          <h2 className="section-title bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-500">
-            Thank You to Our 2026 Sponsors
-          </h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12 max-w-4xl mx-auto">
-            {currentSponsors.map((sponsor, index) => (
-              <div
-                key={index}
-                className="bg-purple-50 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300"
-              >
-                <div className="flex items-center justify-center h-20 bg-white rounded-lg mb-4">
-                  <span className="text-2xl font-bold text-purple-600">
-                    {sponsor.name}
-                  </span>
-                </div>
-                <div className="text-center">
-                  <div className="text-pink-500 font-bold mb-2">
-                    {sponsor.tier}
-                  </div>
-                  <p className="text-gray-700">{sponsor.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Sponsorship Opportunities */}
       <section className="section-padding bg-purple-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-8 font-poppins text-center text-purple-700">
+          <h1 className="text-4xl md:text-5xl font-bold mb-8 font-poppins text-center text-purple-700">
             Become a Sponsor
-          </h2>
+          </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto text-center mb-12">
             Partner with us to support local charities while gaining valuable
             exposure for your business. Join our mission to strengthen the
             DeKalb community through dance and giving.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
             {sponsorTiers.map((tier, index) => (
               <div
                 key={index}
@@ -197,8 +138,245 @@ export default function SponsorsPage() {
         </div>
       </section>
 
-      {/* Why Sponsor */}
+      {/* Sponsor Opportunity Showcase */}
       <section className="section-padding bg-white">
+        <div className="container mx-auto px-4">
+          <h2 className="section-title bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-500">
+            Your Logo Could Be Here
+          </h2>
+          <p className="section-subtitle">
+            See how your brand will be showcased at different sponsorship levels
+          </p>
+
+          <div className="space-y-8 mt-12 max-w-6xl mx-auto">
+            {/* Title Sponsor - Full Width Banner */}
+            <div className="bg-white border-2 border-dashed border-purple-300 p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+              <div className="flex items-center justify-center bg-gradient-to-r from-purple-600 to-indigo-800 rounded-lg mb-6 text-white font-bold relative overflow-hidden h-40">
+                <div className="text-center">
+                  <div className="text-4xl mb-2">YOUR LOGO HERE</div>
+                </div>
+              </div>
+              <div className="text-center">
+                <div className="text-purple-700 font-bold text-2xl mb-3">
+                  Title Sponsor
+                </div>
+                <p className="text-gray-600 text-lg">
+                  Your company logo prominently featured across all materials
+                </p>
+              </div>
+            </div>
+
+            {/* Presenting Partner - Large Card */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="bg-white border-2 border-dashed border-purple-300 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                <div className="flex items-center justify-center bg-gradient-to-r from-yellow-400 to-orange-500 rounded-lg mb-4 text-white font-bold relative overflow-hidden h-24">
+                  <div className="text-center">
+                    <div className="text-2xl">YOUR LOGO HERE</div>
+                  </div>
+                </div>
+                <div className="text-center">
+                  <div className="text-purple-700 font-bold text-xl mb-2">
+                    Presenting Partner
+                  </div>
+                  <p className="text-gray-600">
+                    High visibility placement for your brand
+                  </p>
+                </div>
+              </div>
+              <div className="bg-white border-2 border-dashed border-purple-300 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                <div className="flex items-center justify-center bg-gradient-to-r from-gray-400 to-gray-600 rounded-lg mb-4 text-white font-bold relative overflow-hidden h-20">
+                  <div className="text-center">
+                    <div className="text-lg">YOUR LOGO HERE</div>
+                  </div>
+                </div>
+                <div className="text-center">
+                  <div className="text-purple-700 font-bold text-lg mb-2">
+                    Supporting Sponsor
+                  </div>
+                  <p className="text-gray-600">
+                    Professional recognition for your business
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Community Supporter & Friend - Smaller Cards */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div className="bg-white border-2 border-dashed border-purple-300 p-4 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                <div className="flex items-center justify-center bg-gradient-to-r from-green-400 to-emerald-500 rounded-lg mb-3 text-white font-bold relative overflow-hidden h-12">
+                  <div className="text-center">
+                    <div className="text-sm">YOUR BUSINESS NAME</div>
+                  </div>
+                </div>
+                <div className="text-center">
+                  <div className="text-purple-700 font-bold text-base mb-1">
+                    Community Supporter
+                  </div>
+                  <p className="text-gray-600 text-sm">
+                    Business name recognition throughout event materials
+                  </p>
+                </div>
+              </div>
+              <div className="bg-white border-2 border-dashed border-purple-300 p-4 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                <div className="flex items-center justify-center bg-gradient-to-r from-blue-400 to-cyan-500 rounded-lg mb-3 text-white font-bold relative overflow-hidden h-10">
+                  <div className="text-center">
+                    <div className="text-xs">YOUR BUSINESS NAME</div>
+                  </div>
+                </div>
+                <div className="text-center">
+                  <div className="text-purple-700 font-bold text-base mb-1">
+                    Friend of the Event
+                  </div>
+                  <p className="text-gray-600 text-sm">
+                    Thank you listing in program and website
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Call to Action */}
+          <div className="text-center mt-12">
+            <div className="bg-purple-50 rounded-xl p-8 max-w-2xl mx-auto">
+              <h3 className="text-2xl font-bold text-purple-700 mb-4">
+                Ready to Get Started?
+              </h3>
+              <p className="text-gray-600 mb-6">
+                Contact us today to secure your sponsorship and get your logo
+                featured at &quot;You Got Served&quot; 2026!
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Link
+                  href="/contact"
+                  className="bg-purple-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-purple-700 transition duration-300"
+                >
+                  Become a Sponsor
+                </Link>
+                <button className="border-2 border-purple-600 text-purple-600 font-bold py-3 px-8 rounded-lg hover:bg-purple-50 transition duration-300">
+                  Download Info Packet
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* T-Shirt Logo Placement */}
+      <section className="section-padding bg-purple-50">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-8 font-poppins text-center text-purple-700">
+            Event T-Shirt Logo Placement
+          </h2>
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto text-center mb-12">
+            Your logo will be prominently displayed on our event t-shirts worn
+            by volunteers, staff, and available for purchase by attendees.
+          </p>
+
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-purple-50 rounded-2xl p-8 shadow-lg">
+              <div className="flex flex-col lg:flex-row items-center justify-center gap-12">
+                {/* T-Shirt Mockup */}
+                <div className="relative">
+                  <div className="w-64 h-80 bg-gradient-to-b from-purple-600 to-purple-800 rounded-lg shadow-xl relative overflow-hidden">
+                    {/* Shirt shape */}
+                    <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-20 h-6 bg-purple-700 rounded-b-xl"></div>
+
+                    {/* Title Sponsor - Front Chest */}
+                    <div className="absolute top-16 left-1/2 transform -translate-x-1/2 w-24 h-12 bg-white/90 rounded flex items-center justify-center">
+                      <span className="text-xs font-bold text-purple-800">
+                        TITLE
+                      </span>
+                    </div>
+
+                    {/* Presenting Partner - Sleeve */}
+                    <div className="absolute top-20 right-2 w-12 h-6 bg-white/80 rounded flex items-center justify-center">
+                      <span className="text-xs font-bold text-purple-800">
+                        1K
+                      </span>
+                    </div>
+
+                    {/* Supporting Sponsor - Back (shown as small indicator) */}
+                    <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2 w-16 h-4 bg-white/70 rounded flex items-center justify-center">
+                      <span className="text-xs font-bold text-purple-800">
+                        500
+                      </span>
+                    </div>
+
+                    {/* Community Supporter - Small text */}
+                    <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 w-20 h-3 bg-white/60 rounded flex items-center justify-center">
+                      <span className="text-xs font-bold text-purple-800">
+                        200
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Logo Placement Legend */}
+                <div className="space-y-6">
+                  <div className="flex items-center gap-4">
+                    <div className="w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold">
+                      1
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-purple-700">
+                        Title Sponsor ($5,000)
+                      </h4>
+                      <p className="text-gray-600 text-sm">
+                        Large logo on front chest - Maximum visibility
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center gap-4">
+                    <div className="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center text-white font-bold">
+                      2
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-yellow-600">
+                        Presenting Partner ($1,000)
+                      </h4>
+                      <p className="text-gray-600 text-sm">
+                        Medium logo on sleeve - High visibility
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center gap-4">
+                    <div className="w-8 h-8 bg-gray-500 rounded-full flex items-center justify-center text-white font-bold">
+                      3
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-gray-600">
+                        Supporting Sponsor ($500)
+                      </h4>
+                      <p className="text-gray-600 text-sm">
+                        Small logo on back - Good visibility
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center gap-4">
+                    <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center text-white font-bold">
+                      4
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-green-600">
+                        Community Supporter ($200)
+                      </h4>
+                      <p className="text-gray-600 text-sm">
+                        Business name in small text
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Sponsor */}
+      <section className="section-padding bg-purple-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-12 font-poppins text-center text-purple-700">
             Why Sponsor &quot;You Got Served&quot;?

@@ -11,8 +11,8 @@ const Footer = () => {
               You Got Served
             </h3>
             <p className="mb-4">
-              A charitable competitive dance-off event hosted by Dimensions
-              in DeKalb, Illinois.
+              A charitable competitive dance-off event hosted by Dimensions in
+              DeKalb, Illinois.
             </p>
             <div className="flex space-x-4">
               <a
@@ -131,9 +131,7 @@ const Footer = () => {
             &copy; {new Date().getFullYear()} You Got Served. All rights
             reserved.
           </p>
-          <p className="mt-2">
-            Hosted by Dimensions in Groovytown, Illinois.
-          </p>
+          <p className="mt-2">Hosted by Dimensions in Groovytown, Illinois.</p>
         </div>
       </div>
     </footer>
