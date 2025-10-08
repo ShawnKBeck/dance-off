@@ -6,7 +6,7 @@ export default function SponsorsPage() {
   const sponsorTiers = [
     {
       name: 'Friend of the Event',
-      price: '$100+',
+      price: '$100',
       color: 'from-blue-400 to-cyan-500',
       benefits: [
         'Business name in event program',
@@ -18,7 +18,7 @@ export default function SponsorsPage() {
     },
     {
       name: 'Community Supporter',
-      price: '$200+',
+      price: '$200',
       color: 'from-green-400 to-emerald-500',
       benefits: [
         'Business name in event program',
@@ -31,7 +31,7 @@ export default function SponsorsPage() {
     },
     {
       name: 'Supporting Sponsor',
-      price: '$500+',
+      price: '$500',
       color: 'from-gray-400 to-gray-600',
       benefits: [
         'Logo in event program and website',
@@ -45,7 +45,7 @@ export default function SponsorsPage() {
     },
     {
       name: 'Presenting Partner',
-      price: '$1,000+',
+      price: '$1,000',
       color: 'from-yellow-400 to-orange-500',
       benefits: [
         'Logo on all marketing materials',
