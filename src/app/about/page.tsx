@@ -29,7 +29,7 @@ export default function AboutPage() {
       </section>
 
       {/* Mission Section */}
-      <section className="section-padding bg-white dark:bg-slate-900">
+      <section className="section-padding bg-white">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
@@ -72,7 +72,7 @@ export default function AboutPage() {
       </section>
 
       {/* Competition Format */}
-      <section className="section-padding bg-purple-50 dark:bg-slate-800">
+      <section className="section-padding bg-purple-50">
         <div className="container mx-auto px-4">
           <h2 className="section-title">Competition Format</h2>
           <p className="section-subtitle">
@@ -80,7 +80,7 @@ export default function AboutPage() {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-12">
-            <div className="bg-white dark:bg-slate-700 p-8 rounded-lg shadow-md">
+            <div className="bg-white p-8 rounded-lg shadow-md">
               <h3 className="text-2xl font-bold mb-4 font-poppins text-purple-600">
                 The Dance-Off
               </h3>
@@ -117,7 +117,7 @@ export default function AboutPage() {
               </div>
             </div>
 
-            <div className="bg-white dark:bg-slate-700 p-8 rounded-lg shadow-md">
+            <div className="bg-white p-8 rounded-lg shadow-md">
               <h3 className="text-2xl font-bold mb-4 font-poppins text-pink-500">
                 Entertainment & Community
               </h3>
@@ -159,7 +159,7 @@ export default function AboutPage() {
       </section>
 
       {/* Hosts Section */}
-      <section className="section-padding bg-white dark:bg-slate-900">
+      <section className="section-padding bg-white">
         <div className="container mx-auto px-4">
           <h2 className="section-title">Meet Our Hosts</h2>
           <p className="section-subtitle">
@@ -167,7 +167,7 @@ export default function AboutPage() {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-12">
-            <div className="bg-purple-50 dark:bg-slate-800 p-8 rounded-lg shadow-md">
+            <div className="bg-purple-50 p-8 rounded-lg shadow-md">
               <div className="mb-6 rounded-lg overflow-hidden">
                 <Image
                   src="/images/dance-dimensions.jpg"
