@@ -52,11 +52,20 @@ export default function DonatePage() {
       {/* CSS to center PayPal content */}
       <style>{`
         #paypal-container-HXAJUF5JSEGDL {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+        }
+        #paypal-container-HXAJUF5JSEGDL > * {
+          flex: 0 0 auto;
+          width: 390px;
+          max-width: 100%;
           text-align: center;
         }
         #paypal-container-HXAJUF5JSEGDL iframe {
-          margin: 0 auto;
-          display: block;
+          writing-mode: horizontal-tb !important;
+          text-align: center !important;
         }
       `}</style>
 
@@ -67,58 +76,6 @@ export default function DonatePage() {
       />
 
       <div className="min-h-screen">
-        {/* Donation Impact */}
-        <section className="section-padding bg-white">
-          <div className="container mx-auto px-4">
-            <h2 className="section-title bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-500">
-              Your Impact
-            </h2>
-            <p className="section-subtitle">
-              100% of proceeds go directly to local charities - no
-              administrative fees
-            </p>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
-              <div className="text-center p-6 bg-purple-50 rounded-xl shadow-md">
-                <div className="text-4xl font-bold text-purple-600 mb-2">
-                  $25
-                </div>
-                <h3 className="text-xl font-bold mb-2 font-poppins">
-                  Feeds a Family
-                </h3>
-                <p className="text-gray-600">
-                  Provides a week&apos;s worth of groceries for a family of four
-                  through our food pantry partners.
-                </p>
-              </div>
-
-              <div className="text-center p-6 bg-pink-50 rounded-xl shadow-md">
-                <div className="text-4xl font-bold text-pink-500 mb-2">$50</div>
-                <h3 className="text-xl font-bold mb-2 font-poppins">
-                  Youth Dance Classes
-                </h3>
-                <p className="text-gray-600">
-                  Sponsors one month of dance classes for a child in our
-                  after-school program.
-                </p>
-              </div>
-
-              <div className="text-center p-6 bg-purple-50 rounded-xl shadow-md">
-                <div className="text-4xl font-bold text-purple-600 mb-2">
-                  $100
-                </div>
-                <h3 className="text-xl font-bold mb-2 font-poppins">
-                  Senior Activities
-                </h3>
-                <p className="text-gray-600">
-                  Funds recreational activities and wellness programs for
-                  seniors for one week.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
         {/* Donation Form */}
         <section className="section-padding bg-white">
           <div className="container mx-auto px-4">
@@ -128,13 +85,8 @@ export default function DonatePage() {
               </h2>
 
               <div className="bg-purple-50 p-8 rounded-xl shadow-md">
-                {/* Part 3: PayPal Container with Flexbox Centering */}
-                <div className="flex justify-center items-center">
-                  <div
-                    id="paypal-container-HXAJUF5JSEGDL"
-                    className="w-full max-w-md flex-none"
-                  ></div>
-                </div>
+                {/* PayPal Container */}
+                <div id="paypal-container-HXAJUF5JSEGDL"></div>
 
                 <p className="text-xs text-gray-500 text-center mt-4">
                   Secure donation processing powered by PayPal. Your donation is
