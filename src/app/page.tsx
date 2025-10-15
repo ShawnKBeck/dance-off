@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#2c4a6e] pt-2 pb-8 md:py-12">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#2c4a6e] py-8 md:py-12">
         {/* Retro Grid Background */}
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-b from-[#1b365f] via-[#2c4a6e] to-[#1b365f]"></div>
