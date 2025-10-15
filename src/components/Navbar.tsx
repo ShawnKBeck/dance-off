@@ -24,22 +24,22 @@ const Navbar = () => {
 
   return (
     <nav className="bg-gradient-to-r from-[#1b365f] via-[#2c4a6e] to-cyan-700 text-white sticky top-0 z-50 shadow-lg border-b-2 border-cyan-400/30">
-      <div className="container mx-auto px-4 py-3">
+      <div className="container mx-auto px-4 py-2.5 sm:py-3">
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link href="/" className="flex items-center group">
-            <span className="font-poppins font-bold text-xl md:text-2xl bg-gradient-to-r from-cyan-300 to-white bg-clip-text text-transparent group-hover:from-yellow-400 group-hover:to-cyan-300 transition-all duration-300">
+            <span className="font-poppins font-bold text-lg sm:text-xl md:text-2xl bg-gradient-to-r from-cyan-300 to-white bg-clip-text text-transparent group-hover:from-yellow-400 group-hover:to-cyan-300 transition-all duration-300">
               You Got Served
             </span>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-6">
+          <div className="hidden md:flex space-x-4 lg:space-x-6">
             {navItems.map((item) => (
               <Link
                 key={item.name}
                 href={item.path}
-                className="hover:text-cyan-300 font-semibold transition duration-300 ease-in-out transform hover:scale-105 relative group"
+                className="hover:text-cyan-300 font-semibold text-sm lg:text-base transition duration-300 ease-in-out transform hover:scale-105 relative group"
               >
                 {item.name}
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-cyan-400 group-hover:w-full transition-all duration-300"></span>
@@ -56,7 +56,7 @@ const Navbar = () => {
             {isMenuOpen ? (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-7 w-7"
+                className="h-6 w-6 sm:h-7 sm:w-7"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -71,7 +71,7 @@ const Navbar = () => {
             ) : (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-7 w-7"
+                className="h-6 w-6 sm:h-7 sm:w-7"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -89,12 +89,12 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden mt-4 pb-4 space-y-2 bg-[#1b365f]/50 backdrop-blur-sm rounded-lg p-3">
+          <div className="md:hidden mt-3 pb-3 space-y-1.5 bg-[#1b365f]/50 backdrop-blur-sm rounded-lg p-2">
             {navItems.map((item) => (
               <Link
                 key={item.name}
                 href={item.path}
-                className="block hover:bg-cyan-500/20 hover:text-cyan-300 px-3 py-2.5 rounded-md font-semibold transition duration-300 ease-in-out border-l-4 border-transparent hover:border-cyan-400"
+                className="block hover:bg-cyan-500/20 hover:text-cyan-300 px-3 py-2 text-sm rounded-md font-semibold transition duration-300 ease-in-out border-l-4 border-transparent hover:border-cyan-400"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.name}

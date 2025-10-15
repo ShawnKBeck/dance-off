@@ -5,12 +5,12 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen">
       {/* Simple Header */}
-      <section className="bg-gradient-to-r from-[#1b365f] to-cyan-600 py-12 md:py-16">
+      <section className="bg-gradient-to-r from-[#1b365f] to-cyan-600 py-10 md:py-12 lg:py-16">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-white font-poppins mb-4">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white font-poppins mb-3 md:mb-4">
             About the Event
           </h1>
-          <p className="text-xl text-cyan-100 max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-cyan-100 max-w-3xl mx-auto px-4">
             A charitable dance competition with a mission to make a difference
           </p>
         </div>
@@ -19,12 +19,12 @@ export default function AboutPage() {
       {/* Mission Section */}
       <section className="section-padding bg-white">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold mb-6 font-poppins text-[#1b365f]">
+              <h2 className="text-2xl sm:text-3xl font-bold mb-4 md:mb-6 font-poppins text-[#1b365f]">
                 Our Mission
               </h2>
-              <p className="text-lg mb-4">
+              <p className="text-base sm:text-lg mb-3 md:mb-4">
                 &quot;You Got Served&quot; is more than just a dance
                 competition—it&apos;s a community-driven initiative to raise
                 funds and awareness for local causes that matter in DeKalb

@@ -37,12 +37,12 @@ export default function RulesPage() {
   return (
     <div className="min-h-screen">
       {/* Simple Header */}
-      <section className="bg-gradient-to-r from-[#1b365f] to-cyan-600 py-12 md:py-16">
+      <section className="bg-gradient-to-r from-[#1b365f] to-cyan-600 py-10 md:py-12 lg:py-16">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-white font-poppins mb-4">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white font-poppins mb-3 md:mb-4">
             Bring It!
           </h1>
-          <p className="text-xl text-cyan-100 max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-cyan-100 max-w-3xl mx-auto px-4">
             Official Dance-Off Rules
           </p>
         </div>

@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-[#2c4a6e] py-12 md:py-16">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#2c4a6e] py-8 md:py-12">
         {/* Retro Grid Background */}
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-b from-[#1b365f] via-[#2c4a6e] to-[#1b365f]"></div>
@@ -27,13 +27,28 @@ export default function Home() {
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-yellow-400/10 rounded-full blur-3xl"></div>
         </div>
 
-        <div className="container mx-auto px-4 z-20 w-full">
-          <div className="max-w-7xl mx-auto space-y-6 md:space-y-8">
-            {/* Top Section: Logo + Title/Info */}
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 md:gap-8 items-center">
+        <div className="container mx-auto px-6 z-20 w-full">
+          <div className="max-w-7xl mx-auto">
+            {/* Logo - Top on Mobile */}
+            <div className="flex justify-center lg:hidden mb-6">
+              <div className="relative w-72 h-72 sm:w-80 sm:h-80 drop-shadow-2xl transform -rotate-3 hover:rotate-0 transition-transform duration-500">
+                <Image
+                  src="/images/ygs.png"
+                  alt="You Got Served Logo"
+                  fill
+                  priority
+                  className="object-contain"
+                />
+                {/* Glow effect behind logo */}
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 aspect-square bg-cyan-400/30 rounded-full blur-3xl -z-10"></div>
+              </div>
+            </div>
+
+            {/* Desktop: Logo + Title/Info Side by Side */}
+            <div className="hidden lg:grid lg:grid-cols-12 gap-8 items-center">
               {/* Logo - Left Side */}
-              <div className="lg:col-span-5 flex justify-center lg:justify-end">
-                <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 drop-shadow-2xl transform -rotate-3 hover:rotate-0 hover:scale-105 transition-all duration-500">
+              <div className="lg:col-span-5 flex justify-end">
+                <div className="relative w-96 h-96 drop-shadow-2xl transform -rotate-3 hover:rotate-0 hover:scale-105 transition-all duration-500">
                   <div
                     className="absolute inset-0"
                     style={{
@@ -57,14 +72,14 @@ export default function Home() {
               </div>
 
               {/* Title & Info - Right Side */}
-              <div className="lg:col-span-7 text-center lg:text-left space-y-3 md:space-y-4">
+              <div className="lg:col-span-7 text-left space-y-4">
                 <div>
-                  <div className="inline-block bg-gradient-to-r from-cyan-400 to-cyan-500 text-[#1b365f] font-black text-sm md:text-base lg:text-lg px-4 py-2 md:px-5 md:py-2.5 rounded-full shadow-lg mb-3">
+                  <div className="inline-block bg-gradient-to-r from-cyan-400 to-cyan-500 text-[#1b365f] font-black text-base px-4 py-2 rounded-full shadow-lg mb-2">
                     Dance Battles • Community Impact
                   </div>
                 </div>
 
-                <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold text-white leading-tight">
+                <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
                   <span className="text-yellow-400 drop-shadow-lg">
                     April 11, 2026
                   </span>
@@ -72,30 +87,52 @@ export default function Home() {
                   <span className="text-cyan-300">Egyptian Theatre</span>
                 </h1>
 
-                <p className="text-base md:text-lg lg:text-xl text-gray-200 max-w-2xl lg:max-w-none">
+                <p className="text-lg md:text-xl text-gray-200 max-w-2xl lg:max-w-none">
                   An unforgettable night where dance meets purpose. All proceeds
                   benefit local DeKalb County charities.
                 </p>
               </div>
             </div>
 
+            {/* Mobile: Title & Info */}
+            <div className="lg:hidden text-center space-y-5">
+              <div>
+                <div className="inline-block bg-gradient-to-r from-cyan-400 to-cyan-500 text-[#1b365f] font-black text-xs sm:text-sm px-3 py-1.5 sm:px-4 sm:py-2 rounded-full shadow-lg">
+                  Dance Battles • Community Impact
+                </div>
+              </div>
+
+              <h1 className="text-3xl sm:text-4xl font-bold text-white leading-tight px-2">
+                <span className="text-yellow-400 drop-shadow-lg">
+                  April 11, 2026
+                </span>
+                <br />
+                <span className="text-cyan-300">Egyptian Theatre</span>
+              </h1>
+
+              <p className="text-sm sm:text-base text-gray-200 max-w-md mx-auto px-4 leading-relaxed">
+                An unforgettable night where dance meets purpose. All proceeds
+                benefit local DeKalb County charities.
+              </p>
+            </div>
+
             {/* CTA Buttons */}
-            <div className="flex flex-wrap gap-2.5 md:gap-3 justify-center pt-4 md:pt-6">
+            <div className="flex flex-col sm:flex-row gap-3 justify-center items-center pt-6 md:pt-8 lg:pt-6 px-4">
               <Link
                 href="/tickets"
-                className="btn-retro-pink text-sm md:text-base"
+                className="btn-retro-pink text-sm sm:text-base w-full max-w-xs sm:max-w-none sm:w-auto text-center"
               >
                 🎫 Buy Tickets
               </Link>
               <Link
                 href="/donate"
-                className="btn-retro-cyan text-sm md:text-base"
+                className="btn-retro-cyan text-sm sm:text-base w-full max-w-xs sm:max-w-none sm:w-auto text-center"
               >
                 💖 Donate Now
               </Link>
               <Link
                 href="/about"
-                className="btn-retro-yellow text-sm md:text-base"
+                className="btn-retro-yellow text-sm sm:text-base w-full max-w-xs sm:max-w-none sm:w-auto text-center"
               >
                 ⚡ Learn More
               </Link>
@@ -103,13 +140,13 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Scroll indicator */}
-        <div className="absolute bottom-3 md:bottom-6 left-1/2 -translate-x-1/2 z-20">
-          <div className="text-cyan-300 text-xs font-semibold mb-1.5">
+        {/* Scroll indicator - Desktop only */}
+        <div className="hidden md:block absolute bottom-6 left-1/2 -translate-x-1/2 z-20">
+          <div className="text-cyan-300 text-sm font-semibold mb-2">
             Scroll to explore
           </div>
-          <div className="w-5 h-8 md:w-6 md:h-9 border-2 border-cyan-300 rounded-full mx-auto flex justify-center">
-            <div className="w-1 h-2 bg-cyan-300 rounded-full mt-2"></div>
+          <div className="w-6 h-9 border-2 border-cyan-300 rounded-full mx-auto flex justify-center animate-bounce-slow">
+            <div className="w-1.5 h-2 bg-cyan-300 rounded-full mt-2"></div>
           </div>
         </div>
       </section>
@@ -125,12 +162,12 @@ export default function Home() {
             Bringing the community together through dance and purpose
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
-            <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2 border-t-4 border-cyan-400">
-              <div className="text-cyan-500 text-4xl mb-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mt-8 md:mt-12">
+            <div className="bg-white p-5 md:p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2 border-t-4 border-cyan-400">
+              <div className="text-cyan-500 text-4xl mb-3">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-12 w-12"
+                  className="h-10 w-10 sm:h-12 sm:w-12"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="#06b6d4"
@@ -143,20 +180,20 @@ export default function Home() {
                   />
                 </svg>
               </div>
-              <h3 className="text-2xl md:text-3xl font-bold mb-2 font-poppins text-[#1b365f]">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-2 font-poppins text-[#1b365f]">
                 Community Impact
               </h3>
-              <p className="text-gray-600">
+              <p className="text-sm sm:text-base text-gray-600">
                 All proceeds from the event go directly to local organizations
                 making a difference in DeKalb County communities.
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2 border-t-4 border-pink-500">
-              <div className="text-pink-500 text-4xl mb-4">
+            <div className="bg-white p-5 md:p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2 border-t-4 border-pink-500">
+              <div className="text-pink-500 text-4xl mb-3">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-12 w-12"
+                  className="h-10 w-10 sm:h-12 sm:w-12"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="#ec4899"
@@ -169,20 +206,20 @@ export default function Home() {
                   />
                 </svg>
               </div>
-              <h3 className="text-2xl md:text-3xl font-bold mb-2 font-poppins text-[#1b365f]">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-2 font-poppins text-[#1b365f]">
                 Entertainment
               </h3>
-              <p className="text-gray-600">
+              <p className="text-sm sm:text-base text-gray-600">
                 Experience an unforgettable evening of dance battles,
                 professional showcases, and interactive audience participation.
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2 border-t-4 border-yellow-400">
-              <div className="text-yellow-500 text-4xl mb-4">
+            <div className="bg-white p-5 md:p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2 border-t-4 border-yellow-400">
+              <div className="text-yellow-500 text-4xl mb-3">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-12 w-12"
+                  className="h-10 w-10 sm:h-12 sm:w-12"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="#eab308"
@@ -195,10 +232,10 @@ export default function Home() {
                   />
                 </svg>
               </div>
-              <h3 className="text-2xl md:text-3xl font-bold mb-2 font-poppins text-[#1b365f]">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-2 font-poppins text-[#1b365f]">
                 Local Talent
               </h3>
-              <p className="text-gray-600">
+              <p className="text-sm sm:text-base text-gray-600">
                 Showcasing the incredible dance talent in our community, from
                 beginners to professionals, all united for a common cause.
               </p>
@@ -210,22 +247,22 @@ export default function Home() {
       {/* Event Info & Countdown */}
       <section className="section-padding bg-gradient-to-br from-gray-50 to-cyan-50">
         <div className="container mx-auto px-4">
-          <div className="bg-gradient-to-r from-[#1b365f] via-[#2c4a6e] to-cyan-600 rounded-3xl p-8 md:p-12 text-white shadow-2xl border-4 border-cyan-400/30">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div className="bg-gradient-to-r from-[#1b365f] via-[#2c4a6e] to-cyan-600 rounded-2xl md:rounded-3xl p-6 md:p-10 lg:p-12 text-white shadow-2xl border-4 border-cyan-400/30">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-center">
               <div>
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 font-poppins">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-4 font-poppins">
                   Mark Your Calendar!
                 </h2>
-                <p className="text-lg mb-6">
+                <p className="text-base sm:text-lg mb-4 md:mb-6">
                   Join us for an unforgettable night of dance, fun, and
                   community impact at our event in DeKalb.
                 </p>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4">
                   <div className="flex items-start">
-                    <div className="text-cyan-300 mr-3">
+                    <div className="text-cyan-300 mr-2 sm:mr-3 flex-shrink-0">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        className="h-6 w-6"
+                        className="h-5 w-5 sm:h-6 sm:w-6"
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
@@ -239,17 +276,19 @@ export default function Home() {
                       </svg>
                     </div>
                     <div>
-                      <h3 className="text-lg md:text-xl font-bold">
+                      <h3 className="text-base sm:text-lg md:text-xl font-bold">
                         Date & Time
                       </h3>
-                      <p>April 11, 2026 • 7:00 PM</p>
+                      <p className="text-sm sm:text-base">
+                        April 11, 2026 • 7:00 PM
+                      </p>
                     </div>
                   </div>
                   <div className="flex items-start">
-                    <div className="text-cyan-300 mr-3">
+                    <div className="text-cyan-300 mr-2 sm:mr-3 flex-shrink-0">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        className="h-6 w-6"
+                        className="h-5 w-5 sm:h-6 sm:w-6"
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
@@ -269,21 +308,25 @@ export default function Home() {
                       </svg>
                     </div>
                     <div>
-                      <h3 className="text-lg md:text-xl font-bold">Location</h3>
-                      <p>Egyptian Theatre, DeKalb, IL</p>
+                      <h3 className="text-base sm:text-lg md:text-xl font-bold">
+                        Location
+                      </h3>
+                      <p className="text-sm sm:text-base">
+                        Egyptian Theatre, DeKalb, IL
+                      </p>
                     </div>
                   </div>
                 </div>
               </div>
               <div className="text-center">
-                <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-2 font-poppins">
+                <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-2 font-poppins">
                   Countdown to the Event
                 </h3>
                 <Countdown />
-                <div className="mt-6">
+                <div className="mt-4 md:mt-6">
                   <Link
                     href="/tickets"
-                    className="bg-white text-[#1b365f] font-bold py-3 px-6 rounded-lg hover:bg-cyan-50 transition duration-300 transform hover:scale-105 shadow-md border-2 border-cyan-400"
+                    className="inline-block bg-white text-[#1b365f] font-bold py-2.5 px-5 sm:py-3 sm:px-6 text-sm sm:text-base rounded-lg hover:bg-cyan-50 transition duration-300 transform hover:scale-105 shadow-md border-2 border-cyan-400"
                   >
                     Get Your Tickets
                   </Link>
@@ -295,7 +338,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-pink-500 via-pink-600 to-pink-500 text-white relative overflow-hidden">
+      <section className="py-12 md:py-16 bg-gradient-to-r from-pink-500 via-pink-600 to-pink-500 text-white relative overflow-hidden">
         <div
           className="absolute inset-0 opacity-20"
           style={{
@@ -305,25 +348,25 @@ export default function Home() {
           }}
         ></div>
         <div className="container mx-auto px-4 text-center relative z-10">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 font-poppins drop-shadow-lg">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 font-poppins drop-shadow-lg">
             Ready to Bring It? 🔥
           </h2>
-          <p className="text-xl max-w-3xl mx-auto mb-8 drop-shadow-md">
+          <p className="text-base sm:text-lg md:text-xl max-w-3xl mx-auto mb-6 md:mb-8 drop-shadow-md px-4">
             Got served by another organization? You have two options: Accept the
             challenge and register your team to compete live, or support the
             cause with a donation. Either way, you&apos;re helping our
             community!
           </p>
-          <div className="flex flex-wrap justify-center gap-4">
+          <div className="flex flex-wrap justify-center gap-3 md:gap-4">
             <Link
               href="/register"
-              className="bg-gradient-to-br from-cyan-400 to-cyan-500 text-[#1b365f] font-black py-4 px-10 rounded-2xl hover:from-cyan-500 hover:to-cyan-600 transition-all duration-300 transform hover:scale-105 shadow-2xl border-4 border-cyan-300/50"
+              className="bg-gradient-to-br from-cyan-400 to-cyan-500 text-[#1b365f] font-black py-3 px-6 sm:py-4 sm:px-8 md:px-10 text-sm sm:text-base rounded-2xl hover:from-cyan-500 hover:to-cyan-600 transition-all duration-300 transform hover:scale-105 shadow-2xl border-4 border-cyan-300/50"
             >
               ⚡ Register Your Team
             </Link>
             <Link
               href="/tickets"
-              className="bg-white/10 backdrop-blur-sm border-4 border-white text-white font-black py-4 px-10 rounded-2xl hover:bg-white/20 transition-all duration-300 transform hover:scale-105 shadow-xl"
+              className="bg-white/10 backdrop-blur-sm border-4 border-white text-white font-black py-3 px-6 sm:py-4 sm:px-8 md:px-10 text-sm sm:text-base rounded-2xl hover:bg-white/20 transition-all duration-300 transform hover:scale-105 shadow-xl"
             >
               🎫 Get Tickets
             </Link>

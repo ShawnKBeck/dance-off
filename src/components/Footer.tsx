@@ -2,15 +2,15 @@ import Link from 'next/link'
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-b from-[#1b365f] to-[#0f1f3d] text-white py-10 border-t-4 border-cyan-400/30">
+    <footer className="bg-gradient-to-b from-[#1b365f] to-[#0f1f3d] text-white py-8 md:py-10 border-t-4 border-cyan-400/30">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
           {/* About Section */}
           <div>
-            <h3 className="text-xl font-bold mb-4 text-cyan-400">
+            <h3 className="text-lg sm:text-xl font-bold mb-3 md:mb-4 text-cyan-400">
               You Got Served
             </h3>
-            <p className="mb-4">
+            <p className="text-sm sm:text-base mb-3 md:mb-4">
               A charitable competitive dance-off event hosted by Dimensions in
               DeKalb, Illinois.
             </p>
@@ -62,10 +62,10 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-xl font-bold mb-4 text-cyan-400">
+            <h3 className="text-lg sm:text-xl font-bold mb-3 md:mb-4 text-cyan-400">
               Quick Links
             </h3>
-            <ul className="space-y-2">
+            <ul className="space-y-1.5 md:space-y-2 text-sm sm:text-base">
               <li>
                 <Link
                   href="/"
@@ -111,27 +111,39 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-xl font-bold mb-4 text-cyan-400">Contact Us</h3>
-            <p className="mb-2">Egyptian Theatre</p>
-            <p className="mb-2">145 N 2nd St</p>
-            <p className="mb-2">DeKalb, IL 60115</p>
-            <p className="mb-2">Phone: (815) 757-2825</p>
-            <p className="mb-4">Email: info@yougotserved.dance</p>
+            <h3 className="text-lg sm:text-xl font-bold mb-3 md:mb-4 text-cyan-400">
+              Contact Us
+            </h3>
+            <p className="text-sm sm:text-base mb-1.5 md:mb-2">
+              Egyptian Theatre
+            </p>
+            <p className="text-sm sm:text-base mb-1.5 md:mb-2">145 N 2nd St</p>
+            <p className="text-sm sm:text-base mb-1.5 md:mb-2">
+              DeKalb, IL 60115
+            </p>
+            <p className="text-sm sm:text-base mb-1.5 md:mb-2">
+              Phone: (815) 757-2825
+            </p>
+            <p className="text-sm sm:text-base mb-3 md:mb-4">
+              Email: info@yougotserved.dance
+            </p>
             <Link
               href="/contact"
-              className="inline-block bg-gradient-to-r from-cyan-500 to-cyan-600 text-[#1b365f] font-bold px-6 py-3 rounded-xl hover:from-cyan-600 hover:to-cyan-700 transition duration-300 transform hover:scale-105 shadow-lg"
+              className="inline-block bg-gradient-to-r from-cyan-500 to-cyan-600 text-[#1b365f] font-bold px-5 py-2.5 sm:px-6 sm:py-3 text-sm sm:text-base rounded-xl hover:from-cyan-600 hover:to-cyan-700 transition duration-300 transform hover:scale-105 shadow-lg"
             >
               Get in Touch
             </Link>
           </div>
         </div>
 
-        <div className="border-t border-cyan-400/20 mt-8 pt-6 text-center text-sm">
+        <div className="border-t border-cyan-400/20 mt-6 md:mt-8 pt-4 md:pt-6 text-center text-xs sm:text-sm">
           <p>
             &copy; {new Date().getFullYear()} You Got Served. All rights
             reserved.
           </p>
-          <p className="mt-2">Hosted by Dimensions in Groovytown, Illinois.</p>
+          <p className="mt-1.5 md:mt-2">
+            Hosted by Dimensions in Groovytown, Illinois.
+          </p>
         </div>
       </div>
     </footer>

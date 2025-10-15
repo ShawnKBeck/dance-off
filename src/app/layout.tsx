@@ -19,6 +19,11 @@ export const metadata: Metadata = {
   title: 'April 11, 2026 | Egyptian Theatre',
   description:
     'Dance competition for community impact. All proceeds support local DeKalb County charities.',
+  viewport: {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 5,
+  },
   openGraph: {
     title: 'April 11, 2026 | Egyptian Theatre',
     description:

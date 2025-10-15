@@ -49,22 +49,22 @@ const Countdown = () => {
   }, [])
 
   return (
-    <div className="grid grid-cols-4 gap-2 mt-4">
-      <div className="bg-white/20 rounded-lg p-3">
-        <div className="text-3xl font-bold">{timeLeft.days}</div>
-        <div className="text-sm">Days</div>
+    <div className="grid grid-cols-4 gap-2 sm:gap-3 mt-4">
+      <div className="bg-white/20 rounded-lg p-2 sm:p-3">
+        <div className="text-2xl sm:text-3xl font-bold">{timeLeft.days}</div>
+        <div className="text-xs sm:text-sm">Days</div>
       </div>
-      <div className="bg-white/20 rounded-lg p-3">
-        <div className="text-3xl font-bold">{timeLeft.hours}</div>
-        <div className="text-sm">Hours</div>
+      <div className="bg-white/20 rounded-lg p-2 sm:p-3">
+        <div className="text-2xl sm:text-3xl font-bold">{timeLeft.hours}</div>
+        <div className="text-xs sm:text-sm">Hours</div>
       </div>
-      <div className="bg-white/20 rounded-lg p-3">
-        <div className="text-3xl font-bold">{timeLeft.minutes}</div>
-        <div className="text-sm">Minutes</div>
+      <div className="bg-white/20 rounded-lg p-2 sm:p-3">
+        <div className="text-2xl sm:text-3xl font-bold">{timeLeft.minutes}</div>
+        <div className="text-xs sm:text-sm">Minutes</div>
       </div>
-      <div className="bg-white/20 rounded-lg p-3">
-        <div className="text-3xl font-bold">{timeLeft.seconds}</div>
-        <div className="text-sm">Seconds</div>
+      <div className="bg-white/20 rounded-lg p-2 sm:p-3">
+        <div className="text-2xl sm:text-3xl font-bold">{timeLeft.seconds}</div>
+        <div className="text-xs sm:text-sm">Seconds</div>
       </div>
     </div>
   )

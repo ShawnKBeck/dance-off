@@ -56,28 +56,28 @@ body {
 
 /* Retro Boombox-inspired Button Styles */
 .btn-retro-pink {
-  @apply bg-gradient-to-br from-pink-500 to-pink-600 text-white font-bold py-4 px-8 rounded-2xl hover:from-pink-600 hover:to-pink-700 transition-all duration-300 transform hover:scale-105 hover:-rotate-1 shadow-xl hover:shadow-2xl border-4 border-pink-400/50;
+  @apply bg-gradient-to-br from-pink-500 to-pink-600 text-white font-bold py-3 px-6 sm:py-4 sm:px-8 rounded-2xl hover:from-pink-600 hover:to-pink-700 transition-all duration-300 transform hover:scale-105 hover:-rotate-1 shadow-xl hover:shadow-2xl border-4 border-pink-400/50;
 }
 
 .btn-retro-cyan {
-  @apply bg-gradient-to-br from-cyan-400 to-cyan-500 text-[#1b365f] font-bold py-4 px-8 rounded-2xl hover:from-cyan-500 hover:to-cyan-600 transition-all duration-300 transform hover:scale-105 hover:rotate-1 shadow-xl hover:shadow-2xl border-4 border-cyan-300/50;
+  @apply bg-gradient-to-br from-cyan-400 to-cyan-500 text-[#1b365f] font-bold py-3 px-6 sm:py-4 sm:px-8 rounded-2xl hover:from-cyan-500 hover:to-cyan-600 transition-all duration-300 transform hover:scale-105 hover:rotate-1 shadow-xl hover:shadow-2xl border-4 border-cyan-300/50;
 }
 
 .btn-retro-yellow {
-  @apply bg-gradient-to-br from-yellow-400 to-yellow-500 text-[#1b365f] font-bold py-4 px-8 rounded-2xl hover:from-yellow-500 hover:to-yellow-600 transition-all duration-300 transform hover:scale-105 hover:-rotate-1 shadow-xl hover:shadow-2xl border-4 border-yellow-300/50;
+  @apply bg-gradient-to-br from-yellow-400 to-yellow-500 text-[#1b365f] font-bold py-3 px-6 sm:py-4 sm:px-8 rounded-2xl hover:from-yellow-500 hover:to-yellow-600 transition-all duration-300 transform hover:scale-105 hover:-rotate-1 shadow-xl hover:shadow-2xl border-4 border-yellow-300/50;
 }
 
 /* Section Styles */
 .section-padding {
-  @apply py-16 md:py-24;
+  @apply py-12 md:py-16 lg:py-24;
 }
 
 .section-title {
-  @apply text-3xl md:text-4xl lg:text-5xl font-bold font-poppins mb-6 text-center text-[#1b365f];
+  @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold font-poppins mb-4 md:mb-6 text-center text-[#1b365f];
 }
 
 .section-subtitle {
-  @apply text-xl text-gray-600 max-w-3xl mx-auto text-center mb-12;
+  @apply text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto text-center mb-8 md:mb-12 px-4;
 }
 
 /* Animation Classes */
