@@ -16,11 +16,11 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: 'April 11, 2026 | Egyptian Theatre, DeKalb, IL',
+  title: 'April 11, 2026 | Egyptian Theatre',
   description:
     'Dance competition for community impact. All proceeds support local DeKalb County charities.',
   openGraph: {
-    title: 'April 11, 2026 | Egyptian Theatre, DeKalb, IL',
+    title: 'April 11, 2026 | Egyptian Theatre',
     description:
       'Dance competition for community impact. All proceeds support local DeKalb County charities.',
     images: [
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'April 11, 2026 | Egyptian Theatre, DeKalb, IL',
+    title: 'April 11, 2026 | Egyptian Theatre',
     description:
       'Dance competition for community impact. All proceeds support local DeKalb County charities.',
     images: ['/images/ygs.png'],
