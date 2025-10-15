@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#2c4a6e] py-8 md:py-12">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#2c4a6e] pt-2 pb-8 md:py-12">
         {/* Retro Grid Background */}
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-b from-[#1b365f] via-[#2c4a6e] to-[#1b365f]"></div>
@@ -30,7 +30,7 @@ export default function Home() {
         <div className="container mx-auto px-6 z-20 w-full">
           <div className="max-w-7xl mx-auto">
             {/* Logo - Top on Mobile */}
-            <div className="flex justify-center lg:hidden mb-6">
+            <div className="flex justify-center lg:hidden mb-3">
               <div className="relative w-72 h-72 sm:w-80 sm:h-80 drop-shadow-2xl transform -rotate-3 hover:rotate-0 transition-transform duration-500">
                 <Image
                   src="/images/ygs.png"
@@ -89,7 +89,7 @@ export default function Home() {
             </div>
 
             {/* Mobile: Title & Info */}
-            <div className="lg:hidden text-center space-y-5">
+            <div className="lg:hidden text-center space-y-3">
               <h1 className="text-3xl sm:text-4xl font-bold text-white leading-tight px-2">
                 <span className="text-yellow-400 drop-shadow-lg">
                   April 11, 2026
