@@ -73,12 +73,6 @@ export default function Home() {
 
               {/* Title & Info - Right Side */}
               <div className="lg:col-span-7 text-left space-y-4">
-                <div>
-                  <div className="inline-block bg-gradient-to-r from-cyan-400 to-cyan-500 text-[#1b365f] font-black text-base px-4 py-2 rounded-full shadow-lg mb-2">
-                    Dance Battles • Community Impact
-                  </div>
-                </div>
-
                 <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
                   <span className="text-yellow-400 drop-shadow-lg">
                     April 11, 2026
@@ -96,12 +90,6 @@ export default function Home() {
 
             {/* Mobile: Title & Info */}
             <div className="lg:hidden text-center space-y-5">
-              <div>
-                <div className="inline-block bg-gradient-to-r from-cyan-400 to-cyan-500 text-[#1b365f] font-black text-xs sm:text-sm px-3 py-1.5 sm:px-4 sm:py-2 rounded-full shadow-lg">
-                  Dance Battles • Community Impact
-                </div>
-              </div>
-
               <h1 className="text-3xl sm:text-4xl font-bold text-white leading-tight px-2">
                 <span className="text-yellow-400 drop-shadow-lg">
                   April 11, 2026
