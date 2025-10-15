@@ -23,8 +23,8 @@ const Navbar = () => {
   ]
 
   return (
-    <nav className="bg-gradient-to-r from-[#1b365f] via-[#2c4a6e] to-cyan-700 text-white sticky top-0 z-50 shadow-lg border-b-2 border-cyan-400/30">
-      <div className="container mx-auto px-4 py-2.5 sm:py-3">
+    <nav className="bg-gradient-to-r from-[#1b365f] via-[#2c4a6e] to-cyan-700 text-white sticky top-0 z-[100] shadow-lg border-b-2 border-cyan-400/30">
+      <div className="container mx-auto px-4 py-2.5 sm:py-3 relative">
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link href="/" className="flex items-center group">
@@ -49,9 +49,10 @@ const Navbar = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-cyan-300 focus:outline-none hover:text-cyan-400 transition-colors"
+            className="md:hidden text-cyan-300 focus:outline-none hover:text-cyan-400 transition-colors relative z-50 cursor-pointer"
             onClick={toggleMenu}
             aria-label="Toggle menu"
+            type="button"
           >
             {isMenuOpen ? (
               <svg
@@ -89,7 +90,7 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden mt-3 pb-3 space-y-1.5 bg-[#1b365f]/50 backdrop-blur-sm rounded-lg p-2">
+          <div className="md:hidden mt-3 pb-3 space-y-1.5 bg-[#1b365f]/50 backdrop-blur-sm rounded-lg p-2 relative z-10">
             {navItems.map((item) => (
               <Link
                 key={item.name}
