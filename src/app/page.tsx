@@ -239,9 +239,9 @@ export default function Home() {
                       </svg>
                     </div>
                     <div>
-                      <h4 className="text-lg md:text-xl font-bold">
+                      <h3 className="text-lg md:text-xl font-bold">
                         Date & Time
-                      </h4>
+                      </h3>
                       <p>April 11, 2026 • 7:00 PM</p>
                     </div>
                   </div>
@@ -269,7 +269,7 @@ export default function Home() {
                       </svg>
                     </div>
                     <div>
-                      <h4 className="text-lg md:text-xl font-bold">Location</h4>
+                      <h3 className="text-lg md:text-xl font-bold">Location</h3>
                       <p>Egyptian Theatre, DeKalb, IL</p>
                     </div>
                   </div>
