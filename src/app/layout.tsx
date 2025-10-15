@@ -17,8 +17,26 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: 'You Got Served | Dance Competition',
-  description:
-    'A community-driven dance competition supporting local causes that matter',
+  description: 'Dance battles for community impact - April 11, 2026',
+  openGraph: {
+    title: 'You Got Served | Dance Competition',
+    description: 'Dance battles for community impact - April 11, 2026',
+    images: [
+      {
+        url: '/images/ygs.png',
+        width: 1024,
+        height: 1024,
+        alt: 'You Got Served - Dance Competition',
+      },
+    ],
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'You Got Served | Dance Competition',
+    description: 'Dance battles for community impact - April 11, 2026',
+    images: ['/images/ygs.png'],
+  },
 }
 
 export default function RootLayout({
