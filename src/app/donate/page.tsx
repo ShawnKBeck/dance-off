@@ -59,7 +59,7 @@ export default function DonatePage() {
         }
         #paypal-container-HXAJUF5JSEGDL > * {
           flex: 0 0 auto;
-          width: 390px;
+          width: 400px;
           max-width: 100%;
           text-align: center;
         }
