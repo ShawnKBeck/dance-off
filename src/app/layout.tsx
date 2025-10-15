@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Inter, Poppins } from 'next/font/google'
+import { Inter, Poppins, Fugaz_One } from 'next/font/google'
 import './globals.css'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
@@ -10,9 +10,15 @@ const inter = Inter({
 })
 
 const poppins = Poppins({
-  weight: ['400', '500', '600', '700', '800'],
+  weight: ['400', '500', '600', '700', '800', '900'],
   subsets: ['latin'],
   variable: '--font-poppins',
+})
+
+const fugazOne = Fugaz_One({
+  weight: '400',
+  subsets: ['latin'],
+  variable: '--font-fugaz',
 })
 
 export const metadata: Metadata = {
@@ -58,7 +64,7 @@ export default function RootLayout({
         <meta name="color-scheme" content="light" />
       </head>
       <body
-        className={`${inter.variable} ${poppins.variable} font-sans min-h-screen flex flex-col bg-gradient-to-br from-gray-50 to-cyan-50`}
+        className={`${inter.variable} ${poppins.variable} ${fugazOne.variable} font-sans min-h-screen flex flex-col bg-gradient-to-br from-gray-50 to-cyan-50`}
       >
         <Navbar />
         <main className="flex-grow">{children}</main>

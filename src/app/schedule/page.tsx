@@ -187,29 +187,27 @@ export default function SchedulePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <div className="bg-white p-6 rounded-lg shadow-md border border-cyan-100">
               <h3 className="text-xl font-bold mb-4 font-poppins text-cyan-600 flex items-center">
-                🕺💃 For Participants
+                For Participants
               </h3>
               <ul className="space-y-2 text-gray-700">
-                <li>• 🏁 Team check-in begins at 6:00 PM</li>
-                <li>• 👟💧 Bring comfortable shoes and water</li>
-                <li>• 👗✨ Final costume checks at 6:45 PM</li>
-                <li>• 🎭 Teams must be present for opening ceremony</li>
-                <li>• 📸 Professional photographer will be present</li>
+                <li>• Team check-in begins at 6:00 PM</li>
+                <li>• Bring comfortable shoes and water</li>
+                <li>• Final costume checks at 6:45 PM</li>
+                <li>• Teams must be present for opening ceremony</li>
+                <li>• Professional photographer will be present</li>
               </ul>
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-md border border-pink-100">
               <h3 className="text-xl font-bold mb-4 font-poppins text-pink-500 flex items-center">
-                🎊👀 For Spectators
+                For Spectators
               </h3>
               <ul className="space-y-2 text-gray-700">
-                <li>• 🚪 Doors open at 6:00 PM</li>
-                <li>• 🍿🥤 Concessions available during intermission</li>
-                <li>
-                  • 📱✨ Photography encouraged (no flash during performances)
-                </li>
-                <li>• 🅿️ Parking available at community center</li>
-                <li>• ⏰ Event ends at 9:00 PM</li>
+                <li>• Doors open at 6:00 PM</li>
+                <li>• Concessions available during intermission</li>
+                <li>• Photography encouraged (no flash during performances)</li>
+                <li>• Parking available at community center</li>
+                <li>• Event ends at 9:00 PM</li>
               </ul>
             </div>
           </div>

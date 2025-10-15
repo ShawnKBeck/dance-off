@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -28,9 +29,14 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link href="/" className="flex items-center group">
-            <span className="font-poppins font-bold text-lg sm:text-xl md:text-2xl bg-gradient-to-r from-cyan-300 to-white bg-clip-text text-transparent group-hover:from-yellow-400 group-hover:to-cyan-300 transition-all duration-300">
-              You Got Served
-            </span>
+            <div className="relative w-10 h-10 sm:w-12 sm:h-12">
+              <Image
+                src="/images/ygs.png"
+                alt="You Got Served"
+                fill
+                className="object-contain transition-all duration-300 group-hover:scale-110"
+              />
+            </div>
           </Link>
 
           {/* Desktop Navigation */}

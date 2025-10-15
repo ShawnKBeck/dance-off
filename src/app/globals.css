@@ -29,6 +29,13 @@ body {
   font-family: var(--font-inter), sans-serif;
 }
 
+/* Event Date Styling - Bold and Impactful */
+.event-date {
+  font-family: var(--font-poppins), sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
 /* Custom Button Styles */
 .btn-primary {
   @apply bg-gradient-to-r from-purple-600 to-pink-500 text-white font-medium py-3 px-6 rounded-lg hover:from-purple-700 hover:to-pink-600 transition duration-300 transform hover:scale-105 shadow-md;
@@ -56,15 +63,15 @@ body {
 
 /* Retro Boombox-inspired Button Styles */
 .btn-retro-pink {
-  @apply bg-gradient-to-br from-pink-500 to-pink-600 text-white font-bold py-3 px-6 sm:py-4 sm:px-8 rounded-2xl hover:from-pink-600 hover:to-pink-700 transition-all duration-300 transform hover:scale-105 hover:-rotate-1 shadow-xl hover:shadow-2xl border-4 border-pink-400/50;
+  @apply bg-gradient-to-br from-pink-500 to-pink-600 text-white font-bold py-3 px-6 sm:py-4 sm:px-8 rounded-xl hover:from-pink-600 hover:to-pink-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl;
 }
 
 .btn-retro-cyan {
-  @apply bg-gradient-to-br from-cyan-400 to-cyan-500 text-[#1b365f] font-bold py-3 px-6 sm:py-4 sm:px-8 rounded-2xl hover:from-cyan-500 hover:to-cyan-600 transition-all duration-300 transform hover:scale-105 hover:rotate-1 shadow-xl hover:shadow-2xl border-4 border-cyan-300/50;
+  @apply bg-gradient-to-br from-cyan-400 to-cyan-500 text-[#1b365f] font-bold py-3 px-6 sm:py-4 sm:px-8 rounded-xl hover:from-cyan-500 hover:to-cyan-600 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl;
 }
 
 .btn-retro-yellow {
-  @apply bg-gradient-to-br from-yellow-400 to-yellow-500 text-[#1b365f] font-bold py-3 px-6 sm:py-4 sm:px-8 rounded-2xl hover:from-yellow-500 hover:to-yellow-600 transition-all duration-300 transform hover:scale-105 hover:-rotate-1 shadow-xl hover:shadow-2xl border-4 border-yellow-300/50;
+  @apply bg-gradient-to-br from-yellow-400 to-yellow-500 text-[#1b365f] font-bold py-3 px-6 sm:py-4 sm:px-8 rounded-xl hover:from-yellow-500 hover:to-yellow-600 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl;
 }
 
 /* Section Styles */

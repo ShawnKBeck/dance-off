@@ -74,7 +74,7 @@ export default function Home() {
               {/* Title & Info - Right Side */}
               <div className="lg:col-span-7 text-left space-y-4">
                 <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
-                  <span className="text-yellow-400 drop-shadow-lg">
+                  <span className="event-date text-yellow-400 drop-shadow-lg">
                     April 11, 2026
                   </span>
                   <br />
@@ -91,7 +91,7 @@ export default function Home() {
             {/* Mobile: Title & Info */}
             <div className="lg:hidden text-center space-y-3">
               <h1 className="text-3xl sm:text-4xl font-bold text-white leading-tight px-2">
-                <span className="text-yellow-400 drop-shadow-lg">
+                <span className="event-date text-yellow-400 drop-shadow-lg">
                   April 11, 2026
                 </span>
                 <br />
@@ -110,19 +110,19 @@ export default function Home() {
                 href="/tickets"
                 className="btn-retro-pink text-sm sm:text-base w-full max-w-xs sm:max-w-none sm:w-auto text-center"
               >
-                🎫 Buy Tickets
+                Buy Tickets
               </Link>
               <Link
                 href="/donate"
                 className="btn-retro-cyan text-sm sm:text-base w-full max-w-xs sm:max-w-none sm:w-auto text-center"
               >
-                💖 Donate Now
+                Donate Now
               </Link>
               <Link
                 href="/about"
                 className="btn-retro-yellow text-sm sm:text-base w-full max-w-xs sm:max-w-none sm:w-auto text-center"
               >
-                ⚡ Learn More
+                Learn More
               </Link>
             </div>
           </div>
@@ -337,7 +337,7 @@ export default function Home() {
         ></div>
         <div className="container mx-auto px-4 text-center relative z-10">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 font-poppins drop-shadow-lg">
-            Ready to Bring It? 🔥
+            Ready to Bring It?
           </h2>
           <p className="text-base sm:text-lg md:text-xl max-w-3xl mx-auto mb-6 md:mb-8 drop-shadow-md px-4">
             Got served by another organization? You have two options: Accept the
@@ -348,15 +348,15 @@ export default function Home() {
           <div className="flex flex-wrap justify-center gap-3 md:gap-4">
             <Link
               href="/register"
-              className="bg-gradient-to-br from-cyan-400 to-cyan-500 text-[#1b365f] font-black py-3 px-6 sm:py-4 sm:px-8 md:px-10 text-sm sm:text-base rounded-2xl hover:from-cyan-500 hover:to-cyan-600 transition-all duration-300 transform hover:scale-105 shadow-2xl border-4 border-cyan-300/50"
+              className="bg-gradient-to-br from-cyan-400 to-cyan-500 text-[#1b365f] font-black py-3 px-6 sm:py-4 sm:px-8 md:px-10 text-sm sm:text-base rounded-2xl hover:from-cyan-500 hover:to-cyan-600 transition-all duration-300 transform hover:scale-105 shadow-2xl border-2 border-cyan-300/50"
             >
-              ⚡ Register Your Team
+              Register Your Team
             </Link>
             <Link
               href="/tickets"
-              className="bg-white/10 backdrop-blur-sm border-4 border-white text-white font-black py-3 px-6 sm:py-4 sm:px-8 md:px-10 text-sm sm:text-base rounded-2xl hover:bg-white/20 transition-all duration-300 transform hover:scale-105 shadow-xl"
+              className="bg-white/10 backdrop-blur-sm border-2 border-white text-white font-black py-3 px-6 sm:py-4 sm:px-8 md:px-10 text-sm sm:text-base rounded-2xl hover:bg-white/20 transition-all duration-300 transform hover:scale-105 shadow-xl"
             >
-              🎫 Get Tickets
+              Get Tickets
             </Link>
           </div>
         </div>
