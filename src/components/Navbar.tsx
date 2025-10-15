@@ -31,7 +31,7 @@ const Navbar = () => {
           <Link href="/" className="flex items-center group">
             <div className="relative w-10 h-10 sm:w-12 sm:h-12">
               <Image
-                src="/images/ygs.png"
+                src="/boombox.png"
                 alt="You Got Served"
                 fill
                 className="object-contain transition-all duration-300 group-hover:scale-110"

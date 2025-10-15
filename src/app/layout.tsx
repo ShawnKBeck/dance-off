@@ -30,6 +30,10 @@ export const metadata: Metadata = {
     initialScale: 1,
     maximumScale: 5,
   },
+  icons: {
+    icon: '/boombox.png',
+    apple: '/boombox.png',
+  },
   openGraph: {
     title: 'April 11, 2026 | Egyptian Theatre',
     description:
