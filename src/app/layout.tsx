@@ -30,7 +30,7 @@ export const metadata: Metadata = {
       'Dance competition for community impact. All proceeds support local DeKalb County charities.',
     images: [
       {
-        url: '/images/ygs.png',
+     tufl    url: '/images/ygs.png',
         width: 1024,
         height: 1024,
         alt: 'You Got Served - Dance Competition',

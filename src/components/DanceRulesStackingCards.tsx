@@ -123,14 +123,14 @@ export default function DanceRulesStackingCards() {
       number: 1,
       title: 'You Got Served!',
       description:
-        "When an organization records a challenge video and calls out your organization, you have officially been 'served'! This video challenge spreads awareness and gives you two choices: compete or donate.",
-      color: 'linear-gradient(135deg, #1b365f 0%, #2c4a6e 100%)',
+        "When an organization calls you out via video, you've been served! Two choices: compete or donate.",
+      color: 'linear-gradient(135deg, #1b365f 0%, #06b6d4 100%)',
     },
     {
       number: 2,
       title: "It's On",
       description:
-        "Once served, you must respond! Choose your path: Register your team and show up to compete live at the event, or support the cause by making a donation. Both responses help the community and show you've got spirit.",
+        'Once served, you must respond! Register your team to compete live or donate to support the cause.',
       color: 'linear-gradient(135deg, #ec4899 0%, #db2777 100%)',
     },
     {
@@ -138,13 +138,13 @@ export default function DanceRulesStackingCards() {
       title: 'Dance Instructor',
       description:
         'Each team receives coaching from a professional Dimensions instructor who will help choreograph and perfect their routine.',
-      color: 'linear-gradient(135deg, #06b6d4 0%, #0891b2 100%)',
+      color: 'linear-gradient(135deg, #2c4a6e 0%, #1b365f 100%)',
     },
     {
       number: 4,
       title: 'Bring It',
       description:
-        'When served (challenged via video), organizations have two options: Accept the challenge and register to compete live at the event, or make a donation to support the cause. Only teams who register and show up can compete for the win!',
+        'Accept the challenge and compete live at the event, or donate to support the cause. Only registered teams can win!',
       color: 'linear-gradient(135deg, #eab308 0%, #f59e0b 100%)',
     },
     {
@@ -152,7 +152,7 @@ export default function DanceRulesStackingCards() {
       title: 'Judges Decide',
       description:
         'Impartial judges declare the winner based on style, originality, and attitude. Their decision is final and binding.',
-      color: 'linear-gradient(135deg, #1b365f 0%, #06b6d4 100%)',
+      color: 'linear-gradient(135deg, #06b6d4 0%, #0891b2 100%)',
     },
   ]
 
