@@ -16,10 +16,10 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: 'You Got Served | Dance Competition',
+  title: 'You Got Served',
   description: 'Dance battles for community impact - April 11, 2026',
   openGraph: {
-    title: 'You Got Served | Dance Competition',
+    title: 'You Got Served',
     description: 'Dance battles for community impact - April 11, 2026',
     images: [
       {
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'You Got Served | Dance Competition',
+    title: 'You Got Served',
     description: 'Dance battles for community impact - April 11, 2026',
     images: ['/images/ygs.png'],
   },
