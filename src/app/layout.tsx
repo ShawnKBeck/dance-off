@@ -16,11 +16,13 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: 'You Got Served',
-  description: 'Dance battles for community impact - April 11, 2026',
+  title: 'April 11, 2026 | Egyptian Theatre, DeKalb, IL',
+  description:
+    'Dance competition for community impact. All proceeds support local DeKalb County charities.',
   openGraph: {
-    title: 'You Got Served',
-    description: 'Dance battles for community impact - April 11, 2026',
+    title: 'April 11, 2026 | Egyptian Theatre, DeKalb, IL',
+    description:
+      'Dance competition for community impact. All proceeds support local DeKalb County charities.',
     images: [
       {
         url: '/images/ygs.png',
@@ -33,8 +35,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'You Got Served',
-    description: 'Dance battles for community impact - April 11, 2026',
+    title: 'April 11, 2026 | Egyptian Theatre, DeKalb, IL',
+    description:
+      'Dance competition for community impact. All proceeds support local DeKalb County charities.',
     images: ['/images/ygs.png'],
   },
 }
