@@ -124,41 +124,44 @@ export default function DanceRulesStackingCards() {
       title: 'You Got Served!',
       description:
         "When an organization records a challenge video and calls out your organization, you have officially been 'served'! This video challenge spreads awareness and gives you two choices: compete or donate.",
-      color: 'linear-gradient(135deg, #7c3aed 0%, #a855f7 100%)',
+      color: 'linear-gradient(135deg, #1b365f 0%, #2c4a6e 100%)',
     },
     {
       number: 2,
       title: "It's On",
       description:
         "Once served, you must respond! Choose your path: Register your team and show up to compete live at the event, or support the cause by making a donation. Both responses help the community and show you've got spirit.",
-      color: 'linear-gradient(135deg, #ec4899 0%, #f97316 100%)',
+      color: 'linear-gradient(135deg, #ec4899 0%, #db2777 100%)',
     },
     {
       number: 3,
       title: 'Dance Instructor',
       description:
         'Each team receives coaching from a professional Dimensions instructor who will help choreograph and perfect their routine.',
-      color: 'linear-gradient(135deg, #8b5cf6 0%, #06b6d4 100%)',
+      color: 'linear-gradient(135deg, #06b6d4 0%, #0891b2 100%)',
     },
     {
       number: 4,
       title: 'Bring It',
       description:
         'When served (challenged via video), organizations have two options: Accept the challenge and register to compete live at the event, or make a donation to support the cause. Only teams who register and show up can compete for the win!',
-      color: 'linear-gradient(135deg, #d946ef 0%, #7c3aed 100%)',
+      color: 'linear-gradient(135deg, #eab308 0%, #f59e0b 100%)',
     },
     {
       number: 5,
       title: 'Judges Decide',
       description:
         'Impartial judges declare the winner based on style, originality, and attitude. Their decision is final and binding.',
-      color: 'linear-gradient(135deg, #f59e0b 0%, #ec4899 100%)',
+      color: 'linear-gradient(135deg, #1b365f 0%, #06b6d4 100%)',
     },
   ]
 
   return (
     <ReactLenis root>
-      <main ref={container} className="relative bg-purple-950">
+      <main
+        ref={container}
+        className="relative bg-gradient-to-b from-[#1b365f] to-[#0f1f3d]"
+      >
         {/* Header Section */}
         <section className="pt-12 md:pt-16 pb-8 md:pb-12 flex items-center justify-center relative z-10">
           <div className="text-center text-white px-4">

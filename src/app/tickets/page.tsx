@@ -1,6 +1,5 @@
 'use client'
 
-import Image from 'next/image'
 import Link from 'next/link'
 
 export default function TicketsPage() {
@@ -45,28 +44,13 @@ export default function TicketsPage() {
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="relative h-[40vh] flex items-center justify-center overflow-hidden bg-purple-100">
-        <div className="absolute inset-0 z-0">
-          <div className="relative w-full h-full">
-            <Image
-              src="/images/hero-dance.jpg"
-              alt="Get Your Tickets"
-              fill
-              priority
-              className="object-cover"
-              onError={(e) => {
-                e.currentTarget.style.display = 'none'
-              }}
-            />
-            <div className="absolute inset-0 bg-gradient-to-br from-purple-500/70 via-purple-600/60 to-indigo-700/50"></div>
-          </div>
-        </div>
-        <div className="container mx-auto px-4 z-10 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-white font-poppins mb-4 drop-shadow-lg">
+      {/* Simple Header */}
+      <section className="bg-gradient-to-r from-[#1b365f] to-cyan-600 py-12 md:py-16">
+        <div className="container mx-auto px-4 text-center">
+          <h1 className="text-4xl md:text-5xl font-bold text-white font-poppins mb-4">
             Get Your Tickets
           </h1>
-          <p className="text-xl text-white max-w-3xl mx-auto drop-shadow-md">
+          <p className="text-xl text-cyan-100 max-w-3xl mx-auto">
             Secure your spot for the most exciting dance event of the year!
           </p>
         </div>
@@ -76,12 +60,12 @@ export default function TicketsPage() {
       <section className="section-padding bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-12">
-            <h2 className="text-3xl font-bold mb-6 font-poppins text-purple-700">
+            <h2 className="text-3xl font-bold mb-6 font-poppins text-[#1b365f]">
               Event Details
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="p-4 bg-purple-50 rounded-lg">
-                <div className="text-purple-600 mb-2">
+              <div className="p-4 bg-cyan-50 rounded-lg">
+                <div className="text-cyan-600 mb-2">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-8 w-8 mx-auto"
@@ -130,8 +114,8 @@ export default function TicketsPage() {
                 <p>145 N 2nd St, DeKalb, IL 60115</p>
               </div>
 
-              <div className="p-4 bg-purple-50 rounded-lg">
-                <div className="text-purple-600 mb-2">
+              <div className="p-4 bg-cyan-50 rounded-lg">
+                <div className="text-cyan-600 mb-2">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-8 w-8 mx-auto"
@@ -157,11 +141,9 @@ export default function TicketsPage() {
       </section>
 
       {/* Ticket Options */}
-      <section className="section-padding bg-purple-50">
+      <section className="section-padding bg-cyan-50">
         <div className="container mx-auto px-4">
-          <h2 className="section-title bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-500">
-            Choose Your Experience
-          </h2>
+          <h2 className="section-title">Choose Your Experience</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 max-w-6xl mx-auto">
             {ticketTypes.map((ticket, index) => (
@@ -172,13 +154,13 @@ export default function TicketsPage() {
                 }`}
               >
                 {ticket.popular && (
-                  <div className="bg-gradient-to-r from-purple-600 to-pink-500 text-white text-center py-2 font-bold">
+                  <div className="bg-gradient-to-r from-pink-500 to-pink-500 text-white text-center py-2 font-bold">
                     MOST POPULAR
                   </div>
                 )}
 
                 <div className="p-8">
-                  <h3 className="text-2xl font-bold mb-2 font-poppins text-purple-700">
+                  <h3 className="text-2xl font-bold mb-2 font-poppins text-[#1b365f]">
                     {ticket.name}
                   </h3>
                   <div className="text-4xl font-bold text-pink-500 mb-4">
@@ -214,8 +196,8 @@ export default function TicketsPage() {
                   <button
                     className={`w-full font-bold py-3 px-6 rounded-lg transition duration-300 transform hover:scale-105 shadow-md ${
                       ticket.popular
-                        ? 'bg-gradient-to-r from-purple-600 to-pink-500 text-white hover:from-purple-700 hover:to-pink-600'
-                        : 'bg-purple-600 text-white hover:bg-purple-700'
+                        ? 'bg-gradient-to-r from-pink-500 to-pink-500 text-white hover:from-pink-600 hover:to-pink-600'
+                        : 'bg-cyan-600 text-white hover:bg-cyan-700'
                     }`}
                   >
                     Select Tickets
@@ -231,13 +213,13 @@ export default function TicketsPage() {
       <section className="section-padding bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-8 font-poppins text-center text-purple-700">
+            <h2 className="text-3xl font-bold mb-8 font-poppins text-center text-[#1b365f]">
               Group Sales & Special Offers
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="bg-purple-50 p-6 rounded-lg shadow-md">
-                <h3 className="text-xl font-bold mb-4 font-poppins text-purple-600">
+              <div className="bg-cyan-50 p-6 rounded-lg shadow-md">
+                <h3 className="text-xl font-bold mb-4 font-poppins text-cyan-600">
                   Group Discounts
                 </h3>
                 <p className="text-gray-700 mb-4">
@@ -251,7 +233,7 @@ export default function TicketsPage() {
                 </ul>
                 <Link
                   href="/contact"
-                  className="text-purple-600 font-medium hover:text-purple-800 transition duration-300"
+                  className="text-cyan-600 font-medium hover:text-cyan-700 transition duration-300"
                 >
                   Contact us for group rates →
                 </Link>
@@ -279,7 +261,7 @@ export default function TicketsPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-purple-600 to-pink-500 text-white">
+      <section className="py-16 bg-gradient-to-r from-pink-500 to-pink-500 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 font-poppins">
             Don&apos;t Miss Out!
@@ -289,7 +271,7 @@ export default function TicketsPage() {
             charitable dance event.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <button className="bg-white text-purple-600 font-bold py-3 px-8 rounded-lg hover:bg-gray-100 transition duration-300 transform hover:scale-105 shadow-md">
+            <button className="bg-white text-cyan-600 font-bold py-3 px-8 rounded-lg hover:bg-gray-100 transition duration-300 transform hover:scale-105 shadow-md">
               Buy Tickets Now
             </button>
             <Link

@@ -4,25 +4,13 @@ import Link from 'next/link'
 export default function AboutPage() {
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="relative h-[40vh] flex items-center justify-center overflow-hidden bg-purple-100">
-        <div className="absolute inset-0 z-0">
-          <div className="relative w-full h-full">
-            <Image
-              src="/images/about-hero.jpg"
-              alt="About the Event"
-              fill
-              priority
-              className="object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-br from-purple-500/70 via-purple-600/60 to-indigo-700/50"></div>
-          </div>
-        </div>
-        <div className="container mx-auto px-4 z-10 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-white font-poppins mb-4 drop-shadow-lg text-shadow-lg">
+      {/* Simple Header */}
+      <section className="bg-gradient-to-r from-[#1b365f] to-cyan-600 py-12 md:py-16">
+        <div className="container mx-auto px-4 text-center">
+          <h1 className="text-4xl md:text-5xl font-bold text-white font-poppins mb-4">
             About the Event
           </h1>
-          <p className="text-xl text-white max-w-3xl mx-auto drop-shadow-md text-shadow">
+          <p className="text-xl text-cyan-100 max-w-3xl mx-auto">
             A charitable dance competition with a mission to make a difference
           </p>
         </div>
@@ -33,7 +21,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold mb-6 font-poppins text-purple-600">
+              <h2 className="text-3xl font-bold mb-6 font-poppins text-[#1b365f]">
                 Our Mission
               </h2>
               <p className="text-lg mb-4">
@@ -53,7 +41,7 @@ export default function AboutPage() {
                 making a difference in our community.
               </p>
               <div className="mt-6">
-                <Link href="/donate" className="btn-primary inline-block">
+                <Link href="/donate" className="btn-retro-cyan inline-block">
                   Support Our Cause
                 </Link>
               </div>
@@ -72,7 +60,7 @@ export default function AboutPage() {
       </section>
 
       {/* Competition Format */}
-      <section className="section-padding bg-purple-50">
+      <section className="section-padding bg-gradient-to-br from-gray-50 to-cyan-50">
         <div className="container mx-auto px-4">
           <h2 className="section-title">Competition Format</h2>
           <p className="section-subtitle">
@@ -80,8 +68,8 @@ export default function AboutPage() {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-12">
-            <div className="bg-white p-8 rounded-lg shadow-md">
-              <h3 className="text-2xl font-bold mb-4 font-poppins text-purple-600">
+            <div className="bg-white p-8 rounded-lg shadow-md border-t-4 border-cyan-400">
+              <h3 className="text-2xl font-bold mb-4 font-poppins text-[#1b365f]">
                 The Dance-Off
               </h3>
               <p className="mb-4">
@@ -98,7 +86,7 @@ export default function AboutPage() {
               <div className="mt-6">
                 <Link
                   href="/rules"
-                  className="text-purple-600 font-medium hover:text-purple-800 transition duration-300 flex items-center"
+                  className="text-cyan-600 font-medium hover:text-cyan-700 transition duration-300 flex items-center"
                 >
                   <span>View Official Rules</span>
                   <svg
@@ -117,8 +105,8 @@ export default function AboutPage() {
               </div>
             </div>
 
-            <div className="bg-white p-8 rounded-lg shadow-md">
-              <h3 className="text-2xl font-bold mb-4 font-poppins text-pink-500">
+            <div className="bg-white p-8 rounded-lg shadow-md border-t-4 border-pink-500">
+              <h3 className="text-2xl font-bold mb-4 font-poppins text-[#1b365f]">
                 Entertainment & Community
               </h3>
               <p className="mb-4">
@@ -136,7 +124,7 @@ export default function AboutPage() {
               <div className="mt-6">
                 <Link
                   href="/schedule"
-                  className="text-pink-500 font-medium hover:text-pink-700 transition duration-300 flex items-center"
+                  className="text-pink-600 font-medium hover:text-pink-700 transition duration-300 flex items-center"
                 >
                   <span>View Event Schedule</span>
                   <svg
@@ -167,7 +155,7 @@ export default function AboutPage() {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-12">
-            <div className="bg-purple-50 p-8 rounded-lg shadow-md">
+            <div className="bg-gradient-to-br from-cyan-50 to-white p-8 rounded-lg shadow-md border-t-4 border-yellow-400">
               <div className="mb-6 rounded-lg overflow-hidden">
                 <Image
                   src="/images/dance-dimensions.jpg"
@@ -177,7 +165,7 @@ export default function AboutPage() {
                   className="w-full h-auto object-cover"
                 />
               </div>
-              <h3 className="text-2xl font-bold mb-4 font-poppins text-purple-600">
+              <h3 className="text-2xl font-bold mb-4 font-poppins text-[#1b365f]">
                 Dimensions
               </h3>
               <p className="mb-4">
@@ -198,7 +186,7 @@ export default function AboutPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-purple-600 to-pink-500 text-white">
+      <section className="py-16 bg-gradient-to-r from-pink-500 via-pink-600 to-pink-500 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 font-poppins">
             Be Part of Something Special
@@ -208,16 +196,10 @@ export default function AboutPage() {
             an unforgettable night that celebrates dance and community.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Link
-              href="/tickets"
-              className="bg-white text-purple-600 font-bold py-3 px-8 rounded-lg hover:bg-gray-100 transition duration-300 transform hover:scale-105 shadow-md"
-            >
+            <Link href="/tickets" className="btn-retro-pink">
               Get Your Tickets
             </Link>
-            <Link
-              href="/contact"
-              className="bg-transparent border-2 border-white text-white font-bold py-3 px-8 rounded-lg hover:bg-white/10 transition duration-300 transform hover:scale-105"
-            >
+            <Link href="/contact" className="btn-retro-yellow">
               Contact Us
             </Link>
           </div>

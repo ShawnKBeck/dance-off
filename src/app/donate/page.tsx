@@ -76,15 +76,28 @@ export default function DonatePage() {
       />
 
       <div className="min-h-screen">
+        {/* Simple Header */}
+        <section className="bg-gradient-to-r from-[#1b365f] to-cyan-600 py-12 md:py-16">
+          <div className="container mx-auto px-4 text-center">
+            <h1 className="text-4xl md:text-5xl font-bold text-white font-poppins mb-4">
+              Support Our Cause
+            </h1>
+            <p className="text-xl text-cyan-100 max-w-3xl mx-auto">
+              Make a tax-deductible donation to support local DeKalb County
+              charities
+            </p>
+          </div>
+        </section>
+
         {/* Donation Form */}
         <section className="section-padding bg-white">
           <div className="container mx-auto px-4">
             <div className="max-w-2xl mx-auto">
-              <h2 className="text-3xl font-bold mb-8 font-poppins text-center text-purple-700">
+              <h2 className="text-3xl font-bold mb-8 font-poppins text-center text-[#1b365f]">
                 Make a Donation
               </h2>
 
-              <div className="bg-purple-50 p-8 rounded-xl shadow-md">
+              <div className="bg-gradient-to-br from-cyan-50 to-white p-8 rounded-xl shadow-md border-t-4 border-cyan-400">
                 {/* PayPal Container */}
                 <div id="paypal-container-HXAJUF5JSEGDL"></div>
 
@@ -98,7 +111,7 @@ export default function DonatePage() {
         </section>
 
         {/* Thank You */}
-        <section className="py-16 bg-gradient-to-r from-purple-600 to-pink-500 text-white">
+        <section className="py-16 bg-gradient-to-r from-pink-500 via-pink-600 to-pink-500 text-white">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 font-poppins">
               Thank You for Your Support!
@@ -108,16 +121,10 @@ export default function DonatePage() {
               through the power of dance and giving.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Link
-                href="/about"
-                className="bg-white text-purple-600 font-bold py-3 px-8 rounded-lg hover:bg-gray-100 transition duration-300 transform hover:scale-105 shadow-md"
-              >
+              <Link href="/about" className="btn-retro-cyan">
                 Learn More About Our Mission
               </Link>
-              <Link
-                href="/tickets"
-                className="bg-transparent border-2 border-white text-white font-bold py-3 px-8 rounded-lg hover:bg-white/10 transition duration-300 transform hover:scale-105"
-              >
+              <Link href="/tickets" className="btn-retro-pink">
                 Get Event Tickets
               </Link>
             </div>

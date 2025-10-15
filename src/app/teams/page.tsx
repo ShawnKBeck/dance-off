@@ -39,21 +39,19 @@ export default function TeamsPage() {
       {/* Team Registration Form */}
       <section className="section-padding bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="section-title bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-500">
-            Register Your Team
-          </h2>
+          <h2 className="section-title">Register Your Team</h2>
           <p className="section-subtitle">
             Ready to get served? Sign up your team and represent your favorite
             non-profit!
           </p>
 
           <div className="max-w-4xl mx-auto mt-12">
-            <div className="bg-white rounded-xl shadow-lg border border-purple-100 overflow-hidden">
-              <div className="bg-gradient-to-r from-purple-600 to-pink-500 p-6 text-white text-center">
+            <div className="bg-white rounded-xl shadow-lg border border-cyan-100 overflow-hidden">
+              <div className="bg-gradient-to-r from-[#1b365f] to-cyan-600 p-6 text-white text-center">
                 <h3 className="text-2xl font-bold font-poppins mb-2">
                   Team Application
                 </h3>
-                <p className="text-purple-100">
+                <p className="text-cyan-100">
                   Fill out the form below and we&apos;ll reach out with more
                   details!
                 </p>
@@ -65,7 +63,7 @@ export default function TeamsPage() {
                   <label className="block text-sm font-bold text-gray-700 mb-2">
                     How Many Dancers? *
                   </label>
-                  <select className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition duration-200">
+                  <select className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition duration-200">
                     <option value="">Select number of dancers</option>
                     {Array.from({ length: 16 }, (_, i) => i + 5).map((num) => (
                       <option key={num} value={num}>
@@ -82,7 +80,7 @@ export default function TeamsPage() {
                   </label>
                   <input
                     type="text"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition duration-200"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition duration-200"
                     placeholder="Enter the non-profit organization name"
                   />
                 </div>
@@ -94,7 +92,7 @@ export default function TeamsPage() {
                   </label>
                   <input
                     type="text"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition duration-200"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition duration-200"
                     placeholder="e.g., Hip Hop, Pop, R&B, Latin, etc."
                   />
                 </div>
@@ -108,7 +106,7 @@ export default function TeamsPage() {
                     </label>
                     <input
                       type="text"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition duration-200"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition duration-200"
                       placeholder="Your full name"
                     />
                   </div>
@@ -120,7 +118,7 @@ export default function TeamsPage() {
                     </label>
                     <input
                       type="tel"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition duration-200"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition duration-200"
                       placeholder="(555) 123-4567"
                     />
                   </div>
@@ -135,7 +133,7 @@ export default function TeamsPage() {
                     </label>
                     <input
                       type="email"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition duration-200"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition duration-200"
                       placeholder="your.email@example.com"
                     />
                   </div>
@@ -147,18 +145,18 @@ export default function TeamsPage() {
                     </label>
                     <input
                       type="text"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition duration-200"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition duration-200"
                       placeholder="City, State"
                     />
                   </div>
                 </div>
 
                 {/* Important Notice */}
-                <div className="bg-purple-50 border border-purple-200 rounded-lg p-4">
+                <div className="bg-cyan-50 border border-cyan-200 rounded-lg p-4">
                   <div className="flex items-start">
                     <div className="flex-shrink-0">
                       <svg
-                        className="h-5 w-5 text-purple-600 mt-0.5"
+                        className="h-5 w-5 text-cyan-600 mt-0.5"
                         fill="currentColor"
                         viewBox="0 0 20 20"
                       >
@@ -170,10 +168,10 @@ export default function TeamsPage() {
                       </svg>
                     </div>
                     <div className="ml-3">
-                      <h4 className="text-sm font-bold text-purple-800">
+                      <h4 className="text-sm font-bold text-[#1b365f]">
                         What happens next?
                       </h4>
-                      <p className="text-sm text-purple-700 mt-1">
+                      <p className="text-sm text-gray-700 mt-1">
                         After you submit this form, someone from our team will
                         reach out to you soon with more details about the
                         competition, practice schedules, and next steps.
@@ -184,10 +182,7 @@ export default function TeamsPage() {
 
                 {/* Submit Button */}
                 <div className="text-center">
-                  <button
-                    type="submit"
-                    className="bg-gradient-to-r from-purple-600 to-pink-500 text-white font-bold py-4 px-12 rounded-lg hover:from-purple-700 hover:to-pink-600 transition duration-300 transform hover:scale-105 shadow-lg"
-                  >
+                  <button type="submit" className="btn-retro-cyan">
                     Submit Team Application
                   </button>
                 </div>
@@ -203,11 +198,9 @@ export default function TeamsPage() {
       </section>
 
       {/* Instructors Section */}
-      <section className="section-padding bg-purple-50">
+      <section className="section-padding bg-gradient-to-br from-gray-50 to-cyan-50">
         <div className="container mx-auto px-4">
-          <h2 className="section-title bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-500">
-            Meet Our Instructors
-          </h2>
+          <h2 className="section-title">Meet Our Instructors</h2>
           <p className="section-subtitle">
             Professional dancers from Dimensions who will coach our competing
             teams
@@ -231,7 +224,7 @@ export default function TeamsPage() {
                   <h3 className="text-xl font-bold mb-1 font-poppins">
                     {instructor.name}
                   </h3>
-                  <p className="text-purple-600 font-medium mb-3">
+                  <p className="text-cyan-600 font-medium mb-3">
                     {instructor.specialty}
                   </p>
                   <p className="text-gray-600">{instructor.bio}</p>
@@ -253,7 +246,7 @@ export default function TeamsPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-12">
             {[
               { name: 'Hip Hop', color: 'bg-blue-500' },
-              { name: 'Contemporary', color: 'bg-purple-500' },
+              { name: 'Contemporary', color: 'bg-cyan-500' },
               { name: 'Breaking', color: 'bg-red-500' },
               { name: 'Jazz', color: 'bg-yellow-500' },
               { name: 'Ballet', color: 'bg-pink-500' },
@@ -273,7 +266,7 @@ export default function TeamsPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-purple-600 to-pink-500 text-white">
+      <section className="py-16 bg-gradient-to-r from-pink-500 via-pink-600 to-pink-500 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 font-poppins">
             Want to Participate?
@@ -283,10 +276,7 @@ export default function TeamsPage() {
             touch with us!
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Link
-              href="/contact"
-              className="bg-white text-purple-600 font-bold py-3 px-8 rounded-lg hover:bg-gray-100 transition duration-300 transform hover:scale-105 shadow-md"
-            >
+            <Link href="/contact" className="btn-retro-pink">
               Contact Us
             </Link>
             <Link

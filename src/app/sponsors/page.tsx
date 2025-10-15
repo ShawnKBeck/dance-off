@@ -7,7 +7,7 @@ export default function SponsorsPage() {
     {
       name: 'Friend of the Event',
       price: '$100',
-      color: 'from-blue-400 to-cyan-500',
+      color: 'from-cyan-400 to-cyan-600',
       benefits: [
         'Business name in event program',
         'Website thank you listing',
@@ -19,7 +19,7 @@ export default function SponsorsPage() {
     {
       name: 'Community Supporter',
       price: '$200',
-      color: 'from-green-400 to-emerald-500',
+      color: 'from-pink-500 to-pink-600',
       benefits: [
         'Business name in event program',
         'Business name on event t-shirts (small text)',
@@ -32,7 +32,7 @@ export default function SponsorsPage() {
     {
       name: 'Supporting Sponsor',
       price: '$500',
-      color: 'from-gray-400 to-gray-600',
+      color: 'from-yellow-400 to-yellow-500',
       benefits: [
         'Logo in event program and website',
         'Logo placement on event t-shirts (back)',
@@ -46,7 +46,7 @@ export default function SponsorsPage() {
     {
       name: 'Presenting Partner',
       price: '$1,000',
-      color: 'from-yellow-400 to-orange-500',
+      color: 'from-[#1b365f] to-cyan-600',
       benefits: [
         'Logo on all marketing materials',
         'Logo placement on event t-shirts (sleeve)',
@@ -62,7 +62,7 @@ export default function SponsorsPage() {
     {
       name: 'Title Sponsor',
       price: '$5,000+',
-      color: 'from-purple-600 to-indigo-800',
+      color: 'from-[#1b365f] to-[#0f1f3d]',
       benefits: [
         'Event named after your business (e.g., "Company Name presents You Got Served")',
         'Logo prominently displayed on all marketing materials',
@@ -82,9 +82,9 @@ export default function SponsorsPage() {
   return (
     <div className="min-h-screen">
       {/* Sponsorship Opportunities */}
-      <section className="section-padding bg-purple-50">
+      <section className="section-padding bg-gradient-to-br from-gray-50 to-cyan-50">
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl md:text-5xl font-bold mb-8 font-poppins text-center text-purple-700">
+          <h1 className="text-4xl md:text-5xl font-bold mb-8 font-poppins text-center text-[#1b365f]">
             Become a Sponsor
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto text-center mb-12">
@@ -100,7 +100,11 @@ export default function SponsorsPage() {
                 className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300 transform hover:-translate-y-2"
               >
                 <div
-                  className={`bg-gradient-to-r ${tier.color} text-white p-6 text-center`}
+                  className={`bg-gradient-to-r ${tier.color} ${
+                    tier.name === 'Supporting Sponsor'
+                      ? 'text-[#1b365f]'
+                      : 'text-white'
+                  } p-6 text-center`}
                 >
                   <h3 className="text-xl font-bold mb-2 font-poppins">
                     {tier.name}
@@ -140,23 +144,21 @@ export default function SponsorsPage() {
       {/* Sponsor Opportunity Showcase */}
       <section className="section-padding bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="section-title bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-500">
-            Your Logo Could Be Here
-          </h2>
+          <h2 className="section-title">Your Logo Could Be Here</h2>
           <p className="section-subtitle">
             See how your brand will be showcased at different sponsorship levels
           </p>
 
           <div className="space-y-8 mt-12 max-w-6xl mx-auto">
             {/* Title Sponsor - Full Width Banner */}
-            <div className="bg-white border-2 border-dashed border-purple-300 p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300">
-              <div className="flex items-center justify-center bg-gradient-to-r from-purple-600 to-indigo-800 rounded-lg mb-6 text-white font-bold relative overflow-hidden h-40">
+            <div className="bg-white border-2 border-dashed border-cyan-300 p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+              <div className="flex items-center justify-center bg-gradient-to-r from-[#1b365f] to-cyan-600 rounded-lg mb-6 text-white font-bold relative overflow-hidden h-40">
                 <div className="text-center">
                   <div className="text-4xl mb-2">YOUR LOGO HERE</div>
                 </div>
               </div>
               <div className="text-center">
-                <div className="text-purple-700 font-bold text-2xl mb-3">
+                <div className="text-[#1b365f] font-bold text-2xl mb-3">
                   Title Sponsor
                 </div>
                 <p className="text-gray-600 text-lg">
@@ -167,14 +169,14 @@ export default function SponsorsPage() {
 
             {/* Presenting Partner - Large Card */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="bg-white border-2 border-dashed border-purple-300 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+              <div className="bg-white border-2 border-dashed border-cyan-300 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
                 <div className="flex items-center justify-center bg-gradient-to-r from-yellow-400 to-orange-500 rounded-lg mb-4 text-white font-bold relative overflow-hidden h-24">
                   <div className="text-center">
                     <div className="text-2xl">YOUR LOGO HERE</div>
                   </div>
                 </div>
                 <div className="text-center">
-                  <div className="text-purple-700 font-bold text-xl mb-2">
+                  <div className="text-[#1b365f] font-bold text-xl mb-2">
                     Presenting Partner
                   </div>
                   <p className="text-gray-600">
@@ -182,14 +184,14 @@ export default function SponsorsPage() {
                   </p>
                 </div>
               </div>
-              <div className="bg-white border-2 border-dashed border-purple-300 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+              <div className="bg-white border-2 border-dashed border-cyan-300 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
                 <div className="flex items-center justify-center bg-gradient-to-r from-gray-400 to-gray-600 rounded-lg mb-4 text-white font-bold relative overflow-hidden h-20">
                   <div className="text-center">
                     <div className="text-lg">YOUR LOGO HERE</div>
                   </div>
                 </div>
                 <div className="text-center">
-                  <div className="text-purple-700 font-bold text-lg mb-2">
+                  <div className="text-[#1b365f] font-bold text-lg mb-2">
                     Supporting Sponsor
                   </div>
                   <p className="text-gray-600">
@@ -201,14 +203,14 @@ export default function SponsorsPage() {
 
             {/* Community Supporter & Friend - Smaller Cards */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              <div className="bg-white border-2 border-dashed border-purple-300 p-4 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+              <div className="bg-white border-2 border-dashed border-cyan-300 p-4 rounded-lg shadow-md hover:shadow-lg transition duration-300">
                 <div className="flex items-center justify-center bg-gradient-to-r from-green-400 to-emerald-500 rounded-lg mb-3 text-white font-bold relative overflow-hidden h-12">
                   <div className="text-center">
                     <div className="text-sm">YOUR BUSINESS NAME</div>
                   </div>
                 </div>
                 <div className="text-center">
-                  <div className="text-purple-700 font-bold text-base mb-1">
+                  <div className="text-[#1b365f] font-bold text-base mb-1">
                     Community Supporter
                   </div>
                   <p className="text-gray-600 text-sm">
@@ -216,14 +218,14 @@ export default function SponsorsPage() {
                   </p>
                 </div>
               </div>
-              <div className="bg-white border-2 border-dashed border-purple-300 p-4 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+              <div className="bg-white border-2 border-dashed border-cyan-300 p-4 rounded-lg shadow-md hover:shadow-lg transition duration-300">
                 <div className="flex items-center justify-center bg-gradient-to-r from-blue-400 to-cyan-500 rounded-lg mb-3 text-white font-bold relative overflow-hidden h-10">
                   <div className="text-center">
                     <div className="text-xs">YOUR BUSINESS NAME</div>
                   </div>
                 </div>
                 <div className="text-center">
-                  <div className="text-purple-700 font-bold text-base mb-1">
+                  <div className="text-[#1b365f] font-bold text-base mb-1">
                     Friend of the Event
                   </div>
                   <p className="text-gray-600 text-sm">
@@ -236,8 +238,8 @@ export default function SponsorsPage() {
 
           {/* Call to Action */}
           <div className="text-center mt-12">
-            <div className="bg-purple-50 rounded-xl p-8 max-w-2xl mx-auto">
-              <h3 className="text-2xl font-bold text-purple-700 mb-4">
+            <div className="bg-gradient-to-br from-gray-50 to-cyan-50 rounded-xl p-8 max-w-2xl mx-auto">
+              <h3 className="text-2xl font-bold text-[#1b365f] mb-4">
                 Ready to Get Started?
               </h3>
               <p className="text-gray-600 mb-6">
@@ -245,13 +247,10 @@ export default function SponsorsPage() {
                 featured at &quot;You Got Served&quot; 2026!
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link
-                  href="/contact"
-                  className="bg-purple-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-purple-700 transition duration-300"
-                >
+                <Link href="/contact" className="btn-retro-cyan">
                   Become a Sponsor
                 </Link>
-                <button className="border-2 border-purple-600 text-purple-600 font-bold py-3 px-8 rounded-lg hover:bg-purple-50 transition duration-300">
+                <button className="border-2 border-cyan-600 text-cyan-600 font-bold py-3 px-8 rounded-lg hover:bg-cyan-50 transition duration-300">
                   Download Info Packet
                 </button>
               </div>
@@ -261,9 +260,9 @@ export default function SponsorsPage() {
       </section>
 
       {/* T-Shirt Logo Placement */}
-      <section className="section-padding bg-purple-50">
+      <section className="section-padding bg-gradient-to-br from-gray-50 to-cyan-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-8 font-poppins text-center text-purple-700">
+          <h2 className="text-3xl font-bold mb-8 font-poppins text-center text-[#1b365f]">
             Event T-Shirt Logo Placement
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto text-center mb-12">
@@ -272,38 +271,38 @@ export default function SponsorsPage() {
           </p>
 
           <div className="max-w-4xl mx-auto">
-            <div className="bg-purple-50 rounded-2xl p-8 shadow-lg">
+            <div className="bg-gradient-to-br from-gray-50 to-cyan-50 rounded-2xl p-8 shadow-lg">
               <div className="flex flex-col lg:flex-row items-center justify-center gap-12">
                 {/* T-Shirt Mockup */}
                 <div className="relative">
-                  <div className="w-64 h-80 bg-gradient-to-b from-purple-600 to-purple-800 rounded-lg shadow-xl relative overflow-hidden">
+                  <div className="w-64 h-80 bg-gradient-to-b from-[#1b365f] to-[#0f1f3d] rounded-lg shadow-xl relative overflow-hidden">
                     {/* Shirt shape */}
-                    <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-20 h-6 bg-purple-700 rounded-b-xl"></div>
+                    <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-20 h-6 bg-cyan-600 rounded-b-xl"></div>
 
                     {/* Title Sponsor - Front Chest */}
                     <div className="absolute top-16 left-1/2 transform -translate-x-1/2 w-24 h-12 bg-white/90 rounded flex items-center justify-center">
-                      <span className="text-xs font-bold text-purple-800">
+                      <span className="text-xs font-bold text-[#1b365f]">
                         TITLE
                       </span>
                     </div>
 
                     {/* Presenting Partner - Sleeve */}
                     <div className="absolute top-20 right-2 w-12 h-6 bg-white/80 rounded flex items-center justify-center">
-                      <span className="text-xs font-bold text-purple-800">
+                      <span className="text-xs font-bold text-[#1b365f]">
                         1K
                       </span>
                     </div>
 
                     {/* Supporting Sponsor - Back (shown as small indicator) */}
                     <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2 w-16 h-4 bg-white/70 rounded flex items-center justify-center">
-                      <span className="text-xs font-bold text-purple-800">
+                      <span className="text-xs font-bold text-[#1b365f]">
                         500
                       </span>
                     </div>
 
                     {/* Community Supporter - Small text */}
                     <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 w-20 h-3 bg-white/60 rounded flex items-center justify-center">
-                      <span className="text-xs font-bold text-purple-800">
+                      <span className="text-xs font-bold text-[#1b365f]">
                         200
                       </span>
                     </div>
@@ -313,11 +312,11 @@ export default function SponsorsPage() {
                 {/* Logo Placement Legend */}
                 <div className="space-y-6">
                   <div className="flex items-center gap-4">
-                    <div className="w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold">
+                    <div className="w-8 h-8 bg-cyan-600 rounded-full flex items-center justify-center text-white font-bold">
                       1
                     </div>
                     <div>
-                      <h4 className="font-bold text-purple-700">
+                      <h4 className="font-bold text-[#1b365f]">
                         Title Sponsor ($5,000)
                       </h4>
                       <p className="text-gray-600 text-sm">
@@ -375,15 +374,15 @@ export default function SponsorsPage() {
       </section>
 
       {/* Why Sponsor */}
-      <section className="section-padding bg-purple-50">
+      <section className="section-padding bg-gradient-to-br from-gray-50 to-cyan-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-12 font-poppins text-center text-purple-700">
+          <h2 className="text-3xl font-bold mb-12 font-poppins text-center text-[#1b365f]">
             Why Sponsor &quot;You Got Served&quot;?
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center p-6">
-              <div className="text-purple-600 mb-4">
+              <div className="text-cyan-600 mb-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-16 w-16 mx-auto"
@@ -442,7 +441,7 @@ export default function SponsorsPage() {
             </div>
 
             <div className="text-center p-6">
-              <div className="text-purple-600 mb-4">
+              <div className="text-cyan-600 mb-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-16 w-16 mx-auto"
@@ -471,7 +470,7 @@ export default function SponsorsPage() {
       </section>
 
       {/* Contact CTA */}
-      <section className="py-16 bg-gradient-to-r from-purple-600 to-pink-500 text-white">
+      <section className="py-16 bg-gradient-to-r from-pink-500 via-pink-600 to-pink-500 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 font-poppins">
             Ready to Partner With Us?
@@ -483,7 +482,7 @@ export default function SponsorsPage() {
           <div className="flex flex-wrap justify-center gap-4">
             <Link
               href="/contact"
-              className="bg-white text-purple-600 font-bold py-3 px-8 rounded-lg hover:bg-gray-100 transition duration-300 transform hover:scale-105 shadow-md"
+              className="bg-white text-cyan-600 font-bold py-3 px-8 rounded-lg hover:bg-gray-100 transition duration-300 transform hover:scale-105 shadow-md"
             >
               Become a Sponsor
             </Link>

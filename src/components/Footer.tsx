@@ -2,12 +2,12 @@ import Link from 'next/link'
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white py-10">
+    <footer className="bg-gradient-to-b from-[#1b365f] to-[#0f1f3d] text-white py-10 border-t-4 border-cyan-400/30">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* About Section */}
           <div>
-            <h3 className="text-xl font-bold mb-4 text-pink-400">
+            <h3 className="text-xl font-bold mb-4 text-cyan-400">
               You Got Served
             </h3>
             <p className="mb-4">
@@ -22,7 +22,7 @@ const Footer = () => {
                 aria-label="Facebook"
               >
                 <svg
-                  className="h-6 w-6 text-white hover:text-pink-400"
+                  className="h-6 w-6 text-white hover:text-cyan-400 transition-colors"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -36,7 +36,7 @@ const Footer = () => {
                 aria-label="Instagram"
               >
                 <svg
-                  className="h-6 w-6 text-white hover:text-pink-400"
+                  className="h-6 w-6 text-white hover:text-cyan-400 transition-colors"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -50,7 +50,7 @@ const Footer = () => {
                 aria-label="Twitter"
               >
                 <svg
-                  className="h-6 w-6 text-white hover:text-pink-400"
+                  className="h-6 w-6 text-white hover:text-cyan-400 transition-colors"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -62,14 +62,14 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-xl font-bold mb-4 text-pink-400">
+            <h3 className="text-xl font-bold mb-4 text-cyan-400">
               Quick Links
             </h3>
             <ul className="space-y-2">
               <li>
                 <Link
                   href="/"
-                  className="hover:text-pink-400 transition duration-300"
+                  className="hover:text-cyan-400 transition duration-300"
                 >
                   Home
                 </Link>
@@ -77,7 +77,7 @@ const Footer = () => {
               <li>
                 <Link
                   href="/about"
-                  className="hover:text-pink-400 transition duration-300"
+                  className="hover:text-cyan-400 transition duration-300"
                 >
                   About the Event
                 </Link>
@@ -85,7 +85,7 @@ const Footer = () => {
               <li>
                 <Link
                   href="/rules"
-                  className="hover:text-pink-400 transition duration-300"
+                  className="hover:text-cyan-400 transition duration-300"
                 >
                   Bring It!
                 </Link>
@@ -93,7 +93,7 @@ const Footer = () => {
               <li>
                 <Link
                   href="/teams"
-                  className="hover:text-pink-400 transition duration-300"
+                  className="hover:text-cyan-400 transition duration-300"
                 >
                   Teams & Instructors
                 </Link>
@@ -101,7 +101,7 @@ const Footer = () => {
               <li>
                 <Link
                   href="/schedule"
-                  className="hover:text-pink-400 transition duration-300"
+                  className="hover:text-cyan-400 transition duration-300"
                 >
                   Schedule
                 </Link>
@@ -111,7 +111,7 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-xl font-bold mb-4 text-pink-400">Contact Us</h3>
+            <h3 className="text-xl font-bold mb-4 text-cyan-400">Contact Us</h3>
             <p className="mb-2">Egyptian Theatre</p>
             <p className="mb-2">145 N 2nd St</p>
             <p className="mb-2">DeKalb, IL 60115</p>
@@ -119,14 +119,14 @@ const Footer = () => {
             <p className="mb-4">Email: info@yougotserved.dance</p>
             <Link
               href="/contact"
-              className="inline-block bg-gradient-to-r from-purple-600 to-pink-500 text-white px-4 py-2 rounded-md hover:from-purple-700 hover:to-pink-600 transition duration-300"
+              className="inline-block bg-gradient-to-r from-cyan-500 to-cyan-600 text-[#1b365f] font-bold px-6 py-3 rounded-xl hover:from-cyan-600 hover:to-cyan-700 transition duration-300 transform hover:scale-105 shadow-lg"
             >
               Get in Touch
             </Link>
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-8 pt-6 text-center text-sm">
+        <div className="border-t border-cyan-400/20 mt-8 pt-6 text-center text-sm">
           <p>
             &copy; {new Date().getFullYear()} You Got Served. All rights
             reserved.

@@ -1,33 +1,17 @@
 'use client'
 
-import Image from 'next/image'
 import Link from 'next/link'
 
 export default function ContactPage() {
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="relative h-[40vh] flex items-center justify-center overflow-hidden bg-purple-100">
-        <div className="absolute inset-0 z-0">
-          <div className="relative w-full h-full">
-            <Image
-              src="/images/hero-dance.jpg"
-              alt="Contact Us"
-              fill
-              priority
-              className="object-cover"
-              onError={(e) => {
-                e.currentTarget.style.display = 'none'
-              }}
-            />
-            <div className="absolute inset-0 bg-gradient-to-br from-purple-500/70 via-purple-600/60 to-indigo-700/50"></div>
-          </div>
-        </div>
-        <div className="container mx-auto px-4 z-10 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-white font-poppins mb-4 drop-shadow-lg">
+      {/* Simple Header */}
+      <section className="bg-gradient-to-r from-[#1b365f] to-cyan-600 py-12 md:py-16">
+        <div className="container mx-auto px-4 text-center">
+          <h1 className="text-4xl md:text-5xl font-bold text-white font-poppins mb-4">
             Contact Us
           </h1>
-          <p className="text-xl text-white max-w-3xl mx-auto drop-shadow-md">
+          <p className="text-xl text-cyan-100 max-w-3xl mx-auto">
             Get in touch with questions, sponsorship inquiries, or team
             registration
           </p>
@@ -40,7 +24,7 @@ export default function ContactPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
             {/* Contact Form */}
             <div>
-              <h2 className="text-3xl font-bold mb-6 font-poppins text-purple-700">
+              <h2 className="text-3xl font-bold mb-6 font-poppins text-[#1b365f]">
                 Send Us a Message
               </h2>
 
@@ -53,7 +37,7 @@ export default function ContactPage() {
                     <input
                       type="text"
                       required
-                      className="w-full px-3 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
+                      className="w-full px-3 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500"
                     />
                   </div>
                   <div>
@@ -63,7 +47,7 @@ export default function ContactPage() {
                     <input
                       type="text"
                       required
-                      className="w-full px-3 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
+                      className="w-full px-3 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500"
                     />
                   </div>
                 </div>
@@ -75,7 +59,7 @@ export default function ContactPage() {
                   <input
                     type="email"
                     required
-                    className="w-full px-3 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
+                    className="w-full px-3 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500"
                   />
                 </div>
 
@@ -85,7 +69,7 @@ export default function ContactPage() {
                   </label>
                   <input
                     type="tel"
-                    className="w-full px-3 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
+                    className="w-full px-3 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500"
                   />
                 </div>
 
@@ -95,7 +79,7 @@ export default function ContactPage() {
                   </label>
                   <select
                     required
-                    className="w-full px-3 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
+                    className="w-full px-3 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500"
                   >
                     <option value="">Select a subject...</option>
                     <option value="team-registration">Team Registration</option>
@@ -117,14 +101,11 @@ export default function ContactPage() {
                     rows={6}
                     required
                     placeholder="Tell us more about your inquiry..."
-                    className="w-full px-3 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
+                    className="w-full px-3 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500"
                   ></textarea>
                 </div>
 
-                <button
-                  type="submit"
-                  className="w-full bg-gradient-to-r from-purple-600 to-pink-500 text-white font-bold py-4 px-6 rounded-lg hover:from-purple-700 hover:to-pink-600 transition duration-300 transform hover:scale-105 shadow-md"
-                >
+                <button type="submit" className="w-full btn-retro-cyan">
                   Send Message
                 </button>
               </form>
@@ -132,13 +113,13 @@ export default function ContactPage() {
 
             {/* Contact Info */}
             <div>
-              <h2 className="text-3xl font-bold mb-6 font-poppins text-purple-700">
+              <h2 className="text-3xl font-bold mb-6 font-poppins text-[#1b365f]">
                 Get In Touch
               </h2>
 
               <div className="space-y-8">
                 <div className="flex items-start">
-                  <div className="text-purple-600 mr-4 mt-1">
+                  <div className="text-cyan-600 mr-4 mt-1">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="h-6 w-6"
@@ -173,7 +154,7 @@ export default function ContactPage() {
                 </div>
 
                 <div className="flex items-start">
-                  <div className="text-purple-600 mr-4 mt-1">
+                  <div className="text-cyan-600 mr-4 mt-1">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="h-6 w-6"
@@ -194,7 +175,7 @@ export default function ContactPage() {
                     <p className="text-gray-700">
                       <a
                         href="mailto:info@yougotserved.dance"
-                        className="text-purple-600 hover:text-purple-800"
+                        className="text-cyan-600 hover:text-cyan-700"
                       >
                         info@yougotserved.dance
                       </a>
@@ -203,7 +184,7 @@ export default function ContactPage() {
                 </div>
 
                 <div className="flex items-start">
-                  <div className="text-purple-600 mr-4 mt-1">
+                  <div className="text-cyan-600 mr-4 mt-1">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="h-6 w-6"
@@ -224,7 +205,7 @@ export default function ContactPage() {
                     <p className="text-gray-700">
                       <a
                         href="tel:+18157572825"
-                        className="text-purple-600 hover:text-purple-800"
+                        className="text-cyan-600 hover:text-cyan-700"
                       >
                         (815) 757-2825
                       </a>
@@ -239,7 +220,7 @@ export default function ContactPage() {
                 <div className="flex space-x-4">
                   <a
                     href="#"
-                    className="text-purple-600 hover:text-purple-800 transition duration-300"
+                    className="text-cyan-600 hover:text-cyan-700 transition duration-300"
                   >
                     <svg
                       className="h-8 w-8"
@@ -251,7 +232,7 @@ export default function ContactPage() {
                   </a>
                   <a
                     href="#"
-                    className="text-purple-600 hover:text-purple-800 transition duration-300"
+                    className="text-cyan-600 hover:text-cyan-700 transition duration-300"
                   >
                     <svg
                       className="h-8 w-8"
@@ -263,7 +244,7 @@ export default function ContactPage() {
                   </a>
                   <a
                     href="#"
-                    className="text-purple-600 hover:text-purple-800 transition duration-300"
+                    className="text-cyan-600 hover:text-cyan-700 transition duration-300"
                   >
                     <svg
                       className="h-8 w-8"
@@ -281,15 +262,15 @@ export default function ContactPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="section-padding bg-purple-50">
+      <section className="section-padding bg-gradient-to-br from-gray-50 to-cyan-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-8 font-poppins text-center text-purple-700">
+          <h2 className="text-3xl font-bold mb-8 font-poppins text-center text-[#1b365f]">
             Frequently Asked Questions
           </h2>
 
           <div className="max-w-4xl mx-auto space-y-6">
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="font-bold text-lg mb-2 text-purple-600">
+            <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-cyan-400">
+              <h3 className="font-bold text-lg mb-2 text-[#1b365f]">
                 How do I register my team?
               </h3>
               <p className="text-gray-700">
@@ -299,8 +280,8 @@ export default function ContactPage() {
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="font-bold text-lg mb-2 text-purple-600">
+            <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-pink-500">
+              <h3 className="font-bold text-lg mb-2 text-[#1b365f]">
                 What are the age requirements for participants?
               </h3>
               <p className="text-gray-700">
@@ -310,8 +291,8 @@ export default function ContactPage() {
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="font-bold text-lg mb-2 text-purple-600">
+            <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-yellow-400">
+              <h3 className="font-bold text-lg mb-2 text-[#1b365f]">
                 Can I sponsor the event?
               </h3>
               <p className="text-gray-700">
@@ -319,7 +300,7 @@ export default function ContactPage() {
                 out our{' '}
                 <Link
                   href="/sponsors"
-                  className="text-purple-600 hover:text-purple-800"
+                  className="text-cyan-600 hover:text-cyan-700"
                 >
                   sponsors page
                 </Link>{' '}
@@ -327,8 +308,8 @@ export default function ContactPage() {
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="font-bold text-lg mb-2 text-purple-600">
+            <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-cyan-400">
+              <h3 className="font-bold text-lg mb-2 text-[#1b365f]">
                 Where do the proceeds go?
               </h3>
               <p className="text-gray-700">
@@ -336,7 +317,7 @@ export default function ContactPage() {
                 more about our charity partners on our{' '}
                 <Link
                   href="/donate"
-                  className="text-purple-600 hover:text-purple-800"
+                  className="text-cyan-600 hover:text-cyan-700"
                 >
                   donation page
                 </Link>
@@ -348,7 +329,7 @@ export default function ContactPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-purple-600 to-pink-500 text-white">
+      <section className="py-16 bg-gradient-to-r from-pink-500 via-pink-600 to-pink-500 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 font-poppins">
             Ready to Get Involved?
@@ -358,16 +339,10 @@ export default function ContactPage() {
             we&apos;d love to hear from you!
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Link
-              href="/tickets"
-              className="bg-white text-purple-600 font-bold py-3 px-8 rounded-lg hover:bg-gray-100 transition duration-300 transform hover:scale-105 shadow-md"
-            >
+            <Link href="/tickets" className="btn-retro-pink">
               Get Tickets
             </Link>
-            <Link
-              href="/sponsors"
-              className="bg-transparent border-2 border-white text-white font-bold py-3 px-8 rounded-lg hover:bg-white/10 transition duration-300 transform hover:scale-105"
-            >
+            <Link href="/sponsors" className="btn-retro-yellow">
               Become a Sponsor
             </Link>
           </div>

@@ -53,7 +53,7 @@ export default function RootLayout({
         <meta name="color-scheme" content="light" />
       </head>
       <body
-        className={`${inter.variable} ${poppins.variable} font-sans min-h-screen flex flex-col bg-purple-50`}
+        className={`${inter.variable} ${poppins.variable} font-sans min-h-screen flex flex-col bg-gradient-to-br from-gray-50 to-cyan-50`}
       >
         <Navbar />
         <main className="flex-grow">{children}</main>

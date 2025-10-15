@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Link from 'next/link'
 
 export default function RulesPage() {
@@ -37,25 +36,13 @@ export default function RulesPage() {
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="relative h-[40vh] flex items-center justify-center overflow-hidden bg-purple-100">
-        <div className="absolute inset-0 z-0">
-          <div className="relative w-full h-full">
-            <Image
-              src="/images/rules-hero.jpg"
-              alt="Dance Competition Rules"
-              fill
-              priority
-              className="object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-br from-purple-500/70 via-purple-600/60 to-indigo-700/50"></div>
-          </div>
-        </div>
-        <div className="container mx-auto px-4 z-10 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-white font-poppins mb-4 drop-shadow-lg text-shadow-lg">
+      {/* Simple Header */}
+      <section className="bg-gradient-to-r from-[#1b365f] to-cyan-600 py-12 md:py-16">
+        <div className="container mx-auto px-4 text-center">
+          <h1 className="text-4xl md:text-5xl font-bold text-white font-poppins mb-4">
             Bring It!
           </h1>
-          <p className="text-xl text-white max-w-3xl mx-auto drop-shadow-md text-shadow">
+          <p className="text-xl text-cyan-100 max-w-3xl mx-auto">
             Official Dance-Off Rules
           </p>
         </div>
@@ -65,9 +52,7 @@ export default function RulesPage() {
       <section className="section-padding bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="section-title bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-500">
-              The Official Rules
-            </h2>
+            <h2 className="section-title">The Official Rules</h2>
             <p className="section-subtitle">
               These are the sacred laws of the dance-off. Follow them with honor
               and respect!
@@ -77,11 +62,11 @@ export default function RulesPage() {
               {rules.map((rule) => (
                 <div
                   key={rule.number}
-                  className="flex flex-col md:flex-row gap-6 items-start md:items-center p-6 bg-purple-50 rounded-xl shadow-md hover:shadow-lg transition duration-300"
+                  className="flex flex-col md:flex-row gap-6 items-start md:items-center p-6 bg-gradient-to-br from-cyan-50 to-white rounded-xl shadow-md hover:shadow-lg transition duration-300 border-l-4 border-cyan-400"
                 >
                   <div>
                     <h3 className="text-2xl font-bold mb-2 font-poppins flex items-center">
-                      <span className="bg-gradient-to-r from-purple-600 to-pink-500 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">
+                      <span className="bg-gradient-to-r from-cyan-500 to-cyan-600 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">
                         {rule.number}
                       </span>
                       {rule.title}
@@ -92,8 +77,8 @@ export default function RulesPage() {
               ))}
             </div>
 
-            <div className="mt-12 p-6 bg-purple-50 border-l-4 border-purple-500 rounded-lg">
-              <h3 className="text-xl font-bold mb-2 font-poppins text-purple-700">
+            <div className="mt-12 p-6 bg-gradient-to-br from-yellow-50 to-white border-l-4 border-yellow-400 rounded-lg">
+              <h3 className="text-xl font-bold mb-2 font-poppins text-[#1b365f]">
                 Remember
               </h3>
               <p className="text-lg text-gray-700">
@@ -107,7 +92,7 @@ export default function RulesPage() {
       </section>
 
       {/* Cultural Inspiration */}
-      <section className="section-padding bg-purple-50">
+      <section className="section-padding bg-gradient-to-br from-gray-50 to-cyan-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold mb-6 font-poppins text-center">
@@ -141,15 +126,15 @@ export default function RulesPage() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div>
-              <h2 className="text-3xl font-bold mb-6 font-poppins text-purple-600">
+              <h2 className="text-3xl font-bold mb-6 font-poppins text-[#1b365f]">
                 Competition Format
               </h2>
-              <div className="bg-purple-50 p-6 rounded-lg shadow-md">
+              <div className="bg-gradient-to-br from-cyan-50 to-white p-6 rounded-lg shadow-md border-t-4 border-cyan-400">
                 <ul className="space-y-4">
                   <li className="flex items-start">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="h-6 w-6 text-purple-600 mr-2 mt-1"
+                      className="h-6 w-6 text-cyan-600 mr-2 mt-1"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="#7c3aed"
@@ -168,7 +153,7 @@ export default function RulesPage() {
                   <li className="flex items-start">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="h-6 w-6 text-purple-600 mr-2 mt-1"
+                      className="h-6 w-6 text-cyan-600 mr-2 mt-1"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="#7c3aed"
@@ -187,7 +172,7 @@ export default function RulesPage() {
                   <li className="flex items-start">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="h-6 w-6 text-purple-600 mr-2 mt-1"
+                      className="h-6 w-6 text-cyan-600 mr-2 mt-1"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="#7c3aed"
@@ -206,7 +191,7 @@ export default function RulesPage() {
                   <li className="flex items-start">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="h-6 w-6 text-purple-600 mr-2 mt-1"
+                      className="h-6 w-6 text-cyan-600 mr-2 mt-1"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="#7c3aed"
@@ -226,7 +211,7 @@ export default function RulesPage() {
                   <li className="flex items-start">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="h-6 w-6 text-purple-600 mr-2 mt-1"
+                      className="h-6 w-6 text-cyan-600 mr-2 mt-1"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="#7c3aed"
@@ -340,7 +325,7 @@ export default function RulesPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-purple-600 to-pink-500 text-white">
+      <section className="py-16 bg-gradient-to-r from-pink-500 via-pink-600 to-pink-500 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 font-poppins">
             Ready to Bring It?
@@ -351,10 +336,7 @@ export default function RulesPage() {
             support local charities in DeKalb County!
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Link
-              href="/teams"
-              className="bg-white text-purple-600 font-bold py-3 px-8 rounded-lg hover:bg-gray-100 transition duration-300 transform hover:scale-105 shadow-md"
-            >
+            <Link href="/teams" className="btn-retro-cyan">
               Meet The Teams
             </Link>
             <Link
