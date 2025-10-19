@@ -30,10 +30,6 @@ export const metadata: Metadata = {
     initialScale: 1,
     maximumScale: 5,
   },
-  icons: {
-    icon: '/boombox.png',
-    apple: '/boombox.png',
-  },
   openGraph: {
     title: 'April 11, 2026 | Egyptian Theatre',
     description:
@@ -66,8 +62,6 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="color-scheme" content="light" />
-        <link rel="icon" href="/boombox.png" type="image/png" />
-        <link rel="shortcut icon" href="/boombox.png" type="image/png" />
       </head>
       <body
         className={`${inter.variable} ${poppins.variable} ${fugazOne.variable} font-sans min-h-screen flex flex-col bg-gradient-to-br from-gray-50 to-cyan-50`}
