@@ -17,6 +17,10 @@ declare global {
 
 export default function DonatePage() {
   useEffect(() => {
+    let retryTimer: NodeJS.Timeout | null = null
+    let retryCount = 0
+    const maxRetries = 30 // Try for 3 seconds max
+
     // Initialize PayPal when component mounts or when PayPal becomes available
     const initPayPal = () => {
       const container = document.getElementById(
@@ -24,19 +28,24 @@ export default function DonatePage() {
       )
 
       if (window.paypal && container) {
-        // Clear any existing buttons first
-        container.innerHTML = ''
+        try {
+          // Clear any existing buttons first
+          container.innerHTML = ''
 
-        window.paypal
-          .HostedButtons({
-            hostedButtonId: 'HXAJUF5JSEGDL',
-          })
-          .render('#paypal-container-HXAJUF5JSEGDL')
+          window.paypal
+            .HostedButtons({
+              hostedButtonId: 'HXAJUF5JSEGDL',
+            })
+            .render('#paypal-container-HXAJUF5JSEGDL')
 
-        console.log('PayPal buttons initialized')
-      } else {
+          console.log('PayPal buttons initialized')
+        } catch (error) {
+          console.error('Error initializing PayPal:', error)
+        }
+      } else if (retryCount < maxRetries) {
         // Retry if not ready yet
-        setTimeout(initPayPal, 100)
+        retryCount++
+        retryTimer = setTimeout(initPayPal, 100)
       }
     }
 
@@ -45,6 +54,9 @@ export default function DonatePage() {
 
     return () => {
       clearTimeout(timer)
+      if (retryTimer) {
+        clearTimeout(retryTimer)
+      }
     }
   }, [])
   return (

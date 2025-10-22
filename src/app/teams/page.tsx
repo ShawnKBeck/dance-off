@@ -1,39 +1,6 @@
-import Image from 'next/image'
 import Link from 'next/link'
 
 export default function TeamsPage() {
-  // Sample instructors data - this would typically come from a CMS or API
-  const instructors = [
-    {
-      id: 1,
-      name: 'Alicia Rivera',
-      specialty: 'Hip Hop & Contemporary',
-      bio: 'With over 10 years of professional experience, Alicia brings energy and innovation to every performance. She has choreographed for music videos and national dance competitions.',
-      image: '/images/instructor-1.jpg',
-    },
-    {
-      id: 2,
-      name: 'Marcus Johnson',
-      specialty: 'Breaking & Street Styles',
-      bio: "Marcus started breaking at age 12 and has since become one of the most respected B-boys in the Midwest. He's competed internationally and brings authentic street style to his coaching.",
-      image: '/images/instructor-2.jpg',
-    },
-    {
-      id: 3,
-      name: 'Sophie Chen',
-      specialty: 'Ballet & Jazz',
-      bio: 'Classically trained at Juilliard, Sophie combines technical precision with creative expression. Her choreography seamlessly blends traditional and modern elements.',
-      image: '/images/instructor-3.jpg',
-    },
-    {
-      id: 4,
-      name: 'Darnell Washington',
-      specialty: 'Urban & Commercial',
-      bio: 'Darnell has danced for major recording artists and brings industry experience to his teaching. His dynamic style and attention to detail help teams stand out on stage.',
-      image: '/images/instructor-4.jpg',
-    },
-  ]
-
   return (
     <div className="min-h-screen">
       {/* Team Registration Form */}
@@ -197,70 +164,106 @@ export default function TeamsPage() {
         </div>
       </section>
 
-      {/* Instructors Section */}
+      {/* Contact Us Section */}
       <section className="section-padding bg-gradient-to-br from-gray-50 to-cyan-50">
         <div className="container mx-auto px-4">
-          <h2 className="section-title">Meet Our Instructors</h2>
-          <p className="section-subtitle">
-            Professional dancers from Dimensions who will coach our competing
-            teams
-          </p>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
-            {instructors.map((instructor) => (
-              <div
-                key={instructor.id}
-                className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 transform hover:-translate-y-2"
-              >
-                <div className="relative h-64">
-                  <Image
-                    src={instructor.image}
-                    alt={instructor.name}
-                    fill
-                    className="object-cover"
-                  />
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-white rounded-xl shadow-lg p-8 md:p-12">
+              <div className="text-center mb-8">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-cyan-100 rounded-full mb-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-8 w-8 text-cyan-600"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"
+                    />
+                  </svg>
                 </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold mb-1 font-poppins">
-                    {instructor.name}
-                  </h3>
-                  <p className="text-cyan-600 font-medium mb-3">
-                    {instructor.specialty}
-                  </p>
-                  <p className="text-gray-600">{instructor.bio}</p>
+
+                <h2 className="text-3xl md:text-4xl font-bold mb-4 font-poppins text-[#1b365f]">
+                  Questions About Teams?
+                </h2>
+
+                <p className="text-lg text-gray-600 mb-6">
+                  Have questions about forming a team, competition rules, or the
+                  registration process? We&apos;re here to help!
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                <div className="bg-cyan-50 rounded-lg p-6">
+                  <div className="flex items-start">
+                    <div className="flex-shrink-0">
+                      <svg
+                        className="h-6 w-6 text-cyan-600 mt-1"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                        />
+                      </svg>
+                    </div>
+                    <div className="ml-4">
+                      <h3 className="font-bold text-[#1b365f] mb-1">
+                        Email Us
+                      </h3>
+                      <p className="text-sm text-gray-600">
+                        Get in touch via our contact page
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-pink-50 rounded-lg p-6">
+                  <div className="flex items-start">
+                    <div className="flex-shrink-0">
+                      <svg
+                        className="h-6 w-6 text-pink-500 mt-1"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                        />
+                      </svg>
+                    </div>
+                    <div className="ml-4">
+                      <h3 className="font-bold text-[#1b365f] mb-1">
+                        Quick Response
+                      </h3>
+                      <p className="text-sm text-gray-600">
+                        We typically respond within 24-48 hours
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
-      {/* Dance Styles Section */}
-      <section className="section-padding bg-white">
-        <div className="container mx-auto px-4">
-          <h2 className="section-title">Dance Styles</h2>
-          <p className="section-subtitle">
-            Our competition embraces a wide variety of dance styles
-          </p>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-12">
-            {[
-              { name: 'Hip Hop', color: 'bg-blue-500' },
-              { name: 'Contemporary', color: 'bg-cyan-500' },
-              { name: 'Breaking', color: 'bg-red-500' },
-              { name: 'Jazz', color: 'bg-yellow-500' },
-              { name: 'Ballet', color: 'bg-pink-500' },
-              { name: 'Street', color: 'bg-green-500' },
-              { name: 'Latin', color: 'bg-orange-500' },
-              { name: 'Fusion', color: 'bg-indigo-500' },
-            ].map((style, index) => (
-              <div
-                key={index}
-                className={`${style.color} rounded-lg p-6 text-white text-center shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-1`}
-              >
-                <h3 className="text-xl font-bold font-poppins">{style.name}</h3>
+              <div className="text-center">
+                <Link
+                  href="/contact"
+                  className="inline-block bg-gradient-to-r from-cyan-600 to-cyan-600 text-white font-bold py-4 px-10 rounded-lg hover:from-cyan-700 hover:to-cyan-700 transition duration-300 transform hover:scale-105 shadow-md"
+                >
+                  Contact Us
+                </Link>
               </div>
-            ))}
+            </div>
           </div>
         </div>
       </section>
